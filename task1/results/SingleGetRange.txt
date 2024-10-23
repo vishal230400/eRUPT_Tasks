@@ -1,0 +1,8 @@
+Experiment 1 : Creating 10000 Keys time in ns: 82081129678
+Experiment 1 : GetRange : WANT_ALL : 10000 Keys time in ns: 23893399
+Experiment 1 : GetRange : ITERATOR : 10000 Keys time in ns: 8979250
+Experiment 1 : GetRange : EXACT : 10000 Keys time in ns: 6603164
+Experiment 1 : GetRange : SMALL : 10000 Keys time in ns: 351165265
+Experiment 1 : GetRange : MEDIUM : 10000 Keys time in ns: 86737160
+Experiment 1 : GetRange : LARGE : 10000 Keys time in ns: 25725892
+Experiment 1 : GetRange : SERIAL : 10000 Keys time in ns: 4183010
