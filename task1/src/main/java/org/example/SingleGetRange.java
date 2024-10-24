@@ -106,7 +106,7 @@ public class SingleGetRange {
         SingleGetRange FDB = new SingleGetRange();
         String filename = "task1/results/SingleGetRange.txt";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
-            for (int experiment = 0; experiment < 1; experiment++) {
+            for (int experiment = 0; experiment < 10; experiment++) {
                 long startSetTime = System.nanoTime();
                 for (int i = 0; i < 10000; i++) {
                     FDB.setKey("key_" + i, "value_" + i);
