@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/ReadSnapshot.dir/read_snapshot.c.o  -o ReadSnapshot  /usr/lib/libfdb_c.so -lpthread 

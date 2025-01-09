@@ -43,3 +43,14 @@ target_link_libraries(SingleVSMultiRange pthread)
 # Include the FoundationDB headers
 target_include_directories(SingleVSMultiRange PRIVATE /usr/local/include)
 
+# Add the executable
+add_executable(ReadSnapshot read_snapshot.c)
+
+# Link the FoundationDB library
+target_link_libraries(ReadSnapshot ${FDB_LIBRARY})
+
+# Link the pthread library
+target_link_libraries(ReadSnapshot pthread)
+
+# Include the FoundationDB headers
+target_include_directories(ReadSnapshot PRIVATE /usr/local/include)

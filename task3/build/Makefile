@@ -124,6 +124,19 @@ SingleVSMultiRange/fast:
 .PHONY : SingleVSMultiRange/fast
 
 #=============================================================================
+# Target rules for targets named ReadSnapshot
+
+# Build rule for target.
+ReadSnapshot: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ReadSnapshot
+.PHONY : ReadSnapshot
+
+# fast build rule for target.
+ReadSnapshot/fast:
+	$(MAKE) -f CMakeFiles/ReadSnapshot.dir/build.make CMakeFiles/ReadSnapshot.dir/build
+.PHONY : ReadSnapshot/fast
+
+#=============================================================================
 # Target rules for targets named SingleGetRange
 
 # Build rule for target.
@@ -175,6 +188,33 @@ basic_ops.s: basic_ops.c.s
 basic_ops.c.s:
 	$(MAKE) -f CMakeFiles/BasicFDBOps.dir/build.make CMakeFiles/BasicFDBOps.dir/basic_ops.c.s
 .PHONY : basic_ops.c.s
+
+read_snapshot.o: read_snapshot.c.o
+
+.PHONY : read_snapshot.o
+
+# target to build an object file
+read_snapshot.c.o:
+	$(MAKE) -f CMakeFiles/ReadSnapshot.dir/build.make CMakeFiles/ReadSnapshot.dir/read_snapshot.c.o
+.PHONY : read_snapshot.c.o
+
+read_snapshot.i: read_snapshot.c.i
+
+.PHONY : read_snapshot.i
+
+# target to preprocess a source file
+read_snapshot.c.i:
+	$(MAKE) -f CMakeFiles/ReadSnapshot.dir/build.make CMakeFiles/ReadSnapshot.dir/read_snapshot.c.i
+.PHONY : read_snapshot.c.i
+
+read_snapshot.s: read_snapshot.c.s
+
+.PHONY : read_snapshot.s
+
+# target to generate assembly for a file
+read_snapshot.c.s:
+	$(MAKE) -f CMakeFiles/ReadSnapshot.dir/build.make CMakeFiles/ReadSnapshot.dir/read_snapshot.c.s
+.PHONY : read_snapshot.c.s
 
 single_get_range.o: single_get_range.c.o
 
@@ -239,11 +279,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... SingleVSMultiRange"
+	@echo "... ReadSnapshot"
 	@echo "... SingleGetRange"
 	@echo "... BasicFDBOps"
 	@echo "... basic_ops.o"
 	@echo "... basic_ops.i"
 	@echo "... basic_ops.s"
+	@echo "... read_snapshot.o"
+	@echo "... read_snapshot.i"
+	@echo "... read_snapshot.s"
 	@echo "... single_get_range.o"
 	@echo "... single_get_range.i"
 	@echo "... single_get_range.s"

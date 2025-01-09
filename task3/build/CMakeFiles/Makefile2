@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /workspaces/eRUPT_Tasks/task3/build
 
 # The main recursive "all" target.
 all: CMakeFiles/SingleVSMultiRange.dir/all
+all: CMakeFiles/ReadSnapshot.dir/all
 all: CMakeFiles/SingleGetRange.dir/all
 all: CMakeFiles/BasicFDBOps.dir/all
 
@@ -66,6 +67,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/SingleVSMultiRange.dir/clean
+clean: CMakeFiles/ReadSnapshot.dir/clean
 clean: CMakeFiles/SingleGetRange.dir/clean
 clean: CMakeFiles/BasicFDBOps.dir/clean
 
@@ -78,7 +80,7 @@ clean: CMakeFiles/BasicFDBOps.dir/clean
 CMakeFiles/SingleVSMultiRange.dir/all:
 	$(MAKE) -f CMakeFiles/SingleVSMultiRange.dir/build.make CMakeFiles/SingleVSMultiRange.dir/depend
 	$(MAKE) -f CMakeFiles/SingleVSMultiRange.dir/build.make CMakeFiles/SingleVSMultiRange.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/eRUPT_Tasks/task3/build/CMakeFiles --progress-num=5,6 "Built target SingleVSMultiRange"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/eRUPT_Tasks/task3/build/CMakeFiles --progress-num=7,8 "Built target SingleVSMultiRange"
 .PHONY : CMakeFiles/SingleVSMultiRange.dir/all
 
 # Build rule for subdir invocation for target.
@@ -99,13 +101,40 @@ CMakeFiles/SingleVSMultiRange.dir/clean:
 .PHONY : CMakeFiles/SingleVSMultiRange.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/ReadSnapshot.dir
+
+# All Build rule for target.
+CMakeFiles/ReadSnapshot.dir/all:
+	$(MAKE) -f CMakeFiles/ReadSnapshot.dir/build.make CMakeFiles/ReadSnapshot.dir/depend
+	$(MAKE) -f CMakeFiles/ReadSnapshot.dir/build.make CMakeFiles/ReadSnapshot.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/eRUPT_Tasks/task3/build/CMakeFiles --progress-num=3,4 "Built target ReadSnapshot"
+.PHONY : CMakeFiles/ReadSnapshot.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ReadSnapshot.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/eRUPT_Tasks/task3/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ReadSnapshot.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/eRUPT_Tasks/task3/build/CMakeFiles 0
+.PHONY : CMakeFiles/ReadSnapshot.dir/rule
+
+# Convenience name for target.
+ReadSnapshot: CMakeFiles/ReadSnapshot.dir/rule
+
+.PHONY : ReadSnapshot
+
+# clean rule for target.
+CMakeFiles/ReadSnapshot.dir/clean:
+	$(MAKE) -f CMakeFiles/ReadSnapshot.dir/build.make CMakeFiles/ReadSnapshot.dir/clean
+.PHONY : CMakeFiles/ReadSnapshot.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/SingleGetRange.dir
 
 # All Build rule for target.
 CMakeFiles/SingleGetRange.dir/all:
 	$(MAKE) -f CMakeFiles/SingleGetRange.dir/build.make CMakeFiles/SingleGetRange.dir/depend
 	$(MAKE) -f CMakeFiles/SingleGetRange.dir/build.make CMakeFiles/SingleGetRange.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/eRUPT_Tasks/task3/build/CMakeFiles --progress-num=3,4 "Built target SingleGetRange"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/eRUPT_Tasks/task3/build/CMakeFiles --progress-num=5,6 "Built target SingleGetRange"
 .PHONY : CMakeFiles/SingleGetRange.dir/all
 
 # Build rule for subdir invocation for target.
