@@ -94,3 +94,17 @@
 ![MEDIUM](output_singlerange/MEDIUM_GetRange_Times.png)
 ![LARGE](output_singlerange/LARGE_GetRange_Times.png)
 ![SERIAL](output_singlerange/SERIAL_GetRange_Times.png)
+
+- **Observations**:
+    - The time to create 10,000 keys varies significantly across the experiments, ranging from about 54 to 91 seconds. This variation could be due to factors such as system load, network latency, or other environmental conditions during each test run.
+    - GetRange Performance:
+        - WANT_ALL and ITERATOR modes consistently show the best performance, with ITERATOR often being slightly faster.
+        - EXACT mode also performs well but is slightly slower than ITERATOR.
+        - SMALL mode has the slowest performance among all modes, likely due to the overhead of managing multiple smaller batches of data. This mode is more suitable for scenarios where system memory usage needs to be minimized.
+        - MEDIUM and LARGE modes provide a middle ground between performance and memory usage, with LARGE performing slightly better than MEDIUM. These modes are useful when a balance between batch size and transfer efficiency is required.
+        - SERIAL mode performs reasonably well, indicating its effectiveness in transferring data in a serial manner while maintaining low latency.
+        - The performance differences between these modes can be attributed to how FoundationDB handles data batching and transfer internally.
+- **Accomplishment**: Successfully created a Java Maven project to interact with FoundationDB, and retrieve 10k Key-Value pairs using different streaming modes, and understanding the performance of each streaming mode.
+- **SubTask Completion**: The sub-task was fully completed.
+- **Obstacles**:
+    - I had few issues while fetching using \x00 \xff, which I solved but going through the documentation and some use of Chatgpt to understand.
