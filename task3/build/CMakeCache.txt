@@ -14,12 +14,6 @@
 # EXTERNAL cache entries
 ########################
 
-//Value Computed by CMake
-BasicFDBOps_BINARY_DIR:STATIC=/workspaces/eRUPT_Tasks/task3/build
-
-//Value Computed by CMake
-BasicFDBOps_SOURCE_DIR:STATIC=/workspaces/eRUPT_Tasks/task3
-
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -151,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=BasicFDBOps
+CMAKE_PROJECT_NAME:STATIC=Task3
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -217,6 +211,12 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Path to a library.
 FDB_LIBRARY:FILEPATH=/usr/lib/libfdb_c.so
+
+//Value Computed by CMake
+Task3_BINARY_DIR:STATIC=/workspaces/eRUPT_Tasks/task3/build
+
+//Value Computed by CMake
+Task3_SOURCE_DIR:STATIC=/workspaces/eRUPT_Tasks/task3
 
 
 ########################

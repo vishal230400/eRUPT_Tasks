@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named SingleGetRange
+
+# Build rule for target.
+SingleGetRange: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SingleGetRange
+.PHONY : SingleGetRange
+
+# fast build rule for target.
+SingleGetRange/fast:
+	$(MAKE) -f CMakeFiles/SingleGetRange.dir/build.make CMakeFiles/SingleGetRange.dir/build
+.PHONY : SingleGetRange/fast
+
+#=============================================================================
 # Target rules for targets named BasicFDBOps
 
 # Build rule for target.
@@ -150,6 +163,33 @@ basic_ops.c.s:
 	$(MAKE) -f CMakeFiles/BasicFDBOps.dir/build.make CMakeFiles/BasicFDBOps.dir/basic_ops.c.s
 .PHONY : basic_ops.c.s
 
+single_get_range.o: single_get_range.c.o
+
+.PHONY : single_get_range.o
+
+# target to build an object file
+single_get_range.c.o:
+	$(MAKE) -f CMakeFiles/SingleGetRange.dir/build.make CMakeFiles/SingleGetRange.dir/single_get_range.c.o
+.PHONY : single_get_range.c.o
+
+single_get_range.i: single_get_range.c.i
+
+.PHONY : single_get_range.i
+
+# target to preprocess a source file
+single_get_range.c.i:
+	$(MAKE) -f CMakeFiles/SingleGetRange.dir/build.make CMakeFiles/SingleGetRange.dir/single_get_range.c.i
+.PHONY : single_get_range.c.i
+
+single_get_range.s: single_get_range.c.s
+
+.PHONY : single_get_range.s
+
+# target to generate assembly for a file
+single_get_range.c.s:
+	$(MAKE) -f CMakeFiles/SingleGetRange.dir/build.make CMakeFiles/SingleGetRange.dir/single_get_range.c.s
+.PHONY : single_get_range.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -158,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... SingleGetRange"
 	@echo "... BasicFDBOps"
 	@echo "... basic_ops.o"
 	@echo "... basic_ops.i"
 	@echo "... basic_ops.s"
+	@echo "... single_get_range.o"
+	@echo "... single_get_range.i"
+	@echo "... single_get_range.s"
 .PHONY : help
 
 

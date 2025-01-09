@@ -1,3 +1,4 @@
 /workspaces/eRUPT_Tasks/task3/build/CMakeFiles/rebuild_cache.dir
 /workspaces/eRUPT_Tasks/task3/build/CMakeFiles/edit_cache.dir
+/workspaces/eRUPT_Tasks/task3/build/CMakeFiles/SingleGetRange.dir
 /workspaces/eRUPT_Tasks/task3/build/CMakeFiles/BasicFDBOps.dir

@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/SingleGetRange.dir/single_get_range.c.o  -o SingleGetRange  /usr/lib/libfdb_c.so -lpthread 
