@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named TransactionConflict
+
+# Build rule for target.
+TransactionConflict: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TransactionConflict
+.PHONY : TransactionConflict
+
+# fast build rule for target.
+TransactionConflict/fast:
+	$(MAKE) -f CMakeFiles/TransactionConflict.dir/build.make CMakeFiles/TransactionConflict.dir/build
+.PHONY : TransactionConflict/fast
+
+#=============================================================================
 # Target rules for targets named SingleVSMultiRange
 
 # Build rule for target.
@@ -270,6 +283,33 @@ single_vs_multi_ranges.c.s:
 	$(MAKE) -f CMakeFiles/SingleVSMultiRange.dir/build.make CMakeFiles/SingleVSMultiRange.dir/single_vs_multi_ranges.c.s
 .PHONY : single_vs_multi_ranges.c.s
 
+tx_conflict.o: tx_conflict.c.o
+
+.PHONY : tx_conflict.o
+
+# target to build an object file
+tx_conflict.c.o:
+	$(MAKE) -f CMakeFiles/TransactionConflict.dir/build.make CMakeFiles/TransactionConflict.dir/tx_conflict.c.o
+.PHONY : tx_conflict.c.o
+
+tx_conflict.i: tx_conflict.c.i
+
+.PHONY : tx_conflict.i
+
+# target to preprocess a source file
+tx_conflict.c.i:
+	$(MAKE) -f CMakeFiles/TransactionConflict.dir/build.make CMakeFiles/TransactionConflict.dir/tx_conflict.c.i
+.PHONY : tx_conflict.c.i
+
+tx_conflict.s: tx_conflict.c.s
+
+.PHONY : tx_conflict.s
+
+# target to generate assembly for a file
+tx_conflict.c.s:
+	$(MAKE) -f CMakeFiles/TransactionConflict.dir/build.make CMakeFiles/TransactionConflict.dir/tx_conflict.c.s
+.PHONY : tx_conflict.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -278,6 +318,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... TransactionConflict"
 	@echo "... SingleVSMultiRange"
 	@echo "... ReadSnapshot"
 	@echo "... SingleGetRange"
@@ -294,6 +335,9 @@ help:
 	@echo "... single_vs_multi_ranges.o"
 	@echo "... single_vs_multi_ranges.i"
 	@echo "... single_vs_multi_ranges.s"
+	@echo "... tx_conflict.o"
+	@echo "... tx_conflict.i"
+	@echo "... tx_conflict.s"
 .PHONY : help
 
 

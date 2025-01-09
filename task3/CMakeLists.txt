@@ -54,3 +54,15 @@ target_link_libraries(ReadSnapshot pthread)
 
 # Include the FoundationDB headers
 target_include_directories(ReadSnapshot PRIVATE /usr/local/include)
+
+# Add the executable
+add_executable(TransactionConflict tx_conflict.c)
+
+# Link the FoundationDB library
+target_link_libraries(TransactionConflict ${FDB_LIBRARY})
+
+# Link the pthread library
+target_link_libraries(TransactionConflict pthread)
+
+# Include the FoundationDB headers
+target_include_directories(TransactionConflict PRIVATE /usr/local/include)
