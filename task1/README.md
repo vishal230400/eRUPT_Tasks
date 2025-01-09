@@ -76,3 +76,21 @@
 - **Obstacles**:
     - The program requires a properly installed and running instance of FoundationDB to function correctly. Without an active FDB server, the operations will not execute as expected.
     - For asynchronous handling, the getRange function required the proper use of CompletableFuture to handle results asynchronously.
+
+## Measure single getrange performance:
+```
+- Create a class SingleGetRange.java and use it for this sub-task
+- Store 10k key-value pairs (key_i, val_i) in FDB
+- Retrieve all 10k key-value pairs by executing a getrange on \x00 \xff
+- Modify getrange to use different modes (WANT_ALL, EXACT, ITERATOR, etc..) and report the response time of each execution
+```
+- For this task, I create 10k Key-Value pairs and stored it in FDB and retrieved it through different streaming modes, and deleted all the keys, and repeated the same experiment for a total of 10 times.
+- Below are the results of the same :
+![Key_Creation_Times](output_singlerange/Key_Creation_Times.png)
+![WANT_ALL](output_singlerange/WANT_ALL_GetRange_Times.png)
+![ITERATOR](output_singlerange/ITERATOR_GetRange_Times.png)
+![EXACT](output_singlerange/EXACT_GetRange_Times.png)
+![SMALL](output_singlerange/SMALL_GetRange_Times.png)
+![MEDIUM](output_singlerange/MEDIUM_GetRange_Times.png)
+![LARGE](output_singlerange/LARGE_GetRange_Times.png)
+![SERIAL](output_singlerange/SERIAL_GetRange_Times.png)
