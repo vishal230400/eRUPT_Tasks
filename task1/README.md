@@ -108,3 +108,51 @@
 - **SubTask Completion**: The sub-task was fully completed.
 - **Obstacles**:
     - I had few issues while fetching using \x00 \xff, which I solved but going through the documentation and some use of Chatgpt to understand.
+
+## Compare single getrange vs multiple getranges sent in parallel:
+```
+- Create a class SingleVsMultiRanges.java and use it for this sub-task
+- With the 10k key-value pairs stored in sub-task 5, define 10 ranges R1, R2, ..., R10 such
+that executing getrange on each of those 10 ranges returns exactly 1k key-value pairs.
+- Execute getRange() requests on these 10 ranges in parallel
+- Repeat the execution with different streaming modes (WANT_ALL, EXACT, ITORATOR, etc..) and report the response time of each execution. How are the numbers compared with the case in sub-task 5 where we only issue one getrange on \x00 \xff ?
+```
+- I created 10k Key-Value pair in Fdb like key_i value_i.
+- Divide the 10k into 10 equal ranges and call getrange in parallel 10 times, and wait for all the results to be populated, and do this in different streaming modes.
+- Repeat the whole experiment 10 times, and note timings for each iteration.
+- **Observation**:
+    - Below are the observation for the 10 experiments:
+![Key_Creation_Times](output_SingleVsMultiRanges/Key_Creation_Times.png)
+![WANT_ALL](output_SingleVsMultiRanges/WANT_ALL_GetRange_Times.png)
+![ITERATOR](output_SingleVsMultiRanges/ITERATOR_GetRange_Times.png)
+![EXACT](output_SingleVsMultiRanges/EXACT_GetRange_Times.png)
+![SMALL](output_SingleVsMultiRanges/SMALL_GetRange_Times.png)
+![MEDIUM](output_SingleVsMultiRanges/MEDIUM_GetRange_Times.png)
+![LARGE](output_SingleVsMultiRanges/LARGE_GetRange_Times.png)
+![SERIAL](output_SingleVsMultiRanges/SERIAL_GetRange_Times.png)
+
+- **Table**:
+
+    |              | SingleGetRange | SingleVsMultiRanges |
+    |--------------|----------------|---------------------|
+    | Key Creation | 61.7467        | 56.4245             |
+    | WANT_ALL     | 0.0086         | 0.0106              |
+    | ITERATOR     | 0.0060         | 0.0083              |
+    | EXACT        | 0.0045         | 0.0068              |
+    | SMALL        | 0.3689         | 0.1015              |
+    | MEDIUM       | 0.0930         | 0.0331              |
+    | LARGE        | 0.0263         | 0.0161              |
+    | SERIAL       | 0.0046         | 0.0071              |
+
+- **Inference**:
+    - SMALL, MEDIUM, LARGE streaming modes involve retrieving data in batches. By splitting the data into smaller ranges and issuing multiple parallel requests, each request can operate on a smaller portion of the dataset. This reduces the time needed for each request, as parallelism can be leveraged effectively, resulting in better performance compared to issuing a single large request.
+    - EXACT mode processes the data in a single batch to retrieve exact matches, meaning it is optimized for handling the entire range in one go. When using multiple parallel requests, the overhead of managing separate requests and the associated cost of calling each one increases. Therefore, SingleGetRange becomes more effective as it avoids the overhead of parallelization and processes everything in a single, optimized batch.
+    - SERIAL mode processes data sequentially, one item at a time. When using multiple parallel requests in this mode, the cost of managing separate requests becomes higher than just processing the data in a single, serial batch. Hence, SingleGetRange performs better because it avoids the overhead associated with parallelizing serial data processing.
+    - WANT_ALL and ITERATOR modes also involve retrieving the entire range in a single batch. These modes benefit from a single operation that can optimize the data retrieval process. Parallelizing these requests increases the overhead of managing separate requests, making SingleGetRange more efficient in these scenarios as well.
+    - In conclusion, SMALL/MEDIUM/LARGE works better in SingleVsMultiRanges, EXACT/SERIAL/WANT_ALL/ITERATOR works better in SingleGetRange.
+
+- **Accomplishment**: Successfully created a Java Maven project to interact with FoundationDB, and retrieve 10k Key-Value pairs using different streaming modes parallely, and compare with previous task.
+- **SubTask Completion**: The sub-task was fully completed.
+- **Obstacles**:
+    - I had few issues while comparing the time, and understanding the results.
+    - I was having difficulty in understanding how exactly each streaming mode works, I couldn't find elaborate documentation on the same except [this](https://www.javadoc.io/doc/org.foundationdb/fdb-java/7.1.2/com/apple/foundationdb/StreamingMode.html)
