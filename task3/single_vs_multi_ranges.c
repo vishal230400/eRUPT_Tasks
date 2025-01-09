@@ -110,7 +110,39 @@ void check_transaction_commit(FDBTransaction* tr) {
     fdb_future_destroy(commitFuture);
 }
 
+char start0[20] = "key_0";
+char end0[20] = "key_1898";
+char start1[20] = "key_1899";
+char end1[20] = "key_2798";
+char start2[20] = "key_2799";
+char end2[20] = "key_3698";
+char start3[20] = "key_3699";
+char end3[20] = "key_4598";
+char start4[20] = "key_4599";
+char end4[20] = "key_5498";
+char start5[20] = "key_5499";
+char end5[20] = "key_6398";
+char start6[20] = "key_6399";
+char end6[20] = "key_7298";
+char start7[20] = "key_7299";
+char end7[20] = "key_8198";
+char start8[20] = "key_8199";
+char end8[20] = "key_9098";
+char start9[20] = "key_9099";
+char end9[20] = "key_9999";
 
+void get_multi_range(FDBTransaction* tr1, FDBStreamingMode mode){
+    get_range(tr1, start0, end0, NUM_KEYS/10, mode);
+    get_range(tr1, start1, end1, NUM_KEYS/10, mode);
+    get_range(tr1, start2, end2, NUM_KEYS/10, mode);
+    get_range(tr1, start3, end3, NUM_KEYS/10, mode);
+    get_range(tr1, start4, end4, NUM_KEYS/10, mode);
+    get_range(tr1, start5, end5, NUM_KEYS/10, mode);
+    get_range(tr1, start6, end6, NUM_KEYS/10, mode);
+    get_range(tr1, start7, end7, NUM_KEYS/10, mode);
+    get_range(tr1, start8, end8, NUM_KEYS/10, mode);
+    get_range(tr1, start9, end9, NUM_KEYS/10, mode);
+}
 int main() {
     fdb_error_t err = fdb_select_api_version(FDB_API_VERSION);
     check_fdb_error(err);
@@ -126,7 +158,7 @@ int main() {
         fprintf(stderr, "Error creating network thread: %s\n", strerror(err));
         exit(EXIT_FAILURE);
     }
-    FILE* file = fopen("results/SingleGetRange.txt", "w");
+    FILE* file = fopen("results/SingleVSMultiRanges.txt", "w");
     if (!file) {
         perror("Error opening file");
         exit(EXIT_FAILURE);
@@ -157,49 +189,49 @@ int main() {
             switch (i) {
                 case 0:
                     start_set_time = clock();
-                    get_range(tr1,"\x00","\xFF",NUM_KEYS,FDB_STREAMING_MODE_ITERATOR);
+                    get_multi_range(tr1,FDB_STREAMING_MODE_ITERATOR);
                     end_set_time = clock();
                     duration_set_time = (double)(end_set_time - start_set_time) / CLOCKS_PER_SEC;
                     fprintf(file, "Experiment %d : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: %.6f\n", experiment + 1, duration_set_time);
                     break;
                 case 1:
                     start_set_time = clock();
-                    get_range(tr1,"\x00","\xFF",NUM_KEYS,FDB_STREAMING_MODE_SMALL);
+                    get_multi_range(tr1,FDB_STREAMING_MODE_SMALL);
                     end_set_time = clock();
                     duration_set_time = (double)(end_set_time - start_set_time) / CLOCKS_PER_SEC;
                     fprintf(file, "Experiment %d : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: %.6f\n", experiment + 1, duration_set_time);
                     break;
                 case 2:
                     start_set_time = clock();
-                    get_range(tr1,"\x00","\xFF",NUM_KEYS,FDB_STREAMING_MODE_MEDIUM);
+                    get_multi_range(tr1,FDB_STREAMING_MODE_MEDIUM);
                     end_set_time = clock();
                     duration_set_time = (double)(end_set_time - start_set_time) / CLOCKS_PER_SEC;
                     fprintf(file, "Experiment %d : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: %.6f\n", experiment + 1, duration_set_time);
                     break;
                 case 3:
                     start_set_time = clock();
-                    get_range(tr1,"\x00","\xFF",NUM_KEYS,FDB_STREAMING_MODE_LARGE);
+                    get_multi_range(tr1,FDB_STREAMING_MODE_LARGE);
                     end_set_time = clock();
                     duration_set_time = (double)(end_set_time - start_set_time) / CLOCKS_PER_SEC;
                     fprintf(file, "Experiment %d : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: %.6f\n", experiment + 1, duration_set_time);
                     break;
                 case 4:
                     start_set_time = clock();
-                    get_range(tr1,"\x00","\xFF",NUM_KEYS,FDB_STREAMING_MODE_SERIAL);
+                    get_multi_range(tr1,FDB_STREAMING_MODE_SERIAL);
                     end_set_time = clock();
                     duration_set_time = (double)(end_set_time - start_set_time) / CLOCKS_PER_SEC;
                     fprintf(file, "Experiment %d : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: %.6f\n", experiment + 1, duration_set_time);
                     break;                
                 case 5:
                     start_set_time = clock();
-                    get_range(tr1,"\x00","\xFF",NUM_KEYS,FDB_STREAMING_MODE_WANT_ALL);
+                    get_multi_range(tr1,FDB_STREAMING_MODE_WANT_ALL);
                     end_set_time = clock();
                     duration_set_time = (double)(end_set_time - start_set_time) / CLOCKS_PER_SEC;
                     fprintf(file, "Experiment %d : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: %.6f\n", experiment + 1, duration_set_time);
                     break;
                 case 6:
                     start_set_time = clock();
-                    get_range(tr1,"\x00","\xFF",NUM_KEYS,FDB_STREAMING_MODE_EXACT);
+                    get_multi_range(tr1,FDB_STREAMING_MODE_EXACT);
                     end_set_time = clock();
                     duration_set_time = (double)(end_set_time - start_set_time) / CLOCKS_PER_SEC;
                     fprintf(file, "Experiment %d : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: %.6f\n", experiment + 1, duration_set_time);
