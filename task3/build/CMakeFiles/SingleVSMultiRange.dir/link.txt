@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/SingleVSMultiRange.dir/single_vs_multi_ranges.c.o  -o SingleVSMultiRange  /usr/lib/libfdb_c.so -lpthread 

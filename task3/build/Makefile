@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named SingleVSMultiRange
+
+# Build rule for target.
+SingleVSMultiRange: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SingleVSMultiRange
+.PHONY : SingleVSMultiRange
+
+# fast build rule for target.
+SingleVSMultiRange/fast:
+	$(MAKE) -f CMakeFiles/SingleVSMultiRange.dir/build.make CMakeFiles/SingleVSMultiRange.dir/build
+.PHONY : SingleVSMultiRange/fast
+
+#=============================================================================
 # Target rules for targets named SingleGetRange
 
 # Build rule for target.
@@ -190,6 +203,33 @@ single_get_range.c.s:
 	$(MAKE) -f CMakeFiles/SingleGetRange.dir/build.make CMakeFiles/SingleGetRange.dir/single_get_range.c.s
 .PHONY : single_get_range.c.s
 
+single_vs_multi_ranges.o: single_vs_multi_ranges.c.o
+
+.PHONY : single_vs_multi_ranges.o
+
+# target to build an object file
+single_vs_multi_ranges.c.o:
+	$(MAKE) -f CMakeFiles/SingleVSMultiRange.dir/build.make CMakeFiles/SingleVSMultiRange.dir/single_vs_multi_ranges.c.o
+.PHONY : single_vs_multi_ranges.c.o
+
+single_vs_multi_ranges.i: single_vs_multi_ranges.c.i
+
+.PHONY : single_vs_multi_ranges.i
+
+# target to preprocess a source file
+single_vs_multi_ranges.c.i:
+	$(MAKE) -f CMakeFiles/SingleVSMultiRange.dir/build.make CMakeFiles/SingleVSMultiRange.dir/single_vs_multi_ranges.c.i
+.PHONY : single_vs_multi_ranges.c.i
+
+single_vs_multi_ranges.s: single_vs_multi_ranges.c.s
+
+.PHONY : single_vs_multi_ranges.s
+
+# target to generate assembly for a file
+single_vs_multi_ranges.c.s:
+	$(MAKE) -f CMakeFiles/SingleVSMultiRange.dir/build.make CMakeFiles/SingleVSMultiRange.dir/single_vs_multi_ranges.c.s
+.PHONY : single_vs_multi_ranges.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -198,6 +238,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... SingleVSMultiRange"
 	@echo "... SingleGetRange"
 	@echo "... BasicFDBOps"
 	@echo "... basic_ops.o"
@@ -206,6 +247,9 @@ help:
 	@echo "... single_get_range.o"
 	@echo "... single_get_range.i"
 	@echo "... single_get_range.s"
+	@echo "... single_vs_multi_ranges.o"
+	@echo "... single_vs_multi_ranges.i"
+	@echo "... single_vs_multi_ranges.s"
 .PHONY : help
 
 

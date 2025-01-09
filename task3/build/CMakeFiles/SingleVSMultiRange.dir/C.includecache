@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/eRUPT_Tasks/task3/single_vs_multi_ranges.c
+foundationdb/fdb_c.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+time.h
+-
+pthread.h
+-
+
