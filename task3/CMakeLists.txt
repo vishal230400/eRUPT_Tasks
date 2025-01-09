@@ -8,10 +8,13 @@ set(CMAKE_C_STANDARD 11)
 find_library(FDB_LIBRARY NAMES fdb_c PATHS /usr/local/lib /usr/lib /usr/lib64)
 
 # Add the executable
-add_executable(BasicFDBOps main.c)
+add_executable(BasicFDBOps basic_ops.c)
 
 # Link the FoundationDB library
 target_link_libraries(BasicFDBOps ${FDB_LIBRARY})
+
+# Link the pthread library
+target_link_libraries(BasicFDBOps pthread)
 
 # Include the FoundationDB headers
 target_include_directories(BasicFDBOps PRIVATE /usr/local/include)
