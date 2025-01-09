@@ -156,3 +156,26 @@ that executing getrange on each of those 10 ranges returns exactly 1k key-value 
 - **Obstacles**:
     - I had few issues while comparing the time, and understanding the results.
     - I was having difficulty in understanding how exactly each streaming mode works, I couldn't find elaborate documentation on the same except [this](https://www.javadoc.io/doc/org.foundationdb/fdb-java/7.1.2/com/apple/foundationdb/StreamingMode.html)
+
+## Understand read snapshot:
+```
+- Create a class ReadSnapshot.java and use it for this sub-task
+- Store any arbitrary 4 key-value pairs in the database. Denote the keys as K1, K2, K3 and
+K4
+- Start a transaction T1 and read several keys (let's say K1, K2, K3)
+- On another thread, start a transaction T4 that updates the values of K2, K4
+- Commit transaction T1. Would T1 be aborted? Explain why.
+- Commit transaction T2. Would T2 be aborted? Explain why.
+```
+- **Analysis**:
+    - Commit transaction T1. Would T1 be aborted? Explain why.
+        - Read Snapshot: When T1 reads K1, K2, and K3, it takes a snapshot of the database at that point in time. This means that T1 is working with consistent data that will not be affected by other transactions (such as T4) until T1 commits.
+        - When T4 updates K2 and K4, it modifies the database. However, T1 has already taken a snapshot of the data, so T1 sees the values of K2 and K4 at the time T1 started, and the changes made by T4 are not visible to T1.
+        - T1 will not be aborted because it sees the snapshot data from the time it started, and the changes in T4 do not conflict with T1’s operations (since T1 is reading old values of K2 and K4). It can commit successfully without any issues. The changes made by T4 will only be visible to future transactions.
+    - Commit transaction T4. Would T4 be aborted? Explain why.
+        - T4 updates K2 and K4, but it does not conflict with any ongoing transaction because it is writing to K2 and K4, due to 5s MVCC, so T1 would read take the old snapshot.
+        - T4 can commit successfully, as its updates will not interfere with T1’s snapshot. The transaction T4 will update the database, and its changes will be visible to future transactions, but not to T1, since T1 has already taken a snapshot of the data.
+
+- **Accomplishment**: Successfully created a Java Maven project to interact with FoundationDB, and understand Read Snapshot and few basic transactions.
+- **SubTask Completion**: The sub-task was fully completed.
+- **Obstacles**: There were no obstacles.
