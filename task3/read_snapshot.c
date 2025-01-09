@@ -141,7 +141,8 @@ void* transaction_t4(void* arg) {
 
     set_key(tr4, "K2", "NewValue2");
     set_key(tr4, "K4", "NewValue4");
-
+    
+    sleep(1);
     check_transaction_commit(tr4);
     fdb_transaction_destroy(tr4);
     printf("T4 committed.\n");
@@ -164,7 +165,6 @@ int main() {
         fprintf(stderr, "Error creating network thread: %s\n", strerror(err));
         exit(EXIT_FAILURE);
     }
-    
     FDBTransaction* tr1;
     err = fdb_database_create_transaction(db, &tr1);
     check_fdb_error(err);
@@ -174,20 +174,19 @@ int main() {
     set_key(tr1, "K4", "Value4");
     check_transaction_commit(tr1);
     fdb_transaction_destroy(tr1);
-    
-    // pthread_t t1_thread, t4_thread;
-    // err = pthread_create(&t1_thread, NULL, transaction_t1, (void*)db);
-    // if (err != 0) {
-    //     fprintf(stderr, "Error creating transaction_t1: %s\n", strerror(err));
-    //     exit(EXIT_FAILURE);
-    // }
-    // err = pthread_create(&t4_thread, NULL, transaction_t4, (void*)db);
-    // if (err != 0) {
-    //     fprintf(stderr, "Error creating transaction_t4: %s\n", strerror(err));
-    //     exit(EXIT_FAILURE);
-    // }
-    // pthread_join(t1_thread, NULL);
-    // pthread_join(t4_thread, NULL);
+    pthread_t t1_thread, t4_thread;
+    err = pthread_create(&t1_thread, NULL, transaction_t1, (void*)db);
+    if (err != 0) {
+        fprintf(stderr, "Error creating transaction_t1: %s\n", strerror(err));
+        exit(EXIT_FAILURE);
+    }
+    err = pthread_create(&t4_thread, NULL, transaction_t4, (void*)db);
+    if (err != 0) {
+        fprintf(stderr, "Error creating transaction_t4: %s\n", strerror(err));
+        exit(EXIT_FAILURE);
+    }
+    pthread_join(t1_thread, NULL);
+    pthread_join(t4_thread, NULL);
     fdb_database_destroy(db);
     err = fdb_stop_network();
     check_fdb_error(err);
