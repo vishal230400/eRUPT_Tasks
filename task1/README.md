@@ -18,14 +18,15 @@
     fdbcli
     status
     ```
-- I successfully installed and set up the FoundationDB server (version 6.2.30) and its client on an Ubuntu system.
-- This task was completely, and FoundationDB server and client were installed without any issues, and the server was verified to be running correctly.
-- There were no obstacles encountered during the installation and setup process.
+- **Accomplishment**: I successfully installed and set up the FoundationDB server (version 6.2.30) and its client on an Ubuntu system.
+- **SubTask Completion**: This task was completely, and FoundationDB server and client were installed without any issues, and the server was verified to be running correctly.
+- **Obstacles**: There were no obstacles encountered during the installation and setup process.
 
 ## Install Java 8, Maven, and IntelliJ:
 
-- I already had Java 8, and Maven installed in my MacOS, I just downloaded and installed IntelliJ from Internet.
-- This task was completely by installing Java 8, Maven, and IntelliJ, and no obstacles encountered during the installation process.
+- **Accomplishment**: I already had Java 8, and Maven installed in my MacOS, I just downloaded and installed IntelliJ from Internet.
+- **SubTask Completion**: This task was completely by installing Java 8, Maven, and IntelliJ.
+- **Obstacles**: There were no obstacles encountered during the installation process.
 
 ## Use the FDB command line tool (fdbcli) to connect to the cluster. Try to use its commands set,get, getrange and explore other commands (via command help in fdbcli)
 
@@ -57,3 +58,21 @@
     rollback
     exit
     ```
+- **Accomplishment**: I successfully used the FDB command line tool (fdbcli) to connect to the FoundationDB cluster and tested various commands like writemode on, set, get, getrange, clear, clearrange, begin, commit, rollback, and exit within fdbcli.
+- **SubTask Completion**: This task was completely by trying out various commands in fdbcli.
+- **Obstacles**: There were no obstacles encountered during this process.
+
+## Initialize a Java Maven project and create an executable program that could do basic get, set, getrange operations to the FDB server
+```
+- Create a class BasicFDBOps.java and use it for this sub-task
+- Please use this dependency for the FDB Java client: https://mvnrepository.com/artifact/org.foundationdb/fdb-java/6.2.22
+- For each operation, create a separate Java method for it
+```
+- Created a Java Maven project and implemented basic operations (get, set, getRange, clear, clearRange).
+- Installed the Java extension in GitHub Colab and used mvn clean compile to generate class files.
+- Ran the Java files using the Run/Debug option in Visual Studio Codespace setup.
+- **Accomplishment**: Successfully created a Java Maven project to interact with FoundationDB. The project implements basic operations like inserting, retrieving, and querying a range of keys in the database, using the FoundationDB Java client.
+- **SubTask Completion**: The sub-task was fully completed. All required operations, including get, set, and getRange, were implemented as separate methods. In addition, other important methods such as clear and clearRange were also implemented for managing key-value pairs in the database
+- **Obstacles**:
+    - The program requires a properly installed and running instance of FoundationDB to function correctly. Without an active FDB server, the operations will not execute as expected.
+    - For asynchronous handling, the getRange function required the proper use of CompletableFuture to handle results asynchronously.
