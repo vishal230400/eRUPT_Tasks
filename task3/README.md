@@ -65,7 +65,6 @@
 - **Accomplishment**: Successfully created a C code to interact with FoundationDB, and retrieve 10k Key-Value pairs using different streaming modes.
 - **SubTask Completion**: The sub-task was fully completed.
 - **Obstacles**:
-    - I had few issues while fetching using \x00 \xff, which I solved but going through the documentation and some use of Chatgpt to understand.
     - The observations seems to be different to that of in JAVA, so I am bit confused on the behaviour, maybe I have made some mistake in my implementation.
 
 ## Compare single getrange vs multiple getranges sent in parallel:
@@ -101,12 +100,6 @@
     | MEDIUM       | 0.000024       | 0.000984            |
     | LARGE        | 0.000033       | 0.001030            |
     | SERIAL       | 0.000217       | 0.001458            |
-
-- **Inference**:
-    - EXACT mode processes the data in a single batch to retrieve exact matches, meaning it is optimized for handling the entire range in one go. When using multiple parallel requests, the overhead of managing separate requests and the associated cost of calling each one increases. Therefore, SingleGetRange becomes more effective as it avoids the overhead of parallelization and processes everything in a single, optimized batch.
-    - SERIAL mode processes data sequentially, one item at a time. When using multiple parallel requests in this mode, the cost of managing separate requests becomes higher than just processing the data in a single, serial batch. Hence, SingleGetRange performs better because it avoids the overhead associated with parallelizing serial data processing.
-    - WANT_ALL and ITERATOR modes also involve retrieving the entire range in a single batch. These modes benefit from a single operation that can optimize the data retrieval process. Parallelizing these requests increases the overhead of managing separate requests, making SingleGetRange more efficient in these scenarios as well.
-    - In conclusion, SMALL/MEDIUM/LARGE works better in SingleVsMultiRanges, EXACT/SERIAL/WANT_ALL/ITERATOR works better in SingleGetRange.
 
 - **Accomplishment**: Successfully created a C code to interact with FoundationDB, and retrieve 10k Key-Value pairs using different streaming modes parallely, and compare with previous task.
 - **SubTask Completion**: The sub-task was fully completed.
