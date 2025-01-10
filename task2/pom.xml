@@ -9,9 +9,32 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>23</maven.compiler.source>
-        <maven.compiler.target>23</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <!-- JanusGraph core dependency -->
+        <dependency>
+            <groupId>org.janusgraph</groupId>
+            <artifactId>janusgraph-core</artifactId>
+            <version>1.0.0-20231021-144322.55d7454</version>
+        </dependency>
+
+        <!-- JanusGraph in-memory storage dependency -->
+        <dependency>
+            <groupId>org.janusgraph</groupId>
+            <artifactId>janusgraph-inmemory</artifactId>
+            <version>1.0.0-20231021-144322.55d7454</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.janusgraph/janusgraph-berkeleyje -->
+        <dependency>
+            <groupId>org.janusgraph</groupId>
+            <artifactId>janusgraph-berkeleyje</artifactId>
+            <version>0.6.0</version>
+        </dependency>
+
+    </dependencies>
 </project>
