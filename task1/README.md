@@ -119,6 +119,7 @@ that executing getrange on each of those 10 ranges returns exactly 1k key-value 
 ```
 - I created 10k Key-Value pair in Fdb like key_i value_i.
 - Divide the 10k into 10 equal ranges and call getrange in parallel 10 times, and wait for all the results to be populated, and do this in different streaming modes.
+- Since keys were string to get 10 equal ranges I wrote script and found 10 equal splits from alphabetic order of keys.
 - Repeat the whole experiment 10 times, and note timings for each iteration.
 - **Observation**:
     - Below are the observation for the 10 experiments:
