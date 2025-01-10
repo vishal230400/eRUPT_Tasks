@@ -110,7 +110,7 @@
 
 ## Understand read snapshot:
 ```
-- Create a class ReadSnapshot.java and use it for this sub-task
+- Create a class read_snapshot.c and use it for this sub-task
 - Store any arbitrary 4 key-value pairs in the database. Denote the keys as K1, K2, K3 and
 K4
 - Start a transaction T1 and read several keys (let's say K1, K2, K3)
@@ -133,7 +133,7 @@ K4
 
 ## Understand transaction conflict:
 ```
-- Create a class TransactionConflict.java and use it for this sub-task
+- Create a class tx_conflict.c and use it for this sub-task
 - Store any arbitrary 2 key-value pairs in the database. Denote the keys as K1 and K2.
 - Start a transaction T1 to read K1 and update the value of K2
 - Start a transaction T2 to read K2 and update the value of K1

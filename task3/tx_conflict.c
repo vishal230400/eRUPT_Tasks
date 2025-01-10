@@ -114,7 +114,7 @@ void* transaction_t1(void* arg) {
     char* value = get_value(tr1, "K1");
     printf("T1 reads K1: %s\n", value);
     free(value);
-    sleep(1);
+    sleep(3);
     set_key(tr1, "K2", "NewValue2");
     check_transaction_commit(tr1);
     fdb_transaction_destroy(tr1);
