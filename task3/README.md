@@ -1,6 +1,7 @@
 # Get Familiar with FDB Source Code
 
 ## Download the FDB source code at https://github.com/apple/foundationdb and build it locally in your machine (either Linux or Mac; If you have Mac M1/M2, this sub-task is even more challenging). Prepare a document that lists the steps you did and the commands you executed.
+- **SubTask Completion**: I couldn't complete this subtask, was having issue while setting up both in linux and mac os.
 
 ## From the source code built at Sub-task 1, launch the FDB server and use the fdbcli to connect to it. Issue simple KV operations (get, set, getrange, delete) via the fdbcli tool.
 

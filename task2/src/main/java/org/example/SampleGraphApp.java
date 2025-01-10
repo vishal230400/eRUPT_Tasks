@@ -26,7 +26,6 @@ public class SampleGraphApp {
     private static void initializeSchema(JanusGraph graph) {
         JanusGraphManagement mgmt = graph.openManagement();
         
-        // Create vertex labels
         if (!mgmt.containsVertexLabel("airport")) {
             mgmt.makeVertexLabel("airport").make();
         }
@@ -37,15 +36,13 @@ public class SampleGraphApp {
             mgmt.makeVertexLabel("continent").make();
         }
 
-         // Create edge labels
-         if (!mgmt.containsEdgeLabel("route")) {
+        if (!mgmt.containsEdgeLabel("route")) {
             mgmt.makeEdgeLabel("route").multiplicity(Multiplicity.MULTI).make();
         }
         if (!mgmt.containsEdgeLabel("contains")) {
             mgmt.makeEdgeLabel("contains").multiplicity(Multiplicity.MULTI).make();
         }
 
-        // Create property keys
         if (!mgmt.containsPropertyKey("city")) {
             mgmt.makePropertyKey("city").dataType(String.class).cardinality(Cardinality.SINGLE).make();
         }
@@ -88,7 +85,6 @@ public class SampleGraphApp {
         if (!mgmt.containsPropertyKey("country")) {
             mgmt.makePropertyKey("country").dataType(String.class).cardinality(Cardinality.SINGLE).make();
         }
-        // Vertex Composite Indices
         if (mgmt.getGraphIndex("Idx_comidx_Vertex_identity_unique") == null) {
             mgmt.buildIndex("Idx_comidx_Vertex_identity_unique", Vertex.class)
                 .addKey(mgmt.getPropertyKey("identity"))
@@ -127,7 +123,6 @@ public class SampleGraphApp {
                 .buildCompositeIndex();
         }
 
-        // Edge Composite Index
         if (mgmt.getGraphIndex("Idx_comidx_Edge_identity") == null) {
             mgmt.buildIndex("Idx_comidx_Edge_identity", Edge.class)
                 .addKey(mgmt.getPropertyKey("identity"))
@@ -140,21 +135,16 @@ public class SampleGraphApp {
     private static void loadGraphData(JanusGraph graph, String nodesFile, String edgesFile) {
         GraphTraversalSource g = graph.traversal();
     
-        // Load nodes
         try (BufferedReader br = new BufferedReader(new FileReader(nodesFile))) {
             String line;
-            // Skip the header line (if it exists)
             br.readLine(); 
     
             while ((line = br.readLine()) != null) {
-                //System.out.println(line);
                 String[] parts = line.split(",",-1);
                 
-                // Handle version row separately
                 if (parts[1].equals("version") || parts[1].equals("~label")) {
-                    continue; // Skip version row
+                    continue; 
                 }
-                //System.out.println(parts.length);
                 if (parts.length == 16) {
                     String id = parts[0].strip();
                     String type = parts[2];
@@ -164,7 +154,6 @@ public class SampleGraphApp {
                     String region = parts[6];
                     String country = parts[10];
                     String city = parts[11];
-                    // Create the vertex for airport, country, or continent based on type
                     if (type.equals("airport")) {
                         int runways = Integer.parseInt(parts[7]);
                         int longest = Integer.parseInt(parts[8]);
@@ -198,7 +187,6 @@ public class SampleGraphApp {
             e.printStackTrace();
         }
     
-        // Load edges
         try (BufferedReader br = new BufferedReader(new FileReader(edgesFile))) {
             String line;
             while ((line = br.readLine()) != null) {
