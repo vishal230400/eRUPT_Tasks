@@ -9,6 +9,13 @@
 int  NUM_KEYS=10000;
 int NUM_EXPERIMENTS=10;
 
+struct get_range_args {
+    FDBTransaction* tr;
+    const char* start_key;
+    const char* end_key;
+    FDBStreamingMode mode;
+};
+
 void check_fdb_error(fdb_error_t err) {
     if (err) {
         fprintf(stderr, "FDB error: %s\n", fdb_get_error(err));
@@ -42,6 +49,13 @@ char* get_value(FDBTransaction* tr, const char* key) {
     }
 }
 
+void* get_range_thread_func(void* arg) {
+    struct get_range_args* args = (struct get_range_args*)arg;
+    FDBTransaction* tr = args->tr;
+    get_range(tr, args->start_key, args->end_key, NUM_KEYS / 10, args->mode);
+    return NULL;
+}
+
 void get_range(FDBTransaction* tr, const char* begin_key, const char* end_key, int limit, FDBStreamingMode mode) {
     const uint8_t* begin_key_name = (const uint8_t*)begin_key;
     const uint8_t* end_key_name = (const uint8_t*)end_key;
@@ -53,9 +67,9 @@ void get_range(FDBTransaction* tr, const char* begin_key, const char* end_key, i
     int iteration = 1;
     fdb_bool_t snapshot = 0;
     fdb_bool_t reverse = 0;
-    FDBFuture* future = fdb_transaction_get_range(tr,begin_key_name, begin_key_name_length,1,begin_offset,end_key_name, 
-                                                end_key_name_length,1,end_offset,limit,target_bytes,mode,iteration,
-                                                snapshot,reverse);
+    FDBFuture* future = fdb_transaction_get_range(tr, begin_key_name, begin_key_name_length, 1, begin_offset, end_key_name,
+                                                   end_key_name_length, 1, end_offset, limit, target_bytes, mode, iteration,
+                                                   snapshot, reverse);
 
     fdb_error_t err = fdb_future_block_until_ready(future);
     check_fdb_error(err);
@@ -75,7 +89,6 @@ void get_range(FDBTransaction* tr, const char* begin_key, const char* end_key, i
     //     printf("There are more key-value pairs to fetch.\n");
     // }
 }
-
 
 void clear_key(FDBTransaction* tr, const char* key) {
     fdb_transaction_clear(tr, (const uint8_t*)key, strlen(key));
@@ -131,18 +144,30 @@ char end8[20] = "key_9098";
 char start9[20] = "key_9099";
 char end9[20] = "key_9999";
 
-void get_multi_range(FDBTransaction* tr1, FDBStreamingMode mode){
-    get_range(tr1, start0, end0, NUM_KEYS/10, mode);
-    get_range(tr1, start1, end1, NUM_KEYS/10, mode);
-    get_range(tr1, start2, end2, NUM_KEYS/10, mode);
-    get_range(tr1, start3, end3, NUM_KEYS/10, mode);
-    get_range(tr1, start4, end4, NUM_KEYS/10, mode);
-    get_range(tr1, start5, end5, NUM_KEYS/10, mode);
-    get_range(tr1, start6, end6, NUM_KEYS/10, mode);
-    get_range(tr1, start7, end7, NUM_KEYS/10, mode);
-    get_range(tr1, start8, end8, NUM_KEYS/10, mode);
-    get_range(tr1, start9, end9, NUM_KEYS/10, mode);
+void get_multi_range(FDBTransaction* tr1, FDBStreamingMode mode) {
+    pthread_t threads[10];
+    struct get_range_args args[10] = {
+        {tr1, start0, end0, mode},
+        {tr1, start1, end1, mode},
+        {tr1, start2, end2, mode},
+        {tr1, start3, end3, mode},
+        {tr1, start4, end4, mode},
+        {tr1, start5, end5, mode},
+        {tr1, start6, end6, mode},
+        {tr1, start7, end7, mode},
+        {tr1, start8, end8, mode},
+        {tr1, start9, end9, mode}
+    };
+
+    for (int i = 0; i < 10; i++) {
+        pthread_create(&threads[i], NULL, get_range_thread_func, &args[i]);
+    }
+
+    for (int i = 0; i < 10; i++) {
+        pthread_join(threads[i], NULL);
+    }
 }
+
 int main() {
     fdb_error_t err = fdb_select_api_version(FDB_API_VERSION);
     check_fdb_error(err);
