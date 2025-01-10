@@ -3,3 +3,4 @@
 - Task 1: [Folder](/task1/) [README/Report](/task1/README.md)
 - Task 2: [Folder](/task2/)
 - Task 3: [Folder](/task3/) [README/Report](/task3/README.md) 
+- Doubts: [File](Doubts.md)
