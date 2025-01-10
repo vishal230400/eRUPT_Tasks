@@ -115,7 +115,7 @@ void* transaction_t1(void* arg) {
     printf("T1 reads K1: %s\n", value);
     free(value);
     sleep(3);
-    set_key(tr1, "K2", "NewValue2");
+    set_key(tr1, "K2", "UpdatedByT1");
     check_transaction_commit(tr1);
     fdb_transaction_destroy(tr1);
     printf("T1 committed.\n");
@@ -131,7 +131,7 @@ void* transaction_t2(void* arg) {
     printf("T1 reads K2: %s\n", value);
     free(value);
     sleep(1);
-    set_key(tr1, "K1", "NewValue2");
+    set_key(tr1, "K1", "UpdatedByT2");
     check_transaction_commit(tr1);
     fdb_transaction_destroy(tr1);
     printf("T2 committed.\n");
