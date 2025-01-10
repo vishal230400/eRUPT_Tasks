@@ -38,6 +38,12 @@
 
 ## Use the FDB C library and write a C program (named the file basic_ops.c) to perform basic operations (get/set/getrange/delete) to the FDB server. The document for FDB C API could be found at: https://apple.github.io/foundationdb/api-c.html
 - Created a C code and implemented basic operations (get, set, getRange, clear, clearRange).
+- To run this go to build folder and run the following commands.
+```
+cmake ..
+make
+Run the executables which u want to
+```
 - **Accomplishment**: Successfully created a C code to interact with FoundationDB. The project implements basic operations like inserting, retrieving, and querying a range of keys in the database, using the FoundationDB Java client.
 - **SubTask Completion**: The sub-task was fully completed. All required operations, including get, set, and getRange, were implemented as separate methods. In addition, other important methods such as clear and clearRange were also implemented for managing key-value pairs in the database
 - **Obstacles**:
