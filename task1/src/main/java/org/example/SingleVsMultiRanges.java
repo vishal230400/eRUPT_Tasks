@@ -100,6 +100,32 @@ public class SingleVsMultiRanges {
         return futureResults;
     }
 
+    public CompletableFuture<List<KeyValue>> getRange(byte[] start, byte[] end, StreamingMode sm) {
+        CompletableFuture<List<KeyValue>> futureResults = new CompletableFuture<>();
+        try (Database db = fdb.open()) {
+            Transaction tr = db.createTransaction();
+            Range range = new Range(start,end);
+            AsyncIterable<KeyValue> currResults = tr.getRange(range,Integer.MAX_VALUE,false,sm);
+            currResults.asList().thenAccept(list -> {
+                if (list.size() != 10000) {
+                    System.out.println(start);
+                    System.out.println(end);
+                    System.out.println("GetRangeSize mismatch (size: " + list.size() + "). Abort Experiment...");
+                    futureResults.completeExceptionally(new RuntimeException("Error: Results size not equal to 10,000."));
+                } else {
+                    futureResults.complete(list);
+                }
+                futureResults.complete(list);
+                tr.close();
+            }).exceptionally(e -> {
+                futureResults.completeExceptionally(e);
+                return null;
+            });
+        }
+        return futureResults;
+    }
+
+
     public boolean deleteAll() {
         try (Database db = fdb.open()) {
             db.run(tr -> {
@@ -143,6 +169,23 @@ public class SingleVsMultiRanges {
                 String start9="key_9099";
                 String end9="kez";
                 final int tempExp=experiment+1;
+                FDB.getRange(new byte[]{0x00}, new byte[]{(byte) 0xFF}, StreamingMode.SERIAL).thenAccept(results -> {
+                    long keySize=0;
+                    long valueSize=0;
+                    for (KeyValue kv: results){
+                        keySize+=kv.getKey().length;
+                        valueSize+=kv.getValue().length;
+                    }
+                    try {
+                        writer.write("Experiment " + tempExp + " : KeySize in Bytes: " + keySize + "\n");
+                        writer.write("Experiment " + tempExp + " : ValueSize in Bytes: " + valueSize + "\n");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }).exceptionally(e -> {
+                    System.err.println("Error fetching range: " + e.getMessage());
+                    return null;
+                }).join();
                 for (StreamingMode mode : StreamingMode.values()) {
                     long startGetRangeTime = System.nanoTime();
                     CompletableFuture<List<KeyValue>> result0=FDB.getRange(Tuple.from(start0).pack(),Tuple.from(end0).pack(), mode, false);

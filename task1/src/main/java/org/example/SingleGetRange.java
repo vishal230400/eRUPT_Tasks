@@ -3,7 +3,6 @@ package org.example;
 import com.apple.foundationdb.*;
 import com.apple.foundationdb.async.AsyncIterable;
 import com.apple.foundationdb.tuple.Tuple;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -108,7 +107,6 @@ public class SingleGetRange {
         }
         return false;
     }
-
     public static void main(String[] args) {
         SingleGetRange FDB = new SingleGetRange();
         String filename = "task1/results/SingleGetRange.txt";
@@ -122,6 +120,23 @@ public class SingleGetRange {
                 long durationSetTime = (endSetTime - startSetTime);
                 writer.write("Experiment " + (experiment + 1) + " : Creating 10000 Keys time in ns: " + durationSetTime + "\n");
                 final int tempExp=experiment+1;
+                FDB.getRange(new byte[]{0x00}, new byte[]{(byte) 0xFF}, StreamingMode.SERIAL, false).thenAccept(results -> {
+                    long keySize=0;
+                    long valueSize=0;
+                    for (KeyValue kv: results){
+                        keySize+=kv.getKey().length;
+                        valueSize+=kv.getValue().length;
+                    }
+                    try {
+                        writer.write("Experiment " + tempExp + " : KeySize in Bytes: " + keySize + "\n");
+                        writer.write("Experiment " + tempExp + " : ValueSize in Bytes: " + valueSize + "\n");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }).exceptionally(e -> {
+                    System.err.println("Error fetching range: " + e.getMessage());
+                    return null;
+                }).join();
                 for (StreamingMode mode : StreamingMode.values()) {
                     long startGetRangeTime = System.nanoTime();
                     FDB.getRange(new byte[]{0x00}, new byte[]{(byte) 0xFF}, mode, false).thenAccept(results -> {

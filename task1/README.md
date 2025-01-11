@@ -87,6 +87,7 @@
 - For this task, I create 10k Key-Value pairs and stored it in FDB and retrieved it through different streaming modes, and deleted all the keys, and repeated the same experiment for a total of 10 times.
 - Below are the results of the same :
 ![Key_Creation_Times](output_singlerange/Key_Creation_Times.png)
+![Key_Value_Size](output_singlerange/Key_Value_Size.png)
 ![WANT_ALL](output_singlerange/WANT_ALL_GetRange_Times.png)
 ![ITERATOR](output_singlerange/ITERATOR_GetRange_Times.png)
 ![EXACT](output_singlerange/EXACT_GetRange_Times.png)
@@ -124,6 +125,7 @@ that executing getrange on each of those 10 ranges returns exactly 1k key-value 
 - **Observation**:
     - Below are the observation for the 10 experiments:
 ![Key_Creation_Times](output_SingleVsMultiRanges/Key_Creation_Times.png)
+![Key_Value_Size](output_SingleVsMultiRanges/Key_Value_Size.png)
 ![WANT_ALL](output_SingleVsMultiRanges/WANT_ALL_GetRange_Times.png)
 ![ITERATOR](output_SingleVsMultiRanges/ITERATOR_GetRange_Times.png)
 ![EXACT](output_SingleVsMultiRanges/EXACT_GetRange_Times.png)
