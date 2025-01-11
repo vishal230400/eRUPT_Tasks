@@ -5,4 +5,4 @@ keys.sort()
 
 for i in range(10):
     print("String start"+str(i)+"=\""+keys[i*1000]+"\";")
-    print("String end"+str(i)+"=\""+keys[(i+1)*1000-1]+"\";")
+    print("String end"+str(i)+"=\""+keys[(i+1)*1000]+"\";")

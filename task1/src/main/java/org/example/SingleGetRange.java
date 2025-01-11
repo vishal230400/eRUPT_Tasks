@@ -69,18 +69,25 @@ public class SingleGetRange {
         return futureResults;
     }
 
-    public CompletableFuture<List<KeyValue>> getRange(byte[] start, byte[] end, StreamingMode sm ) {
+    public CompletableFuture<List<KeyValue>> getRange(byte[] start, byte[] end, StreamingMode sm , boolean debug) {
         CompletableFuture<List<KeyValue>> futureResults = new CompletableFuture<>();
-    
         try (Database db = fdb.open()) {
             Transaction tr = db.createTransaction();
             Range range = new Range(start,end);
             AsyncIterable<KeyValue> currResults = tr.getRange(range,Integer.MAX_VALUE,false,sm);
             currResults.asList().thenAccept(list -> {
-                if (list.isEmpty()) {
-                    System.out.println("No results found in the specified range.");
+                if(debug){
+                    if (list.isEmpty()) {
+                        System.out.println("No results found in the specified range.");
+                    } else {
+                        System.out.println("Results found:"+list.size());
+                    }
+                }
+                if (list.size() != 10000) {
+                    System.out.println("GetRangeSize mismatch (size: " + list.size() + "). Abort Experiment...");
+                    futureResults.completeExceptionally(new RuntimeException("Error: Results size not equal to 10,000."));
                 } else {
-                    System.out.println("Results found:"+list.size());
+                    futureResults.complete(list);
                 }
                 futureResults.complete(list);
                 tr.close();
@@ -106,7 +113,7 @@ public class SingleGetRange {
         SingleGetRange FDB = new SingleGetRange();
         String filename = "task1/results/SingleGetRange.txt";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
-            for (int experiment = 0; experiment < 10; experiment++) {
+            for (int experiment = 0; experiment < 50; experiment++) {
                 long startSetTime = System.nanoTime();
                 for (int i = 0; i < 10000; i++) {
                     FDB.setKey("key_" + i, "value_" + i);
@@ -117,7 +124,7 @@ public class SingleGetRange {
                 final int tempExp=experiment+1;
                 for (StreamingMode mode : StreamingMode.values()) {
                     long startGetRangeTime = System.nanoTime();
-                    FDB.getRange(new byte[]{0x00}, new byte[]{(byte) 0xFF}, mode).thenAccept(results -> {
+                    FDB.getRange(new byte[]{0x00}, new byte[]{(byte) 0xFF}, mode, false).thenAccept(results -> {
                         long endGetRangeTime = System.nanoTime();
                         long durationGetRangeTime = (endGetRangeTime - startGetRangeTime);
                         try {

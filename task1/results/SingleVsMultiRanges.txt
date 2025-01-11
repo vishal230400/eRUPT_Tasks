@@ -1,80 +1,400 @@
-Experiment 1 : Creating 10000 Keys time in ns: 56549881305
-Experiment 1 : GetRange : WANT_ALL : 10000 Keys time in ns: 37442362
-Experiment 1 : GetRange : ITERATOR : 10000 Keys time in ns: 30871603
-Experiment 1 : GetRange : EXACT : 10000 Keys time in ns: 15918061
-Experiment 1 : GetRange : SMALL : 10000 Keys time in ns: 165873664
-Experiment 1 : GetRange : MEDIUM : 10000 Keys time in ns: 42851088
-Experiment 1 : GetRange : LARGE : 10000 Keys time in ns: 20817781
-Experiment 1 : GetRange : SERIAL : 10000 Keys time in ns: 10471942
-Experiment 2 : Creating 10000 Keys time in ns: 57232996876
-Experiment 2 : GetRange : WANT_ALL : 10000 Keys time in ns: 7013021
-Experiment 2 : GetRange : ITERATOR : 10000 Keys time in ns: 6989938
-Experiment 2 : GetRange : EXACT : 10000 Keys time in ns: 11178992
-Experiment 2 : GetRange : SMALL : 10000 Keys time in ns: 103252153
-Experiment 2 : GetRange : MEDIUM : 10000 Keys time in ns: 29472573
-Experiment 2 : GetRange : LARGE : 10000 Keys time in ns: 14780950
-Experiment 2 : GetRange : SERIAL : 10000 Keys time in ns: 8395520
-Experiment 3 : Creating 10000 Keys time in ns: 56465243091
-Experiment 3 : GetRange : WANT_ALL : 10000 Keys time in ns: 6833356
-Experiment 3 : GetRange : ITERATOR : 10000 Keys time in ns: 5291069
-Experiment 3 : GetRange : EXACT : 10000 Keys time in ns: 4817867
-Experiment 3 : GetRange : SMALL : 10000 Keys time in ns: 112133746
-Experiment 3 : GetRange : MEDIUM : 10000 Keys time in ns: 37914209
-Experiment 3 : GetRange : LARGE : 10000 Keys time in ns: 17735672
-Experiment 3 : GetRange : SERIAL : 10000 Keys time in ns: 9267185
-Experiment 4 : Creating 10000 Keys time in ns: 56010666715
-Experiment 4 : GetRange : WANT_ALL : 10000 Keys time in ns: 5915364
-Experiment 4 : GetRange : ITERATOR : 10000 Keys time in ns: 5518002
-Experiment 4 : GetRange : EXACT : 10000 Keys time in ns: 5295909
-Experiment 4 : GetRange : SMALL : 10000 Keys time in ns: 114654398
-Experiment 4 : GetRange : MEDIUM : 10000 Keys time in ns: 38384166
-Experiment 4 : GetRange : LARGE : 10000 Keys time in ns: 14586607
-Experiment 4 : GetRange : SERIAL : 10000 Keys time in ns: 5497154
-Experiment 5 : Creating 10000 Keys time in ns: 56232563893
-Experiment 5 : GetRange : WANT_ALL : 10000 Keys time in ns: 18956862
-Experiment 5 : GetRange : ITERATOR : 10000 Keys time in ns: 8257679
-Experiment 5 : GetRange : EXACT : 10000 Keys time in ns: 6344864
-Experiment 5 : GetRange : SMALL : 10000 Keys time in ns: 84021871
-Experiment 5 : GetRange : MEDIUM : 10000 Keys time in ns: 28938287
-Experiment 5 : GetRange : LARGE : 10000 Keys time in ns: 12102718
-Experiment 5 : GetRange : SERIAL : 10000 Keys time in ns: 7097866
-Experiment 6 : Creating 10000 Keys time in ns: 56511011888
-Experiment 6 : GetRange : WANT_ALL : 10000 Keys time in ns: 6869604
-Experiment 6 : GetRange : ITERATOR : 10000 Keys time in ns: 6391932
-Experiment 6 : GetRange : EXACT : 10000 Keys time in ns: 4708252
-Experiment 6 : GetRange : SMALL : 10000 Keys time in ns: 83127319
-Experiment 6 : GetRange : MEDIUM : 10000 Keys time in ns: 28495391
-Experiment 6 : GetRange : LARGE : 10000 Keys time in ns: 10936269
-Experiment 6 : GetRange : SERIAL : 10000 Keys time in ns: 5313571
-Experiment 7 : Creating 10000 Keys time in ns: 56898940060
-Experiment 7 : GetRange : WANT_ALL : 10000 Keys time in ns: 6209362
-Experiment 7 : GetRange : ITERATOR : 10000 Keys time in ns: 5721211
-Experiment 7 : GetRange : EXACT : 10000 Keys time in ns: 5582423
-Experiment 7 : GetRange : SMALL : 10000 Keys time in ns: 90176110
-Experiment 7 : GetRange : MEDIUM : 10000 Keys time in ns: 31206518
-Experiment 7 : GetRange : LARGE : 10000 Keys time in ns: 34360841
-Experiment 7 : GetRange : SERIAL : 10000 Keys time in ns: 8348131
-Experiment 8 : Creating 10000 Keys time in ns: 55885769218
-Experiment 8 : GetRange : WANT_ALL : 10000 Keys time in ns: 5691215
-Experiment 8 : GetRange : ITERATOR : 10000 Keys time in ns: 4599579
-Experiment 8 : GetRange : EXACT : 10000 Keys time in ns: 5416022
-Experiment 8 : GetRange : SMALL : 10000 Keys time in ns: 83536095
-Experiment 8 : GetRange : MEDIUM : 10000 Keys time in ns: 26069536
-Experiment 8 : GetRange : LARGE : 10000 Keys time in ns: 12538467
-Experiment 8 : GetRange : SERIAL : 10000 Keys time in ns: 5165014
-Experiment 9 : Creating 10000 Keys time in ns: 56431339169
-Experiment 9 : GetRange : WANT_ALL : 10000 Keys time in ns: 5286671
-Experiment 9 : GetRange : ITERATOR : 10000 Keys time in ns: 4791577
-Experiment 9 : GetRange : EXACT : 10000 Keys time in ns: 4722699
-Experiment 9 : GetRange : SMALL : 10000 Keys time in ns: 93620875
-Experiment 9 : GetRange : MEDIUM : 10000 Keys time in ns: 41984191
-Experiment 9 : GetRange : LARGE : 10000 Keys time in ns: 11596660
-Experiment 9 : GetRange : SERIAL : 10000 Keys time in ns: 5773088
-Experiment 10 : Creating 10000 Keys time in ns: 56026259707
-Experiment 10 : GetRange : WANT_ALL : 10000 Keys time in ns: 5485652
-Experiment 10 : GetRange : ITERATOR : 10000 Keys time in ns: 4568221
-Experiment 10 : GetRange : EXACT : 10000 Keys time in ns: 4481229
-Experiment 10 : GetRange : SMALL : 10000 Keys time in ns: 84900850
-Experiment 10 : GetRange : MEDIUM : 10000 Keys time in ns: 25879491
-Experiment 10 : GetRange : LARGE : 10000 Keys time in ns: 11444637
-Experiment 10 : GetRange : SERIAL : 10000 Keys time in ns: 5627767
+Experiment 1 : Creating 10000 Keys time in ns: 17552941205
+Experiment 1 : GetRange : WANT_ALL : 10000 Keys time in ns: 23403307
+Experiment 1 : GetRange : ITERATOR : 10000 Keys time in ns: 14009812
+Experiment 1 : GetRange : EXACT : 10000 Keys time in ns: 5914898
+Experiment 1 : GetRange : SMALL : 10000 Keys time in ns: 104372363
+Experiment 1 : GetRange : MEDIUM : 10000 Keys time in ns: 26186825
+Experiment 1 : GetRange : LARGE : 10000 Keys time in ns: 13365620
+Experiment 1 : GetRange : SERIAL : 10000 Keys time in ns: 4453023
+Experiment 2 : Creating 10000 Keys time in ns: 12682758412
+Experiment 2 : GetRange : WANT_ALL : 10000 Keys time in ns: 4466108
+Experiment 2 : GetRange : ITERATOR : 10000 Keys time in ns: 3430586
+Experiment 2 : GetRange : EXACT : 10000 Keys time in ns: 3937742
+Experiment 2 : GetRange : SMALL : 10000 Keys time in ns: 60639292
+Experiment 2 : GetRange : MEDIUM : 10000 Keys time in ns: 17955427
+Experiment 2 : GetRange : LARGE : 10000 Keys time in ns: 7001100
+Experiment 2 : GetRange : SERIAL : 10000 Keys time in ns: 3327156
+Experiment 3 : Creating 10000 Keys time in ns: 11422530863
+Experiment 3 : GetRange : WANT_ALL : 10000 Keys time in ns: 4880189
+Experiment 3 : GetRange : ITERATOR : 10000 Keys time in ns: 3562192
+Experiment 3 : GetRange : EXACT : 10000 Keys time in ns: 3202961
+Experiment 3 : GetRange : SMALL : 10000 Keys time in ns: 58290133
+Experiment 3 : GetRange : MEDIUM : 10000 Keys time in ns: 19576120
+Experiment 3 : GetRange : LARGE : 10000 Keys time in ns: 8077518
+Experiment 3 : GetRange : SERIAL : 10000 Keys time in ns: 3670063
+Experiment 4 : Creating 10000 Keys time in ns: 11453166177
+Experiment 4 : GetRange : WANT_ALL : 10000 Keys time in ns: 4377151
+Experiment 4 : GetRange : ITERATOR : 10000 Keys time in ns: 3051657
+Experiment 4 : GetRange : EXACT : 10000 Keys time in ns: 2853233
+Experiment 4 : GetRange : SMALL : 10000 Keys time in ns: 56830220
+Experiment 4 : GetRange : MEDIUM : 10000 Keys time in ns: 17675192
+Experiment 4 : GetRange : LARGE : 10000 Keys time in ns: 7559147
+Experiment 4 : GetRange : SERIAL : 10000 Keys time in ns: 3221003
+Experiment 5 : Creating 10000 Keys time in ns: 11506896346
+Experiment 5 : GetRange : WANT_ALL : 10000 Keys time in ns: 5716179
+Experiment 5 : GetRange : ITERATOR : 10000 Keys time in ns: 4654827
+Experiment 5 : GetRange : EXACT : 10000 Keys time in ns: 3810151
+Experiment 5 : GetRange : SMALL : 10000 Keys time in ns: 73380942
+Experiment 5 : GetRange : MEDIUM : 10000 Keys time in ns: 17500189
+Experiment 5 : GetRange : LARGE : 10000 Keys time in ns: 6082307
+Experiment 5 : GetRange : SERIAL : 10000 Keys time in ns: 2820292
+Experiment 6 : Creating 10000 Keys time in ns: 11422377838
+Experiment 6 : GetRange : WANT_ALL : 10000 Keys time in ns: 5796090
+Experiment 6 : GetRange : ITERATOR : 10000 Keys time in ns: 4166706
+Experiment 6 : GetRange : EXACT : 10000 Keys time in ns: 3988019
+Experiment 6 : GetRange : SMALL : 10000 Keys time in ns: 82584530
+Experiment 6 : GetRange : MEDIUM : 10000 Keys time in ns: 18070582
+Experiment 6 : GetRange : LARGE : 10000 Keys time in ns: 7351918
+Experiment 6 : GetRange : SERIAL : 10000 Keys time in ns: 3329528
+Experiment 7 : Creating 10000 Keys time in ns: 11431598016
+Experiment 7 : GetRange : WANT_ALL : 10000 Keys time in ns: 6290289
+Experiment 7 : GetRange : ITERATOR : 10000 Keys time in ns: 17876796
+Experiment 7 : GetRange : EXACT : 10000 Keys time in ns: 5607995
+Experiment 7 : GetRange : SMALL : 10000 Keys time in ns: 56029625
+Experiment 7 : GetRange : MEDIUM : 10000 Keys time in ns: 19403782
+Experiment 7 : GetRange : LARGE : 10000 Keys time in ns: 8009804
+Experiment 7 : GetRange : SERIAL : 10000 Keys time in ns: 3421366
+Experiment 8 : Creating 10000 Keys time in ns: 11418993806
+Experiment 8 : GetRange : WANT_ALL : 10000 Keys time in ns: 4147547
+Experiment 8 : GetRange : ITERATOR : 10000 Keys time in ns: 3378477
+Experiment 8 : GetRange : EXACT : 10000 Keys time in ns: 3009204
+Experiment 8 : GetRange : SMALL : 10000 Keys time in ns: 56452167
+Experiment 8 : GetRange : MEDIUM : 10000 Keys time in ns: 17403448
+Experiment 8 : GetRange : LARGE : 10000 Keys time in ns: 6551535
+Experiment 8 : GetRange : SERIAL : 10000 Keys time in ns: 2987096
+Experiment 9 : Creating 10000 Keys time in ns: 11427050333
+Experiment 9 : GetRange : WANT_ALL : 10000 Keys time in ns: 4096575
+Experiment 9 : GetRange : ITERATOR : 10000 Keys time in ns: 2772743
+Experiment 9 : GetRange : EXACT : 10000 Keys time in ns: 2730451
+Experiment 9 : GetRange : SMALL : 10000 Keys time in ns: 54412310
+Experiment 9 : GetRange : MEDIUM : 10000 Keys time in ns: 17024295
+Experiment 9 : GetRange : LARGE : 10000 Keys time in ns: 6461989
+Experiment 9 : GetRange : SERIAL : 10000 Keys time in ns: 3026504
+Experiment 10 : Creating 10000 Keys time in ns: 11475901604
+Experiment 10 : GetRange : WANT_ALL : 10000 Keys time in ns: 4123498
+Experiment 10 : GetRange : ITERATOR : 10000 Keys time in ns: 2895599
+Experiment 10 : GetRange : EXACT : 10000 Keys time in ns: 2886982
+Experiment 10 : GetRange : SMALL : 10000 Keys time in ns: 55802485
+Experiment 10 : GetRange : MEDIUM : 10000 Keys time in ns: 17023077
+Experiment 10 : GetRange : LARGE : 10000 Keys time in ns: 6374038
+Experiment 10 : GetRange : SERIAL : 10000 Keys time in ns: 3346791
+Experiment 11 : Creating 10000 Keys time in ns: 11518114235
+Experiment 11 : GetRange : WANT_ALL : 10000 Keys time in ns: 4296772
+Experiment 11 : GetRange : ITERATOR : 10000 Keys time in ns: 2897337
+Experiment 11 : GetRange : EXACT : 10000 Keys time in ns: 3211273
+Experiment 11 : GetRange : SMALL : 10000 Keys time in ns: 55017995
+Experiment 11 : GetRange : MEDIUM : 10000 Keys time in ns: 16444972
+Experiment 11 : GetRange : LARGE : 10000 Keys time in ns: 6634670
+Experiment 11 : GetRange : SERIAL : 10000 Keys time in ns: 2914676
+Experiment 12 : Creating 10000 Keys time in ns: 11491429460
+Experiment 12 : GetRange : WANT_ALL : 10000 Keys time in ns: 4087381
+Experiment 12 : GetRange : ITERATOR : 10000 Keys time in ns: 3019594
+Experiment 12 : GetRange : EXACT : 10000 Keys time in ns: 2985256
+Experiment 12 : GetRange : SMALL : 10000 Keys time in ns: 55824025
+Experiment 12 : GetRange : MEDIUM : 10000 Keys time in ns: 17219296
+Experiment 12 : GetRange : LARGE : 10000 Keys time in ns: 6939620
+Experiment 12 : GetRange : SERIAL : 10000 Keys time in ns: 2806421
+Experiment 13 : Creating 10000 Keys time in ns: 11478382082
+Experiment 13 : GetRange : WANT_ALL : 10000 Keys time in ns: 4471036
+Experiment 13 : GetRange : ITERATOR : 10000 Keys time in ns: 3086003
+Experiment 13 : GetRange : EXACT : 10000 Keys time in ns: 3202340
+Experiment 13 : GetRange : SMALL : 10000 Keys time in ns: 55503437
+Experiment 13 : GetRange : MEDIUM : 10000 Keys time in ns: 17316394
+Experiment 13 : GetRange : LARGE : 10000 Keys time in ns: 10474911
+Experiment 13 : GetRange : SERIAL : 10000 Keys time in ns: 4711419
+Experiment 14 : Creating 10000 Keys time in ns: 11386350786
+Experiment 14 : GetRange : WANT_ALL : 10000 Keys time in ns: 4033110
+Experiment 14 : GetRange : ITERATOR : 10000 Keys time in ns: 2960590
+Experiment 14 : GetRange : EXACT : 10000 Keys time in ns: 2810550
+Experiment 14 : GetRange : SMALL : 10000 Keys time in ns: 58382866
+Experiment 14 : GetRange : MEDIUM : 10000 Keys time in ns: 17267705
+Experiment 14 : GetRange : LARGE : 10000 Keys time in ns: 6304424
+Experiment 14 : GetRange : SERIAL : 10000 Keys time in ns: 2853621
+Experiment 15 : Creating 10000 Keys time in ns: 11428703771
+Experiment 15 : GetRange : WANT_ALL : 10000 Keys time in ns: 4291151
+Experiment 15 : GetRange : ITERATOR : 10000 Keys time in ns: 3103216
+Experiment 15 : GetRange : EXACT : 10000 Keys time in ns: 3532656
+Experiment 15 : GetRange : SMALL : 10000 Keys time in ns: 55397831
+Experiment 15 : GetRange : MEDIUM : 10000 Keys time in ns: 17313707
+Experiment 15 : GetRange : LARGE : 10000 Keys time in ns: 6481889
+Experiment 15 : GetRange : SERIAL : 10000 Keys time in ns: 2918493
+Experiment 16 : Creating 10000 Keys time in ns: 11455242815
+Experiment 16 : GetRange : WANT_ALL : 10000 Keys time in ns: 4131822
+Experiment 16 : GetRange : ITERATOR : 10000 Keys time in ns: 4721234
+Experiment 16 : GetRange : EXACT : 10000 Keys time in ns: 3386765
+Experiment 16 : GetRange : SMALL : 10000 Keys time in ns: 56765130
+Experiment 16 : GetRange : MEDIUM : 10000 Keys time in ns: 17212793
+Experiment 16 : GetRange : LARGE : 10000 Keys time in ns: 11487759
+Experiment 16 : GetRange : SERIAL : 10000 Keys time in ns: 5304608
+Experiment 17 : Creating 10000 Keys time in ns: 11391336546
+Experiment 17 : GetRange : WANT_ALL : 10000 Keys time in ns: 4164064
+Experiment 17 : GetRange : ITERATOR : 10000 Keys time in ns: 2865954
+Experiment 17 : GetRange : EXACT : 10000 Keys time in ns: 2746289
+Experiment 17 : GetRange : SMALL : 10000 Keys time in ns: 56087884
+Experiment 17 : GetRange : MEDIUM : 10000 Keys time in ns: 16839991
+Experiment 17 : GetRange : LARGE : 10000 Keys time in ns: 6679143
+Experiment 17 : GetRange : SERIAL : 10000 Keys time in ns: 2977772
+Experiment 18 : Creating 10000 Keys time in ns: 11349887449
+Experiment 18 : GetRange : WANT_ALL : 10000 Keys time in ns: 4083921
+Experiment 18 : GetRange : ITERATOR : 10000 Keys time in ns: 3419771
+Experiment 18 : GetRange : EXACT : 10000 Keys time in ns: 3119256
+Experiment 18 : GetRange : SMALL : 10000 Keys time in ns: 68336563
+Experiment 18 : GetRange : MEDIUM : 10000 Keys time in ns: 18568519
+Experiment 18 : GetRange : LARGE : 10000 Keys time in ns: 7747358
+Experiment 18 : GetRange : SERIAL : 10000 Keys time in ns: 2910637
+Experiment 19 : Creating 10000 Keys time in ns: 11394898359
+Experiment 19 : GetRange : WANT_ALL : 10000 Keys time in ns: 4813465
+Experiment 19 : GetRange : ITERATOR : 10000 Keys time in ns: 3976565
+Experiment 19 : GetRange : EXACT : 10000 Keys time in ns: 3734773
+Experiment 19 : GetRange : SMALL : 10000 Keys time in ns: 82606641
+Experiment 19 : GetRange : MEDIUM : 10000 Keys time in ns: 28371795
+Experiment 19 : GetRange : LARGE : 10000 Keys time in ns: 7504492
+Experiment 19 : GetRange : SERIAL : 10000 Keys time in ns: 3469860
+Experiment 20 : Creating 10000 Keys time in ns: 11397177838
+Experiment 20 : GetRange : WANT_ALL : 10000 Keys time in ns: 4409476
+Experiment 20 : GetRange : ITERATOR : 10000 Keys time in ns: 3504224
+Experiment 20 : GetRange : EXACT : 10000 Keys time in ns: 3379980
+Experiment 20 : GetRange : SMALL : 10000 Keys time in ns: 56289233
+Experiment 20 : GetRange : MEDIUM : 10000 Keys time in ns: 17687738
+Experiment 20 : GetRange : LARGE : 10000 Keys time in ns: 6541063
+Experiment 20 : GetRange : SERIAL : 10000 Keys time in ns: 2902171
+Experiment 21 : Creating 10000 Keys time in ns: 11415124258
+Experiment 21 : GetRange : WANT_ALL : 10000 Keys time in ns: 4418658
+Experiment 21 : GetRange : ITERATOR : 10000 Keys time in ns: 2795383
+Experiment 21 : GetRange : EXACT : 10000 Keys time in ns: 2694042
+Experiment 21 : GetRange : SMALL : 10000 Keys time in ns: 56652379
+Experiment 21 : GetRange : MEDIUM : 10000 Keys time in ns: 18814199
+Experiment 21 : GetRange : LARGE : 10000 Keys time in ns: 6523523
+Experiment 21 : GetRange : SERIAL : 10000 Keys time in ns: 2857388
+Experiment 22 : Creating 10000 Keys time in ns: 11383242502
+Experiment 22 : GetRange : WANT_ALL : 10000 Keys time in ns: 4495392
+Experiment 22 : GetRange : ITERATOR : 10000 Keys time in ns: 3387936
+Experiment 22 : GetRange : EXACT : 10000 Keys time in ns: 3247576
+Experiment 22 : GetRange : SMALL : 10000 Keys time in ns: 56558405
+Experiment 22 : GetRange : MEDIUM : 10000 Keys time in ns: 17191142
+Experiment 22 : GetRange : LARGE : 10000 Keys time in ns: 6473522
+Experiment 22 : GetRange : SERIAL : 10000 Keys time in ns: 2928981
+Experiment 23 : Creating 10000 Keys time in ns: 11495821753
+Experiment 23 : GetRange : WANT_ALL : 10000 Keys time in ns: 5187392
+Experiment 23 : GetRange : ITERATOR : 10000 Keys time in ns: 3569227
+Experiment 23 : GetRange : EXACT : 10000 Keys time in ns: 3835327
+Experiment 23 : GetRange : SMALL : 10000 Keys time in ns: 56076458
+Experiment 23 : GetRange : MEDIUM : 10000 Keys time in ns: 17760054
+Experiment 23 : GetRange : LARGE : 10000 Keys time in ns: 6471335
+Experiment 23 : GetRange : SERIAL : 10000 Keys time in ns: 2968394
+Experiment 24 : Creating 10000 Keys time in ns: 11467129860
+Experiment 24 : GetRange : WANT_ALL : 10000 Keys time in ns: 4392660
+Experiment 24 : GetRange : ITERATOR : 10000 Keys time in ns: 3069854
+Experiment 24 : GetRange : EXACT : 10000 Keys time in ns: 2780794
+Experiment 24 : GetRange : SMALL : 10000 Keys time in ns: 54581394
+Experiment 24 : GetRange : MEDIUM : 10000 Keys time in ns: 17551759
+Experiment 24 : GetRange : LARGE : 10000 Keys time in ns: 6646364
+Experiment 24 : GetRange : SERIAL : 10000 Keys time in ns: 3761854
+Experiment 25 : Creating 10000 Keys time in ns: 11383350316
+Experiment 25 : GetRange : WANT_ALL : 10000 Keys time in ns: 4465379
+Experiment 25 : GetRange : ITERATOR : 10000 Keys time in ns: 2939187
+Experiment 25 : GetRange : EXACT : 10000 Keys time in ns: 3418116
+Experiment 25 : GetRange : SMALL : 10000 Keys time in ns: 55516072
+Experiment 25 : GetRange : MEDIUM : 10000 Keys time in ns: 16919004
+Experiment 25 : GetRange : LARGE : 10000 Keys time in ns: 6442163
+Experiment 25 : GetRange : SERIAL : 10000 Keys time in ns: 31672539
+Experiment 26 : Creating 10000 Keys time in ns: 11489213083
+Experiment 26 : GetRange : WANT_ALL : 10000 Keys time in ns: 4197553
+Experiment 26 : GetRange : ITERATOR : 10000 Keys time in ns: 3274886
+Experiment 26 : GetRange : EXACT : 10000 Keys time in ns: 3100030
+Experiment 26 : GetRange : SMALL : 10000 Keys time in ns: 56028990
+Experiment 26 : GetRange : MEDIUM : 10000 Keys time in ns: 16837751
+Experiment 26 : GetRange : LARGE : 10000 Keys time in ns: 6425791
+Experiment 26 : GetRange : SERIAL : 10000 Keys time in ns: 3052111
+Experiment 27 : Creating 10000 Keys time in ns: 11332866324
+Experiment 27 : GetRange : WANT_ALL : 10000 Keys time in ns: 4241517
+Experiment 27 : GetRange : ITERATOR : 10000 Keys time in ns: 2826971
+Experiment 27 : GetRange : EXACT : 10000 Keys time in ns: 2841448
+Experiment 27 : GetRange : SMALL : 10000 Keys time in ns: 57082992
+Experiment 27 : GetRange : MEDIUM : 10000 Keys time in ns: 16525001
+Experiment 27 : GetRange : LARGE : 10000 Keys time in ns: 6312361
+Experiment 27 : GetRange : SERIAL : 10000 Keys time in ns: 3192252
+Experiment 28 : Creating 10000 Keys time in ns: 11447020685
+Experiment 28 : GetRange : WANT_ALL : 10000 Keys time in ns: 5310020
+Experiment 28 : GetRange : ITERATOR : 10000 Keys time in ns: 4829974
+Experiment 28 : GetRange : EXACT : 10000 Keys time in ns: 4390227
+Experiment 28 : GetRange : SMALL : 10000 Keys time in ns: 64881400
+Experiment 28 : GetRange : MEDIUM : 10000 Keys time in ns: 17540764
+Experiment 28 : GetRange : LARGE : 10000 Keys time in ns: 6112308
+Experiment 28 : GetRange : SERIAL : 10000 Keys time in ns: 2943468
+Experiment 29 : Creating 10000 Keys time in ns: 11400944784
+Experiment 29 : GetRange : WANT_ALL : 10000 Keys time in ns: 4366984
+Experiment 29 : GetRange : ITERATOR : 10000 Keys time in ns: 2983799
+Experiment 29 : GetRange : EXACT : 10000 Keys time in ns: 3247188
+Experiment 29 : GetRange : SMALL : 10000 Keys time in ns: 54274215
+Experiment 29 : GetRange : MEDIUM : 10000 Keys time in ns: 18334274
+Experiment 29 : GetRange : LARGE : 10000 Keys time in ns: 6095557
+Experiment 29 : GetRange : SERIAL : 10000 Keys time in ns: 2967964
+Experiment 30 : Creating 10000 Keys time in ns: 11353139521
+Experiment 30 : GetRange : WANT_ALL : 10000 Keys time in ns: 4743414
+Experiment 30 : GetRange : ITERATOR : 10000 Keys time in ns: 3630158
+Experiment 30 : GetRange : EXACT : 10000 Keys time in ns: 3163368
+Experiment 30 : GetRange : SMALL : 10000 Keys time in ns: 98963178
+Experiment 30 : GetRange : MEDIUM : 10000 Keys time in ns: 16901234
+Experiment 30 : GetRange : LARGE : 10000 Keys time in ns: 7070142
+Experiment 30 : GetRange : SERIAL : 10000 Keys time in ns: 3463226
+Experiment 31 : Creating 10000 Keys time in ns: 10946800077
+Experiment 31 : GetRange : WANT_ALL : 10000 Keys time in ns: 4494660
+Experiment 31 : GetRange : ITERATOR : 10000 Keys time in ns: 3323855
+Experiment 31 : GetRange : EXACT : 10000 Keys time in ns: 2778434
+Experiment 31 : GetRange : SMALL : 10000 Keys time in ns: 55816150
+Experiment 31 : GetRange : MEDIUM : 10000 Keys time in ns: 16696733
+Experiment 31 : GetRange : LARGE : 10000 Keys time in ns: 6319672
+Experiment 31 : GetRange : SERIAL : 10000 Keys time in ns: 2868057
+Experiment 32 : Creating 10000 Keys time in ns: 10993498659
+Experiment 32 : GetRange : WANT_ALL : 10000 Keys time in ns: 4163553
+Experiment 32 : GetRange : ITERATOR : 10000 Keys time in ns: 3328938
+Experiment 32 : GetRange : EXACT : 10000 Keys time in ns: 3387677
+Experiment 32 : GetRange : SMALL : 10000 Keys time in ns: 54654142
+Experiment 32 : GetRange : MEDIUM : 10000 Keys time in ns: 17245364
+Experiment 32 : GetRange : LARGE : 10000 Keys time in ns: 6113158
+Experiment 32 : GetRange : SERIAL : 10000 Keys time in ns: 2845465
+Experiment 33 : Creating 10000 Keys time in ns: 10949148778
+Experiment 33 : GetRange : WANT_ALL : 10000 Keys time in ns: 4113901
+Experiment 33 : GetRange : ITERATOR : 10000 Keys time in ns: 2869631
+Experiment 33 : GetRange : EXACT : 10000 Keys time in ns: 2909195
+Experiment 33 : GetRange : SMALL : 10000 Keys time in ns: 66122346
+Experiment 33 : GetRange : MEDIUM : 10000 Keys time in ns: 26298622
+Experiment 33 : GetRange : LARGE : 10000 Keys time in ns: 12233339
+Experiment 33 : GetRange : SERIAL : 10000 Keys time in ns: 6277885
+Experiment 34 : Creating 10000 Keys time in ns: 10972830659
+Experiment 34 : GetRange : WANT_ALL : 10000 Keys time in ns: 4186749
+Experiment 34 : GetRange : ITERATOR : 10000 Keys time in ns: 2910817
+Experiment 34 : GetRange : EXACT : 10000 Keys time in ns: 2766308
+Experiment 34 : GetRange : SMALL : 10000 Keys time in ns: 54793504
+Experiment 34 : GetRange : MEDIUM : 10000 Keys time in ns: 16460690
+Experiment 34 : GetRange : LARGE : 10000 Keys time in ns: 6443826
+Experiment 34 : GetRange : SERIAL : 10000 Keys time in ns: 2910978
+Experiment 35 : Creating 10000 Keys time in ns: 11096659161
+Experiment 35 : GetRange : WANT_ALL : 10000 Keys time in ns: 4449321
+Experiment 35 : GetRange : ITERATOR : 10000 Keys time in ns: 2992960
+Experiment 35 : GetRange : EXACT : 10000 Keys time in ns: 2811763
+Experiment 35 : GetRange : SMALL : 10000 Keys time in ns: 56804142
+Experiment 35 : GetRange : MEDIUM : 10000 Keys time in ns: 17190695
+Experiment 35 : GetRange : LARGE : 10000 Keys time in ns: 7110458
+Experiment 35 : GetRange : SERIAL : 10000 Keys time in ns: 2906379
+Experiment 36 : Creating 10000 Keys time in ns: 10983305718
+Experiment 36 : GetRange : WANT_ALL : 10000 Keys time in ns: 5024728
+Experiment 36 : GetRange : ITERATOR : 10000 Keys time in ns: 3073049
+Experiment 36 : GetRange : EXACT : 10000 Keys time in ns: 2889992
+Experiment 36 : GetRange : SMALL : 10000 Keys time in ns: 57211051
+Experiment 36 : GetRange : MEDIUM : 10000 Keys time in ns: 16993892
+Experiment 36 : GetRange : LARGE : 10000 Keys time in ns: 6252482
+Experiment 36 : GetRange : SERIAL : 10000 Keys time in ns: 3159040
+Experiment 37 : Creating 10000 Keys time in ns: 11036541833
+Experiment 37 : GetRange : WANT_ALL : 10000 Keys time in ns: 4372210
+Experiment 37 : GetRange : ITERATOR : 10000 Keys time in ns: 3448560
+Experiment 37 : GetRange : EXACT : 10000 Keys time in ns: 3193636
+Experiment 37 : GetRange : SMALL : 10000 Keys time in ns: 54996931
+Experiment 37 : GetRange : MEDIUM : 10000 Keys time in ns: 16884242
+Experiment 37 : GetRange : LARGE : 10000 Keys time in ns: 6258097
+Experiment 37 : GetRange : SERIAL : 10000 Keys time in ns: 3005360
+Experiment 38 : Creating 10000 Keys time in ns: 10979765652
+Experiment 38 : GetRange : WANT_ALL : 10000 Keys time in ns: 4144454
+Experiment 38 : GetRange : ITERATOR : 10000 Keys time in ns: 3386447
+Experiment 38 : GetRange : EXACT : 10000 Keys time in ns: 3206245
+Experiment 38 : GetRange : SMALL : 10000 Keys time in ns: 56081525
+Experiment 38 : GetRange : MEDIUM : 10000 Keys time in ns: 16973781
+Experiment 38 : GetRange : LARGE : 10000 Keys time in ns: 6629137
+Experiment 38 : GetRange : SERIAL : 10000 Keys time in ns: 2969657
+Experiment 39 : Creating 10000 Keys time in ns: 11050060002
+Experiment 39 : GetRange : WANT_ALL : 10000 Keys time in ns: 6638266
+Experiment 39 : GetRange : ITERATOR : 10000 Keys time in ns: 4362083
+Experiment 39 : GetRange : EXACT : 10000 Keys time in ns: 3832312
+Experiment 39 : GetRange : SMALL : 10000 Keys time in ns: 58076549
+Experiment 39 : GetRange : MEDIUM : 10000 Keys time in ns: 17540924
+Experiment 39 : GetRange : LARGE : 10000 Keys time in ns: 6421623
+Experiment 39 : GetRange : SERIAL : 10000 Keys time in ns: 27956977
+Experiment 40 : Creating 10000 Keys time in ns: 10989146543
+Experiment 40 : GetRange : WANT_ALL : 10000 Keys time in ns: 4334612
+Experiment 40 : GetRange : ITERATOR : 10000 Keys time in ns: 2929422
+Experiment 40 : GetRange : EXACT : 10000 Keys time in ns: 3394009
+Experiment 40 : GetRange : SMALL : 10000 Keys time in ns: 56366507
+Experiment 40 : GetRange : MEDIUM : 10000 Keys time in ns: 17176785
+Experiment 40 : GetRange : LARGE : 10000 Keys time in ns: 6596439
+Experiment 40 : GetRange : SERIAL : 10000 Keys time in ns: 2986530
+Experiment 41 : Creating 10000 Keys time in ns: 11023422692
+Experiment 41 : GetRange : WANT_ALL : 10000 Keys time in ns: 4383492
+Experiment 41 : GetRange : ITERATOR : 10000 Keys time in ns: 2808276
+Experiment 41 : GetRange : EXACT : 10000 Keys time in ns: 2793425
+Experiment 41 : GetRange : SMALL : 10000 Keys time in ns: 54368070
+Experiment 41 : GetRange : MEDIUM : 10000 Keys time in ns: 17012690
+Experiment 41 : GetRange : LARGE : 10000 Keys time in ns: 6461412
+Experiment 41 : GetRange : SERIAL : 10000 Keys time in ns: 3022043
+Experiment 42 : Creating 10000 Keys time in ns: 11036913486
+Experiment 42 : GetRange : WANT_ALL : 10000 Keys time in ns: 5201819
+Experiment 42 : GetRange : ITERATOR : 10000 Keys time in ns: 3689248
+Experiment 42 : GetRange : EXACT : 10000 Keys time in ns: 3520494
+Experiment 42 : GetRange : SMALL : 10000 Keys time in ns: 82255466
+Experiment 42 : GetRange : MEDIUM : 10000 Keys time in ns: 24346983
+Experiment 42 : GetRange : LARGE : 10000 Keys time in ns: 7140003
+Experiment 42 : GetRange : SERIAL : 10000 Keys time in ns: 3404338
+Experiment 43 : Creating 10000 Keys time in ns: 10948305695
+Experiment 43 : GetRange : WANT_ALL : 10000 Keys time in ns: 4283046
+Experiment 43 : GetRange : ITERATOR : 10000 Keys time in ns: 2965967
+Experiment 43 : GetRange : EXACT : 10000 Keys time in ns: 2786425
+Experiment 43 : GetRange : SMALL : 10000 Keys time in ns: 54597090
+Experiment 43 : GetRange : MEDIUM : 10000 Keys time in ns: 17995549
+Experiment 43 : GetRange : LARGE : 10000 Keys time in ns: 6895570
+Experiment 43 : GetRange : SERIAL : 10000 Keys time in ns: 3531124
+Experiment 44 : Creating 10000 Keys time in ns: 11012669081
+Experiment 44 : GetRange : WANT_ALL : 10000 Keys time in ns: 4206300
+Experiment 44 : GetRange : ITERATOR : 10000 Keys time in ns: 3283415
+Experiment 44 : GetRange : EXACT : 10000 Keys time in ns: 2936181
+Experiment 44 : GetRange : SMALL : 10000 Keys time in ns: 54228310
+Experiment 44 : GetRange : MEDIUM : 10000 Keys time in ns: 16857174
+Experiment 44 : GetRange : LARGE : 10000 Keys time in ns: 6675106
+Experiment 44 : GetRange : SERIAL : 10000 Keys time in ns: 3003718
+Experiment 45 : Creating 10000 Keys time in ns: 11018282620
+Experiment 45 : GetRange : WANT_ALL : 10000 Keys time in ns: 4507875
+Experiment 45 : GetRange : ITERATOR : 10000 Keys time in ns: 2912492
+Experiment 45 : GetRange : EXACT : 10000 Keys time in ns: 2977612
+Experiment 45 : GetRange : SMALL : 10000 Keys time in ns: 56826804
+Experiment 45 : GetRange : MEDIUM : 10000 Keys time in ns: 17423075
+Experiment 45 : GetRange : LARGE : 10000 Keys time in ns: 7773524
+Experiment 45 : GetRange : SERIAL : 10000 Keys time in ns: 2990261
+Experiment 46 : Creating 10000 Keys time in ns: 11078712540
+Experiment 46 : GetRange : WANT_ALL : 10000 Keys time in ns: 4521571
+Experiment 46 : GetRange : ITERATOR : 10000 Keys time in ns: 3087716
+Experiment 46 : GetRange : EXACT : 10000 Keys time in ns: 3482385
+Experiment 46 : GetRange : SMALL : 10000 Keys time in ns: 55737983
+Experiment 46 : GetRange : MEDIUM : 10000 Keys time in ns: 17714296
+Experiment 46 : GetRange : LARGE : 10000 Keys time in ns: 6402741
+Experiment 46 : GetRange : SERIAL : 10000 Keys time in ns: 3549869
+Experiment 47 : Creating 10000 Keys time in ns: 10986988684
+Experiment 47 : GetRange : WANT_ALL : 10000 Keys time in ns: 4585408
+Experiment 47 : GetRange : ITERATOR : 10000 Keys time in ns: 2874389
+Experiment 47 : GetRange : EXACT : 10000 Keys time in ns: 2815639
+Experiment 47 : GetRange : SMALL : 10000 Keys time in ns: 55123931
+Experiment 47 : GetRange : MEDIUM : 10000 Keys time in ns: 17426542
+Experiment 47 : GetRange : LARGE : 10000 Keys time in ns: 7008468
+Experiment 47 : GetRange : SERIAL : 10000 Keys time in ns: 3685381
+Experiment 48 : Creating 10000 Keys time in ns: 10964464057
+Experiment 48 : GetRange : WANT_ALL : 10000 Keys time in ns: 4241833
+Experiment 48 : GetRange : ITERATOR : 10000 Keys time in ns: 2898901
+Experiment 48 : GetRange : EXACT : 10000 Keys time in ns: 2817974
+Experiment 48 : GetRange : SMALL : 10000 Keys time in ns: 55793290
+Experiment 48 : GetRange : MEDIUM : 10000 Keys time in ns: 47113083
+Experiment 48 : GetRange : LARGE : 10000 Keys time in ns: 6931161
+Experiment 48 : GetRange : SERIAL : 10000 Keys time in ns: 3452417
+Experiment 49 : Creating 10000 Keys time in ns: 11044268231
+Experiment 49 : GetRange : WANT_ALL : 10000 Keys time in ns: 4560595
+Experiment 49 : GetRange : ITERATOR : 10000 Keys time in ns: 3473095
+Experiment 49 : GetRange : EXACT : 10000 Keys time in ns: 3182714
+Experiment 49 : GetRange : SMALL : 10000 Keys time in ns: 54757194
+Experiment 49 : GetRange : MEDIUM : 10000 Keys time in ns: 16654473
+Experiment 49 : GetRange : LARGE : 10000 Keys time in ns: 6616164
+Experiment 49 : GetRange : SERIAL : 10000 Keys time in ns: 3408515
+Experiment 50 : Creating 10000 Keys time in ns: 11038753042
+Experiment 50 : GetRange : WANT_ALL : 10000 Keys time in ns: 4751599
+Experiment 50 : GetRange : ITERATOR : 10000 Keys time in ns: 3186174
+Experiment 50 : GetRange : EXACT : 10000 Keys time in ns: 3474525
+Experiment 50 : GetRange : SMALL : 10000 Keys time in ns: 56818769
+Experiment 50 : GetRange : MEDIUM : 10000 Keys time in ns: 18108587
+Experiment 50 : GetRange : LARGE : 10000 Keys time in ns: 6858107
+Experiment 50 : GetRange : SERIAL : 10000 Keys time in ns: 3183927
