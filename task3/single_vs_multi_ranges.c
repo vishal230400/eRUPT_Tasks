@@ -7,7 +7,7 @@
 #include <pthread.h>
 
 int  NUM_KEYS=10000;
-int NUM_EXPERIMENTS=10;
+int NUM_EXPERIMENTS=50;
 
 struct get_range_args {
     FDBTransaction* tr;
@@ -49,47 +49,71 @@ char* get_value(FDBTransaction* tr, const char* key) {
     }
 }
 
+void get_range(FDBTransaction* tr, const char* begin_key, const char* end_key, int limit, FDBStreamingMode mode) {
+    const uint8_t* begin_key_name = (const uint8_t*)begin_key;
+    const uint8_t* end_key_name = (const uint8_t*)end_key;
+    int begin_key_name_length = strlen(begin_key);
+    int end_key_name_length = strlen(end_key);
+    int rowLimit = limit > 0 ? limit : 1000;
+    int byteLimit = 100000;
+    int iteration = 1;
+    fdb_bool_t snapshot = 0;
+    fdb_bool_t reverse = 0;
+    int total_count = 0;
+    int more = 1;
+    uint8_t* allocated_key = NULL;
+    while (more) {
+        FDBFuture* future = fdb_transaction_get_range(
+            tr, 
+            FDB_KEYSEL_FIRST_GREATER_OR_EQUAL(begin_key_name, begin_key_name_length), 
+            FDB_KEYSEL_FIRST_GREATER_THAN(end_key_name, end_key_name_length), 
+            rowLimit, 
+            byteLimit, 
+            mode, 
+            iteration, 
+            snapshot, 
+            reverse
+        );
+        fdb_error_t err = fdb_future_block_until_ready(future);
+        check_fdb_error(err);
+        const FDBKeyValue* keyvalues;
+        int count;
+        err = fdb_future_get_keyvalue_array(future, &keyvalues, &count, &more);
+        fdb_future_destroy(future);
+        check_fdb_error(err);
+        total_count += count;
+        if (more) {
+            if (allocated_key) {
+                free(allocated_key);
+                allocated_key = NULL;
+            }
+            size_t next_key_length = keyvalues[count - 1].key_length + 1;
+            allocated_key = (uint8_t*)malloc(next_key_length);
+            memcpy(allocated_key, keyvalues[count - 1].key, keyvalues[count - 1].key_length);
+            allocated_key[keyvalues[count - 1].key_length] = '\0';
+            begin_key_name = allocated_key;
+            begin_key_name_length = keyvalues[count - 1].key_length + 1;
+            iteration++;
+        }
+        // if (!more ){
+        //     printf("%s\n",keyvalues[count - 1].key);
+        // }
+    }
+    if (allocated_key) {
+        free(allocated_key);
+    }
+    if (total_count != NUM_KEYS/10) {
+        fprintf(stderr, "Error: Expected %d key-value pairs, but found %d.\n", NUM_KEYS/10, total_count);
+        exit(EXIT_FAILURE);
+    }
+}
+
 void* get_range_thread_func(void* arg) {
     struct get_range_args* args = (struct get_range_args*)arg;
     FDBTransaction* tr = args->tr;
     get_range(tr, args->start_key, args->end_key, NUM_KEYS / 10, args->mode);
     return NULL;
 }
-
-void get_range(FDBTransaction* tr, const char* begin_key, const char* end_key, int limit, FDBStreamingMode mode) {
-    const uint8_t* begin_key_name = (const uint8_t*)begin_key;
-    const uint8_t* end_key_name = (const uint8_t*)end_key;
-    int begin_key_name_length = strlen(begin_key);
-    int end_key_name_length = strlen(end_key);
-    int begin_offset = 0;
-    int end_offset = 0;
-    int target_bytes = 0;
-    int iteration = 1;
-    fdb_bool_t snapshot = 0;
-    fdb_bool_t reverse = 0;
-    FDBFuture* future = fdb_transaction_get_range(tr, begin_key_name, begin_key_name_length, 1, begin_offset, end_key_name,
-                                                   end_key_name_length, 1, end_offset, limit, target_bytes, mode, iteration,
-                                                   snapshot, reverse);
-
-    fdb_error_t err = fdb_future_block_until_ready(future);
-    check_fdb_error(err);
-
-    const FDBKeyValue* keyvalues;
-    int count;
-    int more;
-    err = fdb_future_get_keyvalue_array(future, &keyvalues, &count, &more);
-    fdb_future_destroy(future);
-    check_fdb_error(err);
-
-    // printf("Found %d key-value pairs in the range:\n", count);
-    // for (int i = 0; i < count; ++i) {
-    //     printf("Key: %.*s, Value: %.*s\n", keyvalues[i].key_length, keyvalues[i].key, keyvalues[i].value_length, keyvalues[i].value);
-    // }
-    // if (more) {
-    //     printf("There are more key-value pairs to fetch.\n");
-    // }
-}
-
 void clear_key(FDBTransaction* tr, const char* key) {
     fdb_transaction_clear(tr, (const uint8_t*)key, strlen(key));
 }
@@ -118,7 +142,7 @@ void check_transaction_commit(FDBTransaction* tr) {
         exit(EXIT_FAILURE);
     } else {
         committed = 1;
-        printf("Transaction committed successfully.\n");
+        //printf("Transaction committed successfully.\n");
     }
     fdb_future_destroy(commitFuture);
 }
