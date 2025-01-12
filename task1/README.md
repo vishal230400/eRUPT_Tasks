@@ -97,10 +97,9 @@
 ![SERIAL](output_singlerange/SERIAL_GetRange_Times.png)
 
 - **Observations**:
-    - The time to create 10,000 keys varies significantly across the experiments, ranging from about 54 to 91 seconds. This variation could be due to factors such as system load, network latency, or other environmental conditions during each test run.
+    - The time to create 10,000 keys varies significantly across the experiments, ranging from about 10.8 to 12 seconds. 
     - GetRange Performance:
-        - WANT_ALL and ITERATOR modes consistently show the best performance, with ITERATOR often being slightly faster.
-        - EXACT mode also performs well but is slightly slower than ITERATOR in few places but has better performance if we consider the mean.
+        - EXACT, ITERATOR, WANT_ALL modes consistently show the similar better performance if we neglect the outlier experiments.
         - SMALL mode has the slowest performance among all modes, likely due to the overhead of managing multiple smaller batches of data. This mode is more suitable for scenarios where system memory usage needs to be minimized.
         - MEDIUM and LARGE modes provide a middle ground between performance and memory usage, with LARGE performing slightly better than MEDIUM. These modes are useful when a balance between batch size and transfer efficiency is required.
         - SERIAL mode performs reasonably well, indicating its effectiveness in transferring data in a serial manner while maintaining low latency.
@@ -138,21 +137,21 @@ that executing getrange on each of those 10 ranges returns exactly 1k key-value 
 
     |              | SingleGetRange | SingleVsMultiRanges |
     |--------------|----------------|---------------------|
-    | Key Creation | 61.7467        | 56.4245             |
-    | WANT_ALL     | 0.0086         | 0.0106              |
-    | ITERATOR     | 0.0060         | 0.0083              |
-    | EXACT        | 0.0045         | 0.0068              |
-    | SMALL        | 0.3689         | 0.1015              |
-    | MEDIUM       | 0.0930         | 0.0331              |
-    | LARGE        | 0.0263         | 0.0161              |
-    | SERIAL       | 0.0046         | 0.0071              |
+    | Key Creation | 11.0421        | 11.0621             |
+    | WANT_ALL     | 0.0047         | 0.0047              |
+    | ITERATOR     | 0.0031         | 0.0038              |
+    | EXACT        | 0.0029         | 0.0033              |
+    | SMALL        | 0.2833         | 0.0588              |
+    | MEDIUM       | 0.0799         | 0.0198              |
+    | LARGE        | 0.0215         | 0.0074              |
+    | SERIAL       | 0.0042         | 0.0040              |
 
 - **Inference**:
     - SMALL, MEDIUM, LARGE streaming modes involve retrieving data in batches. By splitting the data into smaller ranges and issuing multiple parallel requests, each request can operate on a smaller portion of the dataset. This reduces the time needed for each request, as parallelism can be leveraged effectively, resulting in better performance compared to issuing a single large request.
     - EXACT mode processes the data in a single batch to retrieve exact matches, meaning it is optimized for handling the entire range in one go. When using multiple parallel requests, the overhead of managing separate requests and the associated cost of calling each one increases. Therefore, SingleGetRange becomes more effective as it avoids the overhead of parallelization and processes everything in a single, optimized batch.
-    - SERIAL mode processes data sequentially, one item at a time. When using multiple parallel requests in this mode, the cost of managing separate requests becomes higher than just processing the data in a single, serial batch. Hence, SingleGetRange performs better because it avoids the overhead associated with parallelizing serial data processing.
+    - SERIAL mode processes data sequentially, one item at a time. When using multiple parallel requests in this mode, the cost of managing separate requests becomes higher than just processing the data in a single, serial batch. Hence, technically SingleGetRange should perform better because it avoids the overhead associated with parallelizing serial data processing, but here is the result seems to be different. Looking closely, it may be due to multiple spikes in SingleGetRange Serial mode, Mean isn't the ideal criteria to understand these results.
     - WANT_ALL and ITERATOR modes also involve retrieving the entire range in a single batch. These modes benefit from a single operation that can optimize the data retrieval process. Parallelizing these requests increases the overhead of managing separate requests, making SingleGetRange more efficient in these scenarios as well.
-    - In conclusion, SMALL/MEDIUM/LARGE works better in SingleVsMultiRanges, EXACT/SERIAL/WANT_ALL/ITERATOR works better in SingleGetRange.
+    - In conclusion, SMALL/MEDIUM/LARGE works better in SingleVsMultiRanges, EXACT/WANT_ALL/ITERATOR works better in SingleGetRange.
 
 - **Accomplishment**: Successfully created a Java Maven project to interact with FoundationDB, and retrieve 10k Key-Value pairs using different streaming modes parallely, and compare with previous task.
 - **SubTask Completion**: The sub-task was fully completed.
