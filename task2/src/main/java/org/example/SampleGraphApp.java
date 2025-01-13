@@ -22,7 +22,7 @@ public class SampleGraphApp {
         loadGraphData(graph, "./task2/src/resources/air-routes-latest-nodes.txt", "./task2/src/resources/air-routes-latest-edges.txt");
         verifyGraphData(graph);
         List<Vertex> airportsInUS = graph.traversal().V().hasLabel("airport").has("country", "US").toList();
-        System.out.println("Airports in the US:");
+        System.out.println("Airports in the US :");
         for (Vertex airport : airportsInUS) {
             System.out.println("Airport ID: " + airport.property("identity").value() +", Name: " + airport.property("desc").value() +", ICAO: " + airport.property("icao").value());
         }
