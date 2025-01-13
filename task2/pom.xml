@@ -36,5 +36,26 @@
             <version>0.6.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.yourcompany</groupId>
+            <artifactId>nugraph-calltracing</artifactId>
+            <version>1.6.5-RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yourcompany</groupId>
+            <artifactId>janusgraph-foundationdb</artifactId>
+            <version>0.1.0</version>
+        </dependency>        <!-- fdb-java dependency -->
+        <dependency>
+            <groupId>org.foundationdb</groupId>
+            <artifactId>fdb-java</artifactId>
+            <version>6.2.22</version>
+        </dependency>
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>5.7.1</version>
+        </dependency>
+
     </dependencies>
 </project>

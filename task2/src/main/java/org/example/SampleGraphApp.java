@@ -8,19 +8,35 @@ import org.janusgraph.core.JanusGraph;
 import org.janusgraph.core.JanusGraphFactory;
 import org.janusgraph.core.Multiplicity;
 import org.janusgraph.core.schema.JanusGraphManagement;
+import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvValidationException;
 import org.janusgraph.core.Cardinality;
-
-import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
 public class SampleGraphApp {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws CsvValidationException {
         JanusGraph graph = JanusGraphFactory.build().set("storage.backend", "inmemory").open();
         initializeSchema(graph);
         loadGraphData(graph, "./task2/src/resources/air-routes-latest-nodes.txt", "./task2/src/resources/air-routes-latest-edges.txt");
+        verifyGraphData(graph);
+        List<Vertex> airportsInUS = graph.traversal().V().hasLabel("airport").has("country", "US").toList();
+        System.out.println("Airports in the US:");
+        for (Vertex airport : airportsInUS) {
+            System.out.println("Airport ID: " + airport.property("identity").value() +", Name: " + airport.property("desc").value() +", ICAO: " + airport.property("icao").value());
+        }
         graph.close();
+    }
+
+    private static void verifyGraphData(JanusGraph graph) {
+        GraphTraversalSource g = graph.traversal();
+    
+        long vertexCount = g.V().count().next();
+        long edgeCount = g.E().count().next();
+    
+        System.out.println("Vertex count: " + vertexCount);
+        System.out.println("Edge count: " + edgeCount);
     }
 
     private static void initializeSchema(JanusGraph graph) {
@@ -132,66 +148,72 @@ public class SampleGraphApp {
         mgmt.commit();
     }
 
-    private static void loadGraphData(JanusGraph graph, String nodesFile, String edgesFile) {
+    private static void loadGraphData(JanusGraph graph, String nodesFile, String edgesFile) throws CsvValidationException {
         GraphTraversalSource g = graph.traversal();
-    
-        try (BufferedReader br = new BufferedReader(new FileReader(nodesFile))) {
-            String line;
-            br.readLine(); 
-    
-            while ((line = br.readLine()) != null) {
-                String[] parts = line.split(",",-1);
-                
+
+        try (CSVReader reader = new CSVReader(new FileReader(nodesFile))) {
+            String[] parts;
+            reader.readNext();
+
+            while ((parts = reader.readNext()) != null) {
                 if (parts[1].equals("version") || parts[1].equals("~label")) {
-                    continue; 
+                    continue;
                 }
-                if (parts.length == 16) {
-                    String id = parts[0].strip();
-                    String type = parts[2];
-                    String code = parts[3];
-                    String icao = parts[4];
-                    String desc = parts[5];
-                    String region = parts[6];
-                    String country = parts[10];
-                    String city = parts[11];
-                    if (type.equals("airport")) {
-                        int runways = Integer.parseInt(parts[7]);
-                        int longest = Integer.parseInt(parts[8]);
-                        int elev = Integer.parseInt(parts[9]);
-                        double lat = Double.parseDouble(parts[12]);
-                        double lon = Double.parseDouble(parts[13]);
-                        g.addV(type).property("code", code)
-                                .property("identity",id)
-                                .property("icao", icao)
-                                .property("desc", desc)
-                                .property("region", region)
-                                .property("runways", runways)
-                                .property("longest", longest)
-                                .property("elev", elev)
-                                .property("country", country)
-                                .property("city", city)
-                                .property("lat", lat)
-                                .property("lon", lon)
-                                .next();
-                    } else if (type.equals("country") || type.equals("continent")) {
-                        g.addV(type).property("code", code)
-                                .property("identity",id)
-                                .property("desc", desc)
-                                .property("country", country)
-                                .property("city", city)
-                                .next();
-                    }
+
+                if (parts.length != 16) {
+                    System.out.println("Invalid row: " + String.join(",", parts));
+                    continue;
+                }
+
+                String id = parts[0].strip();
+                String type = parts[2];
+                String code = parts[3];
+                String icao = parts[4];
+                String desc = parts[5];
+                String region = parts[6];
+                String country = parts[10];
+                String city = parts[11];
+
+                if (type.equals("airport")) {
+                    int runways = parts[7].isEmpty() ? 0 : Integer.parseInt(parts[7]);
+                    int longest = parts[8].isEmpty() ? 0 : Integer.parseInt(parts[8]);
+                    int elev = parts[9].isEmpty() ? 0 : Integer.parseInt(parts[9]);
+                    double lat = parts[12].isEmpty() ? 0.0 : Double.parseDouble(parts[12]);
+                    double lon = parts[13].isEmpty() ? 0.0 : Double.parseDouble(parts[13]);
+
+                    g.addV(type).property("code", code)
+                            .property("identity", id)
+                            .property("icao", icao)
+                            .property("desc", desc)
+                            .property("region", region)
+                            .property("runways", runways)
+                            .property("longest", longest)
+                            .property("elev", elev)
+                            .property("country", country)
+                            .property("city", city)
+                            .property("lat", lat)
+                            .property("lon", lon)
+                            .next();
+                } else if (type.equals("country") || type.equals("continent")) {
+                    g.addV(type).property("code", code)
+                            .property("identity", id)
+                            .property("desc", desc)
+                            .property("country", country)
+                            .property("city", city)
+                            .next();
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-    
-        try (BufferedReader br = new BufferedReader(new FileReader(edgesFile))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                String[] parts = line.split(",", -1);
+
+        try (CSVReader reader = new CSVReader(new FileReader(edgesFile))) {
+            String[] parts;
+            while ((parts = reader.readNext()) != null) {
                 if (parts.length == 5) {
+                    if (parts[1].equals("~from")) {
+                        continue;
+                    }
                     String fromID = parts[1].strip();
                     String toID = parts[2].strip();
                     String edgeLabel = parts[3];
@@ -202,23 +224,19 @@ public class SampleGraphApp {
                     if (fromTraversal.hasNext() && toTraversal.hasNext()) {
                         Vertex from = fromTraversal.next();
                         Vertex to = toTraversal.next();
-                        
+
                         g.V(from)
-                            .addE(edgeLabel)
-                            .property("dist", dist)
-                            .to(to)
-                            .iterate();
+                                .addE(edgeLabel)
+                                .property("dist", dist)
+                                .to(to)
+                                .iterate();
                     } else {
+                        System.out.println("One or both vertices not found for edge: " + fromID + " -> " + toID);
                     }
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-        long vertexCount = g.V().count().next();
-        long edgeCount = g.E().count().next();
-        
-        System.out.println("Total number of vertices: " + vertexCount);
-        System.out.println("Total number of edges: " + edgeCount);
     }    
 }

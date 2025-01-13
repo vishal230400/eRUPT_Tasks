@@ -1,8 +1,12 @@
-2025-01-10 03:57:33.626 UTC INFO [data/graph] JEErasure soft shutdown initiated.
-2025-01-10 03:57:33.629 UTC INFO [data/graph] RepairReservedFiles-data/graph soft shutdown initiated.
-2025-01-10 03:57:45.395 UTC INFO [data/graph] JEErasure soft shutdown initiated.
-2025-01-10 03:57:45.395 UTC INFO [data/graph] RepairReservedFiles-data/graph soft shutdown initiated.
-2025-01-10 06:29:06.840 UTC INFO [data/graph] JEErasure soft shutdown initiated.
-2025-01-10 06:29:06.842 UTC INFO [data/graph] RepairReservedFiles-data/graph soft shutdown initiated.
-2025-01-10 06:29:19.463 UTC INFO [data/graph] JEErasure soft shutdown initiated.
-2025-01-10 06:29:19.464 UTC INFO [data/graph] RepairReservedFiles-data/graph soft shutdown initiated.
+2025-01-13 23:38:30.543 UTC INFO [data/graph] JEErasure soft shutdown initiated.
+2025-01-13 23:38:30.545 UTC INFO [data/graph] RepairReservedFiles-data/graph soft shutdown initiated.
+2025-01-13 23:38:44.179 UTC INFO [data/graph] JEErasure soft shutdown initiated.
+2025-01-13 23:38:44.180 UTC INFO [data/graph] RepairReservedFiles-data/graph soft shutdown initiated.
+2025-01-13 23:38:44.327 UTC INFO [data/graph] Clean file 0x0: predicted min util is below minUtilization, current util min: 20 max: 20, predicted util min: 20 max: 20, chose file with util min: 10 max: 10 avg: 10
+2025-01-13 23:38:44.370 UTC INFO [data/graph] JEErasure soft shutdown initiated.
+2025-01-13 23:38:44.371 UTC INFO [data/graph] RepairReservedFiles-data/graph soft shutdown initiated.
+2025-01-13 23:38:44.422 UTC INFO [data/graph] Clean file 0x0: predicted min util is below minUtilization, current util min: 20 max: 20, predicted util min: 20 max: 20, chose file with util min: 9 max: 9 avg: 9
+2025-01-13 23:38:44.829 UTC INFO [data/graph] CleanerRun 1 on file 0x0 ends: invokedFromDaemon=true finished=true fileDeleted=false nEntriesRead=101963 nDbLookups=104 nINsObsolete=3839 nINsCleaned=646 nINsDead=0 nINsMigrated=646 nBINDeltasObsolete=1 nBINDeltasCleaned=0 nBINDeltasDead=0 nBINDeltasMigrated=0 nLNsObsolete=95388 nLNsCleaned=2083 nLNsDead=0 nLNsExpired=0 nLNsExtinct=0 nLNsMigrated=2081 nLNsMarked=0 nLNQueueHits=806 nLNsLocked=0 inSummary=<INSummary totalINCount="4486" totalINSize="5728011" totalBINDeltaCount="1" totalBINDeltaSize="79" obsoleteINCount="3840" obsoleteINSize="4826702" obsoleteBINDeltaCount="1" obsoleteBINDeltaSize="79"/> estSummary=<summary totalCount="102007" totalSize="9999920" totalINCount="4486" totalINSize="5728011" totalLNCount="97471" totalLNSize="4270264" maxLNSize="111" obsoleteINCount="3840" obsoleteLNCount="95388" obsoleteLNSize="4145515" obsoleteLNSizeCounted="95388" getObsoleteSize="9050317" getObsoleteINSize="4903157" getObsoleteLNSize="4145515" getMaxObsoleteSize="9050317" getMaxObsoleteLNSize="4145515" getAvgObsoleteLNSizeNotCounted="NaN"/> recalcSummary=<summary totalCount="102007" totalSize="9999920" totalINCount="4486" totalINSize="5728011" totalLNCount="97471" totalLNSize="4270264" maxLNSize="0" obsoleteINCount="3840" obsoleteLNCount="95388" obsoleteLNSize="4145515" obsoleteLNSizeCounted="95388" getObsoleteSize="9050317" getObsoleteINSize="4903157" getObsoleteLNSize="4145515" getMaxObsoleteSize="9050317" getMaxObsoleteLNSize="4145515" getAvgObsoleteLNSizeNotCounted="NaN"/> estimatedUtil=9 recalcUtil=9
+2025-01-13 23:38:45.304 UTC INFO [data/graph] Cleaner deleted files: 0x0
+2025-01-13 23:38:45.305 UTC INFO [data/graph] JEErasure soft shutdown initiated.
+2025-01-13 23:38:45.306 UTC INFO [data/graph] RepairReservedFiles-data/graph soft shutdown initiated.
