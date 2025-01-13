@@ -58,7 +58,7 @@ Run the executables which u want to
 - Retrieve all 10k key-value pairs by executing a getrange on \x00 \xff
 - Modify getrange to use different modes (WANT_ALL, EXACT, ITERATOR, etc..) and report the response time of each execution
 ```
-- For this task, I create 10k Key-Value pairs and stored it in FDB and retrieved it through different streaming modes, and deleted all the keys, and repeated the same experiment for a total of 10 times.
+- For this task, I create 10k Key-Value pairs and stored it in FDB and retrieved it through different streaming modes, and deleted all the keys, and repeated the same experiment for a total of 50 times.
 - Below are the results of the same :
 ![Key_Creation_Times](output_singlerange/Key_Creation_Times.png)
 ![WANT_ALL](output_singlerange/WANT_ALL_GetRange_Times.png)
@@ -72,7 +72,14 @@ Run the executables which u want to
 - **Observations**:
     - SMALL, MEDIUM, LARGE, SERIAL does batches in fetching with 256,1000,4096,80000 bytes, according to implementation. Their results also would be in the same, in our case since k,v size is more than 80k bytes, so Latency of SMALL>MEDIUM>LARGE>SERIAL
     - ITERATOR byte range increases as iteration increases starts with 4096, 6144, 9216, 13824, 20736, 31104, 46656, 69984, 80000, 120000, so I expected performance to be similar to that of MEDIUM.
-    - According to code, WANT_ALL and SERIAL are interlinked as same at few points, so I feel both must have similar performance, but WANT_ALL seem to have better performance than SERIAL. 
+    - According to code, WANT_ALL and SERIAL are interlinked as same at few points, so I feel both must have similar performance, but WANT_ALL seem to have better performance than SERIAL.
+    - Byte Limit:
+            - /* _ITERATOR mode maps to one of the known streaming modes
+   depending on iteration */
+            - const int mode_bytes_array[] = { GetRangeLimits::BYTE_LIMIT_UNLIMITED, 256, 1000, 4096, 80000 };
+            - /* The progression used for FDB_STREAMING_MODE_ITERATOR.
+   Goes 1.5 * previous. */
+            - static const int iteration_progression[] = { 4096, 6144, 9216, 13824, 20736, 31104, 46656, 69984, 80000, 120000 };
 - **Accomplishment**: Successfully created a C code to interact with FoundationDB, and retrieve 10k Key-Value pairs using different streaming modes.
 - **SubTask Completion**: The sub-task was fully completed.
 
@@ -85,8 +92,7 @@ Run the executables which u want to
 ```
 - I created 10k Key-Value pair in Fdb like key_i value_i.
 - Divide the 10k into 10 equal ranges and call getrange in parallel 10 times, and wait for all the results to be populated, and do this in different streaming modes.
-- Since keys were string to get 10 equal ranges I wrote script and found 10 equal splits from alphabetic order of keys.
-- Repeat the whole experiment 10 times, and note timings for each iteration.
+- Repeat the whole experiment 50 times, and note timings for each iteration.
 - **Observation**:
     - Below are the observation for the 10 experiments:
 ![Key_Creation_Times](output_SingleVSMultiRanges/Key_Creation_Times.png)

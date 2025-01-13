@@ -84,7 +84,7 @@
 - Retrieve all 10k key-value pairs by executing a getrange on \x00 \xff
 - Modify getrange to use different modes (WANT_ALL, EXACT, ITERATOR, etc..) and report the response time of each execution
 ```
-- For this task, I create 10k Key-Value pairs and stored it in FDB and retrieved it through different streaming modes, and deleted all the keys, and repeated the same experiment for a total of 10 times.
+- For this task, I create 10k Key-Value pairs and stored it in FDB and retrieved it through different streaming modes, and deleted all the keys, and repeated the same experiment for a total of 50 times.
 - Below are the results of the same :
 ![Key_Creation_Times](output_singlerange/Key_Creation_Times.png)
 ![Key_Value_Size](output_singlerange/Key_Value_Size.png)
@@ -100,9 +100,7 @@
     - The time to create 10,000 keys varies significantly across the experiments, ranging from about 10.8 to 12 seconds. 
     - GetRange Performance:
         - EXACT, ITERATOR, WANT_ALL modes consistently show the similar better performance if we neglect the outlier experiments.
-        - SMALL mode has the slowest performance among all modes, likely due to the overhead of managing multiple smaller batches of data. This mode is more suitable for scenarios where system memory usage needs to be minimized.
-        - MEDIUM and LARGE modes provide a middle ground between performance and memory usage, with LARGE performing slightly better than MEDIUM. These modes are useful when a balance between batch size and transfer efficiency is required.
-        - SERIAL mode performs reasonably well, indicating its effectiveness in transferring data in a serial manner while maintaining low latency.
+        - SMALL, MEDIUM, LARGE, SERIAL does batches in fetching with 256,1000,4096,80000 bytes, according to implementation. Their results also would be in the same, in our case since k,v size is more than 80k bytes, so Latency of SMALL>MEDIUM>LARGE>SERIAL
         - Byte Limit:
             - /* _ITERATOR mode maps to one of the known streaming modes
    depending on iteration */
@@ -126,10 +124,9 @@ that executing getrange on each of those 10 ranges returns exactly 1k key-value 
 ```
 - I created 10k Key-Value pair in Fdb like key_i value_i.
 - Divide the 10k into 10 equal ranges and call getrange in parallel 10 times, and wait for all the results to be populated, and do this in different streaming modes.
-- Since keys were string to get 10 equal ranges I wrote script and found 10 equal splits from alphabetic order of keys.
-- Repeat the whole experiment 10 times, and note timings for each iteration.
+- Repeat the whole experiment 50 times, and note timings for each iteration.
 - **Observation**:
-    - Below are the observation for the 10 experiments:
+    - Below are the observation for the 50 experiments:
 ![Key_Creation_Times](output_SingleVsMultiRanges/Key_Creation_Times.png)
 ![Key_Value_Size](output_SingleVsMultiRanges/Key_Value_Size.png)
 ![WANT_ALL](output_SingleVsMultiRanges/WANT_ALL_GetRange_Times.png)
