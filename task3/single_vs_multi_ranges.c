@@ -147,25 +147,25 @@ void check_transaction_commit(FDBTransaction* tr) {
     fdb_future_destroy(commitFuture);
 }
 
-char start0[20] = "key_0";
-char end0[20] = "key_1898";
-char start1[20] = "key_1899";
-char end1[20] = "key_2798";
-char start2[20] = "key_2799";
-char end2[20] = "key_3698";
-char start3[20] = "key_3699";
-char end3[20] = "key_4598";
-char start4[20] = "key_4599";
-char end4[20] = "key_5498";
-char start5[20] = "key_5499";
-char end5[20] = "key_6398";
-char start6[20] = "key_6399";
-char end6[20] = "key_7298";
-char start7[20] = "key_7299";
-char end7[20] = "key_8198";
-char start8[20] = "key_8199";
-char end8[20] = "key_9098";
-char start9[20] = "key_9099";
+char start0[20] = "key_0000";
+char end0[20] = "key_0999";
+char start1[20] = "key_1000";
+char end1[20] = "key_1999";
+char start2[20] = "key_2000";
+char end2[20] = "key_2999";
+char start3[20] = "key_3000";
+char end3[20] = "key_3999";
+char start4[20] = "key_4000";
+char end4[20] = "key_4999";
+char start5[20] = "key_5000";
+char end5[20] = "key_5999";
+char start6[20] = "key_6000";
+char end6[20] = "key_6999";
+char start7[20] = "key_7000";
+char end7[20] = "key_7999";
+char start8[20] = "key_8000";
+char end8[20] = "key_8999";
+char start9[20] = "key_9000";
 char end9[20] = "key_9999";
 
 void get_multi_range(FDBTransaction* tr1, FDBStreamingMode mode) {
@@ -219,9 +219,9 @@ int main() {
 
         clock_t start_set_time = clock();
         for (int i = 0; i < NUM_KEYS; i++) {
-            char key[20], value[20];
-            sprintf(key, "key_%d", i);
-            sprintf(value, "value_%d", i);
+            char key[9], value[11];
+            sprintf(key, "key_%04d", i);
+            sprintf(value, "value_%04d", i);
             set_key(tr, key, value);
         }
         check_transaction_commit(tr);

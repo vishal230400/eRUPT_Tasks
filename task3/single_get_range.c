@@ -160,9 +160,9 @@ int main() {
 
         clock_t start_set_time = clock();
         for (int i = 0; i < NUM_KEYS; i++) {
-            char key[20], value[20];
-            sprintf(key, "key_%d", i);
-            sprintf(value, "value_%d", i);
+            char key[9], value[11];
+            sprintf(key, "key_%04d", i);
+            sprintf(value, "value_%04d", i);
             set_key(tr, key, value);
         }
         check_transaction_commit(tr);
