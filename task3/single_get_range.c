@@ -48,7 +48,7 @@ void get_range(FDBTransaction* tr, const char* begin_key, const char* end_key, i
     int begin_key_name_length = strlen(begin_key);
     int end_key_name_length = strlen(end_key);
     int rowLimit = limit > 0 ? limit : 1000;
-    int byteLimit = 100000;
+    int byteLimit = 0;
     int iteration = 1;
     fdb_bool_t snapshot = 0;
     fdb_bool_t reverse = 0;
