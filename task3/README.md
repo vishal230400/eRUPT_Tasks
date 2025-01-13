@@ -69,10 +69,12 @@ Run the executables which u want to
 ![LARGE](output_singlerange/LARGE_GetRange_Times.png)
 ![SERIAL](output_singlerange/SERIAL_GetRange_Times.png)
 
+- **Observations**:
+    - SMALL, MEDIUM, LARGE, SERIAL does batches in fetching with 256,1000,4096,80000 bytes, according to implementation. Their results also would be in the same, in our case since k,v size is more than 80k bytes, so Latency of SMALL>MEDIUM>LARGE>SERIAL
+    - ITERATOR byte range increases as iteration increases starts with 4096, 6144, 9216, 13824, 20736, 31104, 46656, 69984, 80000, 120000, so I expected performance to be similar to that of MEDIUM.
+    - According to code, WANT_ALL and SERIAL are interlinked as same at few points, so I feel both must have similar performance, but WANT_ALL seem to have better performance than SERIAL. 
 - **Accomplishment**: Successfully created a C code to interact with FoundationDB, and retrieve 10k Key-Value pairs using different streaming modes.
 - **SubTask Completion**: The sub-task was fully completed.
-- **Obstacles**:
-    - The observations seems to be different to that of in JAVA, so I am bit confused on the behaviour, maybe I have made some mistake in my implementation.
 
 ## Compare single getrange vs multiple getranges sent in parallel:
 ```
@@ -109,12 +111,12 @@ Run the executables which u want to
     | LARGE        | 0.001789       | 0.001707            |
     | SERIAL       | 0.000252       | 0.001037            |
 
+- **Observation**:
+    - SMALL / MEDIUM / LARGE has small byte limit for chunk size, so when parallelizm is used we get better performance.
+    - In case of SERIAL, what I feel is happening is, since chunk size is 80000, the whole data can be covered in like 3-4 iterations, instead we do parallel, and it goes till 10 iteration and there is overhead cost of parallelization which makes it worse.
+    - WANT_ALL / ITERATOR / EXACT all goes through the same issue of overhead of parallelization.
 - **Accomplishment**: Successfully created a C code to interact with FoundationDB, and retrieve 10k Key-Value pairs using different streaming modes parallely, and compare with previous task.
 - **SubTask Completion**: The sub-task was fully completed.
-- **Obstacles**:
-    - I had few issues while comparing the time, and understanding the results.
-    - I was having difficulty in understanding how exactly each streaming mode works.
-    - I have doubt in the number of SMALL/MEDIUM/LARGE, as the trends seems to be different. I think I might have implemented it incorrectly.
 
 ## Understand read snapshot:
 ```

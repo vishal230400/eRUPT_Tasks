@@ -103,7 +103,14 @@
         - SMALL mode has the slowest performance among all modes, likely due to the overhead of managing multiple smaller batches of data. This mode is more suitable for scenarios where system memory usage needs to be minimized.
         - MEDIUM and LARGE modes provide a middle ground between performance and memory usage, with LARGE performing slightly better than MEDIUM. These modes are useful when a balance between batch size and transfer efficiency is required.
         - SERIAL mode performs reasonably well, indicating its effectiveness in transferring data in a serial manner while maintaining low latency.
-        - The performance differences between these modes can be attributed to how FoundationDB handles data batching and transfer internally.
+        - Byte Limit:
+            - /* _ITERATOR mode maps to one of the known streaming modes
+   depending on iteration */
+            - const int mode_bytes_array[] = { GetRangeLimits::BYTE_LIMIT_UNLIMITED, 256, 1000, 4096, 80000 };
+            - /* The progression used for FDB_STREAMING_MODE_ITERATOR.
+   Goes 1.5 * previous. */
+            - static const int iteration_progression[] = { 4096, 6144, 9216, 13824, 20736, 31104, 46656, 69984, 80000, 120000 };
+
 - **Accomplishment**: Successfully created a Java Maven project to interact with FoundationDB, and retrieve 10k Key-Value pairs using different streaming modes, and understanding the performance of each streaming mode.
 - **SubTask Completion**: The sub-task was fully completed.
 - **Obstacles**:
@@ -148,11 +155,7 @@ that executing getrange on each of those 10 ranges returns exactly 1k key-value 
 
 - **Inference**:
     - SMALL, MEDIUM, LARGE streaming modes involve retrieving data in batches. By splitting the data into smaller ranges and issuing multiple parallel requests, each request can operate on a smaller portion of the dataset. This reduces the time needed for each request, as parallelism can be leveraged effectively, resulting in better performance compared to issuing a single large request.
-    - EXACT mode processes the data in a single batch to retrieve exact matches, meaning it is optimized for handling the entire range in one go. When using multiple parallel requests, the overhead of managing separate requests and the associated cost of calling each one increases. Therefore, SingleGetRange becomes more effective as it avoids the overhead of parallelization and processes everything in a single, optimized batch.
-    - SERIAL mode processes data sequentially, one item at a time. When using multiple parallel requests in this mode, the cost of managing separate requests becomes higher than just processing the data in a single, serial batch. Hence, technically SingleGetRange should perform better because it avoids the overhead associated with parallelizing serial data processing, but here is the result seems to be different. Looking closely, it may be due to multiple spikes in SingleGetRange Serial mode, Mean isn't the ideal criteria to understand these results.
-    - WANT_ALL and ITERATOR modes also involve retrieving the entire range in a single batch. These modes benefit from a single operation that can optimize the data retrieval process. Parallelizing these requests increases the overhead of managing separate requests, making SingleGetRange more efficient in these scenarios as well.
-    - In conclusion, SMALL/MEDIUM/LARGE works better in SingleVsMultiRanges, EXACT/WANT_ALL/ITERATOR works better in SingleGetRange.
-
+    
 - **Accomplishment**: Successfully created a Java Maven project to interact with FoundationDB, and retrieve 10k Key-Value pairs using different streaming modes parallely, and compare with previous task.
 - **SubTask Completion**: The sub-task was fully completed.
 - **Obstacles**:
