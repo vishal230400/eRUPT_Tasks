@@ -120,7 +120,7 @@ public class SingleGetRange {
         SingleGetRange FDB = new SingleGetRange();
         String filename = "task1/results/SingleGetRange.txt";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
-            for (int experiment = 0; experiment < 5; experiment++) {
+            for (int experiment = 0; experiment < 50; experiment++) {
                 long startSetTime = System.nanoTime();
                 for (int i = 0; i < 10000; i++) {
                     FDB.setKey(keys[i], values[i]);
