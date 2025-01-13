@@ -137,14 +137,14 @@ that executing getrange on each of those 10 ranges returns exactly 1k key-value 
 
     |              | SingleGetRange | SingleVsMultiRanges |
     |--------------|----------------|---------------------|
-    | Key Creation | 11.0421        | 11.0621             |
-    | WANT_ALL     | 0.0047         | 0.0047              |
-    | ITERATOR     | 0.0031         | 0.0038              |
-    | EXACT        | 0.0029         | 0.0033              |
-    | SMALL        | 0.2833         | 0.0588              |
-    | MEDIUM       | 0.0799         | 0.0198              |
-    | LARGE        | 0.0215         | 0.0074              |
-    | SERIAL       | 0.0042         | 0.0040              |
+    | Key Creation | 23.9217        | 24.8089             |
+    | WANT_ALL     | 0.0069         | 0.0060              |
+    | ITERATOR     | 0.0057         | 0.0055              |
+    | EXACT        | 0.0058         | 0.0057              |
+    | SMALL        | 0.3314         | 0.0705              |
+    | MEDIUM       | 0.0940         | 0.0229              |
+    | LARGE        | 0.0294         | 0.0096              |
+    | SERIAL       | 0.0064         | 0.0060              |
 
 - **Inference**:
     - SMALL, MEDIUM, LARGE streaming modes involve retrieving data in batches. By splitting the data into smaller ranges and issuing multiple parallel requests, each request can operate on a smaller portion of the dataset. This reduces the time needed for each request, as parallelism can be leveraged effectively, resulting in better performance compared to issuing a single large request.

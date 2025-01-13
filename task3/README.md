@@ -100,14 +100,14 @@ Run the executables which u want to
 
     |              | SingleGetRange | SingleVsMultiRanges |
     |--------------|----------------|---------------------|
-    | Key Creation | 0.024659       | 0.022819            |
-    | WANT_ALL     | 0.000050       | 0.001024            |
-    | ITERATOR     | 0.001443       | 0.001992            |
-    | EXACT        | 0.000599       | 0.001016            |
-    | SMALL        | 0.000031       | 0.001049            |
-    | MEDIUM       | 0.000024       | 0.000984            |
-    | LARGE        | 0.000033       | 0.001030            |
-    | SERIAL       | 0.000217       | 0.001458            |
+    | Key Creation | 0.017994       | 0.021914            |
+    | WANT_ALL     | 0.000186       | 0.001021            |
+    | ITERATOR     | 0.002462       | 0.004632            |
+    | EXACT        | 0.000171       | 0.001042            |
+    | SMALL        | 0.027807       | 0.014098            |
+    | MEDIUM       | 0.007115       | 0.004159            |
+    | LARGE        | 0.001856       | 0.001708            |
+    | SERIAL       | 0.000244       | 0.001081            |
 
 - **Accomplishment**: Successfully created a C code to interact with FoundationDB, and retrieve 10k Key-Value pairs using different streaming modes parallely, and compare with previous task.
 - **SubTask Completion**: The sub-task was fully completed.
