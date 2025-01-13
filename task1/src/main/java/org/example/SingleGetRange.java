@@ -8,6 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+import java.text.DecimalFormat;
 
 
 public class SingleGetRange {
@@ -108,13 +109,21 @@ public class SingleGetRange {
         return false;
     }
     public static void main(String[] args) {
+        String[] keys =new String[10000];
+        String[] values= new String[10000];
+        DecimalFormat keyFormatter = new DecimalFormat("0000");
+        DecimalFormat valueFormatter = new DecimalFormat("0000");
+        for(int i=0;i<10000;i++){
+            keys[i] = String.format("key_%s", keyFormatter.format(i));
+            values[i] = String.format("value_%s", valueFormatter.format(i));
+        }
         SingleGetRange FDB = new SingleGetRange();
         String filename = "task1/results/SingleGetRange.txt";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
-            for (int experiment = 0; experiment < 50; experiment++) {
+            for (int experiment = 0; experiment < 5; experiment++) {
                 long startSetTime = System.nanoTime();
                 for (int i = 0; i < 10000; i++) {
-                    FDB.setKey("key_" + i, "value_" + i);
+                    FDB.setKey(keys[i], values[i]);
                 }
                 long endSetTime = System.nanoTime();
                 long durationSetTime = (endSetTime - startSetTime);

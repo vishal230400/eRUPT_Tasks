@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ReadSnapshot.dir/read_snapshot.c.o"
+  "CMakeFiles/ReadSnapshot.dir/read_snapshot.c.o.d"
   "ReadSnapshot"
   "ReadSnapshot.pdb"
 )

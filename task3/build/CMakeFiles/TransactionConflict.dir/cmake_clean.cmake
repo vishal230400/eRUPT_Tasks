@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TransactionConflict.dir/tx_conflict.c.o"
+  "CMakeFiles/TransactionConflict.dir/tx_conflict.c.o.d"
   "TransactionConflict"
   "TransactionConflict.pdb"
 )

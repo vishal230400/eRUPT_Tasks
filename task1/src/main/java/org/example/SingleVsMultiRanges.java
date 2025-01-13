@@ -7,6 +7,7 @@ import com.apple.foundationdb.tuple.Tuple;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
@@ -137,36 +138,44 @@ public class SingleVsMultiRanges {
     }
 
     public static void main(String[] args) {
+        String[] keys =new String[10000];
+        String[] values= new String[10000];
+        DecimalFormat keyFormatter = new DecimalFormat("0000");
+        DecimalFormat valueFormatter = new DecimalFormat("0000");
+        for(int i=0;i<10000;i++){
+            keys[i] = String.format("key_%s", keyFormatter.format(i));
+            values[i] = String.format("value_%s", valueFormatter.format(i));
+        }
         SingleVsMultiRanges FDB = new SingleVsMultiRanges();
         String filename = "task1/results/SingleVsMultiRanges.txt";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
-            for (int experiment = 0; experiment < 50; experiment++) {
+            for (int experiment = 0; experiment < 5; experiment++) {
                 long startSetTime = System.nanoTime();
                 for (int i = 0; i < 10000; i++) {
-                    FDB.setKey("key_" + i, "value_" + i);
+                    FDB.setKey(keys[i],values[i]);
                 }
                 long endSetTime = System.nanoTime();
                 long durationSetTime = (endSetTime - startSetTime);
                 writer.write("Experiment " + (experiment + 1) + " : Creating 10000 Keys time in ns: " + durationSetTime + "\n");
-                String start0="key_0";
-                String end0="key_1899";
-                String start1="key_1899";
-                String end1="key_2799";
-                String start2="key_2799";
-                String end2="key_3699";
-                String start3="key_3699";
-                String end3="key_4599";
-                String start4="key_4599";
-                String end4="key_5499";
-                String start5="key_5499";
-                String end5="key_6399";
-                String start6="key_6399";
-                String end6="key_7299";
-                String start7="key_7299";
-                String end7="key_8199";
-                String start8="key_8199";
-                String end8="key_9099";
-                String start9="key_9099";
+                String start0="key_0000";
+                String end0="key_1000";
+                String start1="key_1000";
+                String end1="key_2000";
+                String start2="key_2000";
+                String end2="key_3000";
+                String start3="key_3000";
+                String end3="key_4000";
+                String start4="key_4000";
+                String end4="key_5000";
+                String start5="key_5000";
+                String end5="key_6000";
+                String start6="key_6000";
+                String end6="key_7000";
+                String start7="key_7000";
+                String end7="key_8000";
+                String start8="key_8000";
+                String end8="key_9000";
+                String start9="key_9000";
                 String end9="kez";
                 final int tempExp=experiment+1;
                 FDB.getRange(new byte[]{0x00}, new byte[]{(byte) 0xFF}, StreamingMode.SERIAL).thenAccept(results -> {

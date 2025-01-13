@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SingleGetRange.dir/single_get_range.c.o"
+  "CMakeFiles/SingleGetRange.dir/single_get_range.c.o.d"
   "SingleGetRange"
   "SingleGetRange.pdb"
 )

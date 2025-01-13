@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SingleVSMultiRange.dir/single_vs_multi_ranges.c.o"
+  "CMakeFiles/SingleVSMultiRange.dir/single_vs_multi_ranges.c.o.d"
   "SingleVSMultiRange"
   "SingleVSMultiRange.pdb"
 )
