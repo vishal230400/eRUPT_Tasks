@@ -39,7 +39,7 @@ c. Report the number of vertices/edges loaded, the time it takes to load and the
 ```
 - Initialized Schema, and loaded edges and vertices from csv files provided.
 - There were 3748 vertex and 57645 edges when I used CSVReader to load.
-- I understand for persistent usage I have to commit at the end before closing the graph.
+- I understood for persistent usage I have to commit at the end before closing the graph.
 - Here are the below results:
     ```
     Output:
@@ -105,7 +105,7 @@ storage size
 - I added maven dependency to pom.xml and ran Janusgraph with FDB.
 - Initialized Schema, and loaded edges and vertices from csv files provided.
 - There were 3748 vertex and 57645 edges when I used CSVReader to load.
-- I understand for persistent usage I have to commit at the end before closing the graph, but due to limitation in FDB, I had to commit it thrice in my application, which causes increase in loading time.
+- I understood for persistent usage I have to commit at the end before closing the graph, but due to limitation in FDB, I had to commit it thrice in my application, which causes increase in loading time.
 - According to official documentation:
     ```
     FoundationDB currently does not support transactions running for over five seconds. In particular, after 5 seconds from the first read in a transaction:
