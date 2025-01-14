@@ -13,6 +13,10 @@ import com.opencsv.exceptions.CsvValidationException;
 import org.janusgraph.core.Cardinality;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.stream.Stream;
 
 public class SampleGraphAppBerkley {
     public static void main(String[] args) throws CsvValidationException {
@@ -20,14 +24,22 @@ public class SampleGraphAppBerkley {
         initializeSchema(graph);
         long startSetTime = System.nanoTime();
         loadGraphData(graph, "./task2/src/resources/air-routes-latest-nodes.txt", "./task2/src/resources/air-routes-latest-edges.txt");
+        graph.tx().commit();
         long endSetTime = System.nanoTime();
         long durationSetTime = (endSetTime - startSetTime);
         System.out.println("Time taken to load to berkley db in ns is: "+durationSetTime);
-        graph.tx().commit();
         verifyGraphData(graph);
         graph.close();
+        Path path = Paths.get("data/graph");
+        try {
+            long storageSize = getFolderSize(path);
+            System.out.println("Storage size: " + storageSize / 1_048_576 + " MB");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         JanusGraph reopen_graph = JanusGraphFactory.build().set("storage.backend", "berkeleyje").set("storage.directory", "data/graph").open();
         initializeSchema(reopen_graph);
+        System.out.println("Reloaded graph Details:");
         verifyGraphData(reopen_graph);
         reopen_graph.close();
     }
@@ -42,6 +54,11 @@ public class SampleGraphAppBerkley {
         System.out.println("Edge count: " + edgeCount);
     }
 
+    private static long getFolderSize(Path path) throws IOException {
+        try (Stream<Path> paths = Files.walk(path)) {
+            return paths.filter(Files::isRegularFile).mapToLong(p -> p.toFile().length()).sum();
+        }
+    }
     private static void initializeSchema(JanusGraph graph) {
         JanusGraphManagement mgmt = graph.openManagement();
         

@@ -16,16 +16,18 @@ import java.io.IOException;
 
 public class SampleGraphAppFDB {
     public static void main(String[] args) throws CsvValidationException {
-        JanusGraph graph = JanusGraphFactory.open("/home/vishal/github/eRUPT_Tasks/task2/janusgraph-0.3.0-hadoop2/conf/janusgraph-foundationdb.properties");
+        JanusGraph graph = JanusGraphFactory.open("/home/vishal/github/eRUPT_Tasks/task2/janusgraph-foundationdb/conf/janusgraph-foundationdb.properties");
         initializeSchema(graph);
         long startSetTime = System.nanoTime();
         loadGraphData(graph, "./task2/src/resources/air-routes-latest-nodes.txt", "./task2/src/resources/air-routes-latest-edges.txt");
         long endSetTime = System.nanoTime();
         long durationSetTime = (endSetTime - startSetTime);
         System.out.println("Time taken to load to FDB db in ns is: "+durationSetTime);
+        verifyGraphData(graph);
         graph.close();
-        JanusGraph reopen_graph = JanusGraphFactory.open("/home/vishal/github/eRUPT_Tasks/task2/janusgraph-0.3.0-hadoop2/conf/janusgraph-foundationdb.properties");
+        JanusGraph reopen_graph = JanusGraphFactory.open("/home/vishal/github/eRUPT_Tasks/task2/janusgraph-foundationdb/conf/janusgraph-foundationdb.properties");
         initializeSchema(reopen_graph);
+        System.out.println("Reloaded graph Details:");
         verifyGraphData(reopen_graph);
         reopen_graph.close();
     }
@@ -154,7 +156,6 @@ public class SampleGraphAppFDB {
         try (CSVReader reader = new CSVReader(new FileReader(nodesFile))) {
             String[] parts;
             reader.readNext();
-            int count=0;
             while ((parts = reader.readNext()) != null) {
                 if (parts[1].equals("version") || parts[1].equals("~label")) {
                     continue;
@@ -173,7 +174,6 @@ public class SampleGraphAppFDB {
                 String region = parts[6];
                 String country = parts[10];
                 String city = parts[11];
-                count++;
                 if (type.equals("airport")) {
                     int runways = parts[7].isEmpty() ? 0 : Integer.parseInt(parts[7]);
                     int longest = parts[8].isEmpty() ? 0 : Integer.parseInt(parts[8]);
@@ -201,9 +201,6 @@ public class SampleGraphAppFDB {
                             .property("country", country)
                             .property("city", city)
                             .next();
-                }
-                if(count%1000==0){
-                    g.tx().commit();
                 }
             }
         } catch (IOException e) {
@@ -237,7 +234,7 @@ public class SampleGraphAppFDB {
                     } else {
                         System.out.println("One or both vertices not found for edge: " + fromID + " -> " + toID);
                     }
-                    if(count%1000==0){
+                    if(count%30000==0){
                         g.tx().commit();
                     }
                 }
