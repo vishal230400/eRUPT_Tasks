@@ -22,10 +22,10 @@ public class SampleGraphAppBerkley {
     public static void main(String[] args) throws CsvValidationException {
         JanusGraph graph = JanusGraphFactory.build().set("storage.backend", "berkeleyje").set("storage.directory", "data/graph").open();
         initializeSchema(graph);
-        long startSetTime = System.nanoTime();
+        long startSetTime = System.currentTimeMillis();
         loadGraphData(graph, "./task2/src/resources/air-routes-latest-nodes.txt", "./task2/src/resources/air-routes-latest-edges.txt");
         graph.tx().commit();
-        long endSetTime = System.nanoTime();
+        long endSetTime = System.currentTimeMillis();
         long durationSetTime = (endSetTime - startSetTime);
         System.out.println("Time taken to load to berkley db in ns is   : "+durationSetTime);
         verifyGraphData(graph);

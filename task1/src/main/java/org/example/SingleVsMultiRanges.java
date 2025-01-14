@@ -150,13 +150,13 @@ public class SingleVsMultiRanges {
         String filename = "task1/results/SingleVsMultiRanges.txt";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
             for (int experiment = 0; experiment < 50; experiment++) {
-                long startSetTime = System.nanoTime();
+                long startSetTime = System.currentTimeMillis();
                 for (int i = 0; i < 10000; i++) {
                     FDB.setKey(keys[i],values[i]);
                 }
-                long endSetTime = System.nanoTime();
+                long endSetTime = System.currentTimeMillis();
                 long durationSetTime = (endSetTime - startSetTime);
-                writer.write("Experiment " + (experiment + 1) + " : Creating 10000 Keys time in ns: " + durationSetTime + "\n");
+                writer.write("Experiment " + (experiment + 1) + " : Creating 10000 Keys time in ms: " + durationSetTime + "\n");
                 String start0="key_0000";
                 String end0="key_1000";
                 String start1="key_1000";
@@ -196,7 +196,7 @@ public class SingleVsMultiRanges {
                     return null;
                 }).join();
                 for (StreamingMode mode : StreamingMode.values()) {
-                    long startGetRangeTime = System.nanoTime();
+                    long startGetRangeTime = System.currentTimeMillis();
                     CompletableFuture<List<KeyValue>> result0=FDB.getRange(Tuple.from(start0).pack(),Tuple.from(end0).pack(), mode, false);
                     CompletableFuture<List<KeyValue>> result1=FDB.getRange(Tuple.from(start1).pack(),Tuple.from(end1).pack(), mode,false);
                     CompletableFuture<List<KeyValue>> result2=FDB.getRange(Tuple.from(start2).pack(),Tuple.from(end2).pack(), mode,false);
@@ -208,10 +208,10 @@ public class SingleVsMultiRanges {
                     CompletableFuture<List<KeyValue>> result8=FDB.getRange(Tuple.from(start8).pack(),Tuple.from(end8).pack(), mode,false);
                     CompletableFuture<List<KeyValue>> result9=FDB.getRange(Tuple.from(start9).pack(),Tuple.from(end9).pack(), mode,false);
                     CompletableFuture.allOf(result0,result1,result2,result3,result4,result5,result6,result7,result8,result9).join();
-                    long endGetRangeTime = System.nanoTime();
+                    long endGetRangeTime = System.currentTimeMillis();
                     long durationGetRangeTime = (endGetRangeTime - startGetRangeTime);
                     try {
-                        writer.write("Experiment " + tempExp+ " : GetRange : " + mode + " : 10000 Keys time in ns: " + durationGetRangeTime + "\n");
+                        writer.write("Experiment " + tempExp+ " : GetRange : " + mode + " : 10000 Keys time in ms: " + durationGetRangeTime + "\n");
                     } catch (IOException e) {
                         e.printStackTrace();
                     }

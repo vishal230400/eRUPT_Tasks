@@ -1,400 +1,400 @@
-Experiment 1 : Creating 10000 Keys time in s: 0.025229
-Experiment 1 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.006001
-Experiment 1 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.013295
-Experiment 1 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004304
-Experiment 1 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001777
-Experiment 1 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.002147
-Experiment 1 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001021
-Experiment 1 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001014
-Experiment 2 : Creating 10000 Keys time in s: 0.019801
-Experiment 2 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004727
-Experiment 2 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014618
-Experiment 2 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004441
-Experiment 2 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001646
-Experiment 2 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001106
-Experiment 2 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000965
-Experiment 2 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000922
-Experiment 3 : Creating 10000 Keys time in s: 0.019464
-Experiment 3 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004645
-Experiment 3 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014707
-Experiment 3 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004335
-Experiment 3 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001627
-Experiment 3 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000938
-Experiment 3 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000870
-Experiment 3 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000895
-Experiment 4 : Creating 10000 Keys time in s: 0.017628
-Experiment 4 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004467
-Experiment 4 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.012379
-Experiment 4 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004273
-Experiment 4 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001738
-Experiment 4 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001062
-Experiment 4 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001126
-Experiment 4 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000979
-Experiment 5 : Creating 10000 Keys time in s: 0.021456
-Experiment 5 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004258
-Experiment 5 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014946
-Experiment 5 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004246
-Experiment 5 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001675
-Experiment 5 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000928
-Experiment 5 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000883
-Experiment 5 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001002
-Experiment 6 : Creating 10000 Keys time in s: 0.019178
-Experiment 6 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004288
-Experiment 6 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014142
-Experiment 6 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004226
-Experiment 6 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001573
-Experiment 6 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001146
-Experiment 6 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000834
-Experiment 6 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000882
-Experiment 7 : Creating 10000 Keys time in s: 0.019606
-Experiment 7 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004371
-Experiment 7 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.015408
-Experiment 7 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004293
-Experiment 7 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001642
-Experiment 7 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000958
-Experiment 7 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000954
-Experiment 7 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000897
-Experiment 8 : Creating 10000 Keys time in s: 0.019255
-Experiment 8 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004307
-Experiment 8 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.015084
-Experiment 8 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004362
-Experiment 8 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001697
-Experiment 8 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001029
-Experiment 8 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000980
-Experiment 8 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000979
-Experiment 9 : Creating 10000 Keys time in s: 0.020689
-Experiment 9 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004730
-Experiment 9 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.015425
-Experiment 9 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004365
-Experiment 9 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001611
-Experiment 9 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000922
-Experiment 9 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000989
-Experiment 9 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000894
-Experiment 10 : Creating 10000 Keys time in s: 0.020485
-Experiment 10 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004665
-Experiment 10 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.015253
-Experiment 10 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004301
-Experiment 10 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001685
-Experiment 10 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000964
-Experiment 10 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001033
-Experiment 10 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000882
-Experiment 11 : Creating 10000 Keys time in s: 0.021132
-Experiment 11 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004364
-Experiment 11 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.015929
-Experiment 11 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004194
-Experiment 11 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001787
-Experiment 11 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000999
-Experiment 11 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000965
-Experiment 11 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001008
-Experiment 12 : Creating 10000 Keys time in s: 0.020961
-Experiment 12 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004581
-Experiment 12 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.015608
-Experiment 12 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004174
-Experiment 12 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001717
-Experiment 12 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001026
-Experiment 12 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000976
-Experiment 12 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001070
-Experiment 13 : Creating 10000 Keys time in s: 0.021002
-Experiment 13 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004717
-Experiment 13 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014653
-Experiment 13 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004177
-Experiment 13 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001731
-Experiment 13 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000897
-Experiment 13 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001060
-Experiment 13 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000987
-Experiment 14 : Creating 10000 Keys time in s: 0.021605
-Experiment 14 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004724
-Experiment 14 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014924
-Experiment 14 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004534
-Experiment 14 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001754
-Experiment 14 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001040
-Experiment 14 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001084
-Experiment 14 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000974
-Experiment 15 : Creating 10000 Keys time in s: 0.022309
-Experiment 15 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004346
-Experiment 15 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.013403
-Experiment 15 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004288
-Experiment 15 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001677
-Experiment 15 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001014
-Experiment 15 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000980
-Experiment 15 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001027
-Experiment 16 : Creating 10000 Keys time in s: 0.020688
-Experiment 16 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.003833
-Experiment 16 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014397
-Experiment 16 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004413
-Experiment 16 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001676
-Experiment 16 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000960
-Experiment 16 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001102
-Experiment 16 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000942
-Experiment 17 : Creating 10000 Keys time in s: 0.019796
-Experiment 17 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004385
-Experiment 17 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014734
-Experiment 17 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004176
-Experiment 17 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001739
-Experiment 17 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001017
-Experiment 17 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000928
-Experiment 17 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001073
-Experiment 18 : Creating 10000 Keys time in s: 0.019242
-Experiment 18 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004588
-Experiment 18 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014271
-Experiment 18 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004439
-Experiment 18 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001685
-Experiment 18 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000960
-Experiment 18 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000990
-Experiment 18 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001010
-Experiment 19 : Creating 10000 Keys time in s: 0.020696
-Experiment 19 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004721
-Experiment 19 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.015406
-Experiment 19 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004346
-Experiment 19 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001690
-Experiment 19 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000920
-Experiment 19 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000974
-Experiment 19 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000954
-Experiment 20 : Creating 10000 Keys time in s: 0.021670
-Experiment 20 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004531
-Experiment 20 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014691
-Experiment 20 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004334
-Experiment 20 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001753
-Experiment 20 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001006
-Experiment 20 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000980
-Experiment 20 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000998
-Experiment 21 : Creating 10000 Keys time in s: 0.020360
-Experiment 21 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004449
-Experiment 21 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.015158
-Experiment 21 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004089
-Experiment 21 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001685
-Experiment 21 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000944
-Experiment 21 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000953
-Experiment 21 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000905
-Experiment 22 : Creating 10000 Keys time in s: 0.019464
-Experiment 22 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004310
-Experiment 22 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.013694
-Experiment 22 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004299
-Experiment 22 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001698
-Experiment 22 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000892
-Experiment 22 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001008
-Experiment 22 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000993
-Experiment 23 : Creating 10000 Keys time in s: 0.020783
-Experiment 23 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004488
-Experiment 23 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.015102
-Experiment 23 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004012
-Experiment 23 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001779
-Experiment 23 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001081
-Experiment 23 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001018
-Experiment 23 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000976
-Experiment 24 : Creating 10000 Keys time in s: 0.022984
-Experiment 24 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004957
-Experiment 24 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.011802
-Experiment 24 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.003847
-Experiment 24 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001726
-Experiment 24 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001022
-Experiment 24 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001046
-Experiment 24 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001070
-Experiment 25 : Creating 10000 Keys time in s: 0.022186
-Experiment 25 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004383
-Experiment 25 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.011605
-Experiment 25 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.003756
-Experiment 25 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001726
-Experiment 25 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001144
-Experiment 25 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001092
-Experiment 25 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001055
-Experiment 26 : Creating 10000 Keys time in s: 0.021819
-Experiment 26 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004520
-Experiment 26 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.011436
-Experiment 26 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.003694
-Experiment 26 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001708
-Experiment 26 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001118
-Experiment 26 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001042
-Experiment 26 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000984
-Experiment 27 : Creating 10000 Keys time in s: 0.022026
-Experiment 27 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004682
-Experiment 27 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.012176
-Experiment 27 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004063
-Experiment 27 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001751
-Experiment 27 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001152
-Experiment 27 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001107
-Experiment 27 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001042
-Experiment 28 : Creating 10000 Keys time in s: 0.023399
-Experiment 28 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.005401
-Experiment 28 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.011911
-Experiment 28 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.003732
-Experiment 28 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001709
-Experiment 28 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001018
-Experiment 28 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001062
-Experiment 28 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000985
-Experiment 29 : Creating 10000 Keys time in s: 0.023323
-Experiment 29 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004750
-Experiment 29 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.011969
-Experiment 29 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.003650
-Experiment 29 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001728
-Experiment 29 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001099
-Experiment 29 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001107
-Experiment 29 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001025
-Experiment 30 : Creating 10000 Keys time in s: 0.021962
-Experiment 30 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004717
-Experiment 30 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.011562
-Experiment 30 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.003811
-Experiment 30 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001767
-Experiment 30 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001085
-Experiment 30 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001027
-Experiment 30 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001027
-Experiment 31 : Creating 10000 Keys time in s: 0.021782
-Experiment 31 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.005252
-Experiment 31 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.015636
-Experiment 31 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004210
-Experiment 31 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001757
-Experiment 31 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001022
-Experiment 31 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001074
-Experiment 31 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001105
-Experiment 32 : Creating 10000 Keys time in s: 0.020124
-Experiment 32 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004389
-Experiment 32 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014357
-Experiment 32 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004276
-Experiment 32 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001712
-Experiment 32 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001073
-Experiment 32 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001033
-Experiment 32 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000899
-Experiment 33 : Creating 10000 Keys time in s: 0.020185
-Experiment 33 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004710
-Experiment 33 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014770
-Experiment 33 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004509
-Experiment 33 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001756
-Experiment 33 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001075
-Experiment 33 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000918
-Experiment 33 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000964
-Experiment 34 : Creating 10000 Keys time in s: 0.022569
-Experiment 34 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.003922
-Experiment 34 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014538
-Experiment 34 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.003813
-Experiment 34 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001813
-Experiment 34 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001047
-Experiment 34 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000997
-Experiment 34 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001036
-Experiment 35 : Creating 10000 Keys time in s: 0.022008
-Experiment 35 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004548
-Experiment 35 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.013896
-Experiment 35 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004776
-Experiment 35 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001865
-Experiment 35 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001064
-Experiment 35 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001123
-Experiment 35 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001081
-Experiment 36 : Creating 10000 Keys time in s: 0.022235
-Experiment 36 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004720
-Experiment 36 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014739
-Experiment 36 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004328
-Experiment 36 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001730
-Experiment 36 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001041
-Experiment 36 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000966
-Experiment 36 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001030
-Experiment 37 : Creating 10000 Keys time in s: 0.021645
-Experiment 37 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004457
-Experiment 37 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.015187
-Experiment 37 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004246
-Experiment 37 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001591
-Experiment 37 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000890
-Experiment 37 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000899
-Experiment 37 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000946
-Experiment 38 : Creating 10000 Keys time in s: 0.020653
-Experiment 38 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004658
-Experiment 38 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.015130
-Experiment 38 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004254
-Experiment 38 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001721
-Experiment 38 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000929
-Experiment 38 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000944
-Experiment 38 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000955
-Experiment 39 : Creating 10000 Keys time in s: 0.022229
-Experiment 39 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004232
-Experiment 39 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014175
-Experiment 39 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004070
-Experiment 39 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001539
-Experiment 39 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000970
-Experiment 39 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000999
-Experiment 39 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001076
-Experiment 40 : Creating 10000 Keys time in s: 0.020588
-Experiment 40 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004696
-Experiment 40 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.015254
-Experiment 40 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004178
-Experiment 40 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001751
-Experiment 40 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001037
-Experiment 40 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000941
-Experiment 40 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001073
-Experiment 41 : Creating 10000 Keys time in s: 0.022310
-Experiment 41 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004772
-Experiment 41 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014692
-Experiment 41 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004093
-Experiment 41 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001896
-Experiment 41 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001081
-Experiment 41 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001071
-Experiment 41 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001157
-Experiment 42 : Creating 10000 Keys time in s: 0.021369
-Experiment 42 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004419
-Experiment 42 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014466
-Experiment 42 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004468
-Experiment 42 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001823
-Experiment 42 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001083
-Experiment 42 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000970
-Experiment 42 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000946
-Experiment 43 : Creating 10000 Keys time in s: 0.021757
-Experiment 43 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004745
-Experiment 43 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014878
-Experiment 43 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004113
-Experiment 43 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001672
-Experiment 43 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000952
-Experiment 43 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.001063
-Experiment 43 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001011
-Experiment 44 : Creating 10000 Keys time in s: 0.021573
-Experiment 44 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004410
-Experiment 44 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014680
-Experiment 44 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004202
-Experiment 44 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001689
-Experiment 44 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001085
-Experiment 44 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000999
-Experiment 44 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001204
-Experiment 45 : Creating 10000 Keys time in s: 0.020674
-Experiment 45 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004354
-Experiment 45 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.015042
-Experiment 45 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004266
-Experiment 45 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001564
-Experiment 45 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000898
-Experiment 45 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000888
-Experiment 45 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000972
-Experiment 46 : Creating 10000 Keys time in s: 0.020801
-Experiment 46 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004644
-Experiment 46 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.015466
-Experiment 46 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004190
-Experiment 46 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001682
-Experiment 46 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000993
-Experiment 46 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000955
-Experiment 46 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000865
-Experiment 47 : Creating 10000 Keys time in s: 0.020496
-Experiment 47 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004801
-Experiment 47 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.012350
-Experiment 47 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.003654
-Experiment 47 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001732
-Experiment 47 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001051
-Experiment 47 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000986
-Experiment 47 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001016
-Experiment 48 : Creating 10000 Keys time in s: 0.021298
-Experiment 48 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.005115
-Experiment 48 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.015031
-Experiment 48 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004276
-Experiment 48 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001734
-Experiment 48 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.000928
-Experiment 48 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000929
-Experiment 48 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000855
-Experiment 49 : Creating 10000 Keys time in s: 0.020561
-Experiment 49 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004650
-Experiment 49 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.014449
-Experiment 49 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004207
-Experiment 49 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001687
-Experiment 49 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001004
-Experiment 49 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000878
-Experiment 49 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.000896
-Experiment 50 : Creating 10000 Keys time in s: 0.021656
-Experiment 50 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in s: 0.004933
-Experiment 50 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in s: 0.015331
-Experiment 50 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in s: 0.004403
-Experiment 50 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in s: 0.001471
-Experiment 50 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in s: 0.001043
-Experiment 50 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in s: 0.000939
-Experiment 50 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in s: 0.001011
+Experiment 1 : Creating 10000 Keys time in ms: 24.972000
+Experiment 1 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 6.236000
+Experiment 1 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 13.790000
+Experiment 1 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.370000
+Experiment 1 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.882000
+Experiment 1 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.933000
+Experiment 1 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.013000
+Experiment 1 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.068000
+Experiment 2 : Creating 10000 Keys time in ms: 25.471000
+Experiment 2 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 5.297000
+Experiment 2 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 14.927000
+Experiment 2 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.352000
+Experiment 2 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.692000
+Experiment 2 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.095000
+Experiment 2 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.044000
+Experiment 2 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 0.984000
+Experiment 3 : Creating 10000 Keys time in ms: 22.521000
+Experiment 3 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.633000
+Experiment 3 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 15.468000
+Experiment 3 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.116000
+Experiment 3 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.919000
+Experiment 3 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.092000
+Experiment 3 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.127000
+Experiment 3 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.065000
+Experiment 4 : Creating 10000 Keys time in ms: 24.300000
+Experiment 4 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.804000
+Experiment 4 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 15.254000
+Experiment 4 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.556000
+Experiment 4 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.685000
+Experiment 4 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 0.912000
+Experiment 4 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 0.987000
+Experiment 4 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 0.920000
+Experiment 5 : Creating 10000 Keys time in ms: 21.241000
+Experiment 5 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.683000
+Experiment 5 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 15.040000
+Experiment 5 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.310000
+Experiment 5 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.752000
+Experiment 5 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.108000
+Experiment 5 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 0.979000
+Experiment 5 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 0.896000
+Experiment 6 : Creating 10000 Keys time in ms: 22.831000
+Experiment 6 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.851000
+Experiment 6 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 13.997000
+Experiment 6 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.240000
+Experiment 6 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.706000
+Experiment 6 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 0.940000
+Experiment 6 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 0.904000
+Experiment 6 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 0.958000
+Experiment 7 : Creating 10000 Keys time in ms: 21.220000
+Experiment 7 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.923000
+Experiment 7 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 15.194000
+Experiment 7 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.383000
+Experiment 7 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.692000
+Experiment 7 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.007000
+Experiment 7 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.022000
+Experiment 7 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 0.940000
+Experiment 8 : Creating 10000 Keys time in ms: 19.970000
+Experiment 8 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.570000
+Experiment 8 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 15.683000
+Experiment 8 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.643000
+Experiment 8 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.725000
+Experiment 8 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.006000
+Experiment 8 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.089000
+Experiment 8 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.042000
+Experiment 9 : Creating 10000 Keys time in ms: 22.909000
+Experiment 9 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.491000
+Experiment 9 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 14.581000
+Experiment 9 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.337000
+Experiment 9 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.708000
+Experiment 9 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 0.924000
+Experiment 9 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.073000
+Experiment 9 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 0.984000
+Experiment 10 : Creating 10000 Keys time in ms: 21.536000
+Experiment 10 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.772000
+Experiment 10 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 14.130000
+Experiment 10 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.274000
+Experiment 10 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.654000
+Experiment 10 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 0.874000
+Experiment 10 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 0.848000
+Experiment 10 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 0.872000
+Experiment 11 : Creating 10000 Keys time in ms: 19.314000
+Experiment 11 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.252000
+Experiment 11 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 14.893000
+Experiment 11 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.194000
+Experiment 11 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.741000
+Experiment 11 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 0.905000
+Experiment 11 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 0.983000
+Experiment 11 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.030000
+Experiment 12 : Creating 10000 Keys time in ms: 23.038000
+Experiment 12 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.972000
+Experiment 12 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 11.981000
+Experiment 12 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.501000
+Experiment 12 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.688000
+Experiment 12 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.044000
+Experiment 12 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 0.989000
+Experiment 12 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.021000
+Experiment 13 : Creating 10000 Keys time in ms: 20.408000
+Experiment 13 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.737000
+Experiment 13 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 14.657000
+Experiment 13 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.262000
+Experiment 13 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.788000
+Experiment 13 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.220000
+Experiment 13 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 0.928000
+Experiment 13 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 0.888000
+Experiment 14 : Creating 10000 Keys time in ms: 20.133000
+Experiment 14 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.431000
+Experiment 14 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 14.410000
+Experiment 14 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 3.834000
+Experiment 14 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.652000
+Experiment 14 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.064000
+Experiment 14 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.169000
+Experiment 14 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.107000
+Experiment 15 : Creating 10000 Keys time in ms: 21.773000
+Experiment 15 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.023000
+Experiment 15 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 14.785000
+Experiment 15 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.200000
+Experiment 15 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.793000
+Experiment 15 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.086000
+Experiment 15 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.023000
+Experiment 15 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.127000
+Experiment 16 : Creating 10000 Keys time in ms: 21.982000
+Experiment 16 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.315000
+Experiment 16 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 14.153000
+Experiment 16 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.268000
+Experiment 16 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.749000
+Experiment 16 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.102000
+Experiment 16 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.012000
+Experiment 16 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.165000
+Experiment 17 : Creating 10000 Keys time in ms: 20.811000
+Experiment 17 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.205000
+Experiment 17 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 12.089000
+Experiment 17 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 3.641000
+Experiment 17 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.703000
+Experiment 17 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.190000
+Experiment 17 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.106000
+Experiment 17 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.009000
+Experiment 18 : Creating 10000 Keys time in ms: 22.438000
+Experiment 18 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.939000
+Experiment 18 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 14.764000
+Experiment 18 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.128000
+Experiment 18 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.561000
+Experiment 18 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.035000
+Experiment 18 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.067000
+Experiment 18 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.051000
+Experiment 19 : Creating 10000 Keys time in ms: 22.752000
+Experiment 19 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 5.203000
+Experiment 19 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 14.985000
+Experiment 19 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.278000
+Experiment 19 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.645000
+Experiment 19 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.137000
+Experiment 19 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 0.898000
+Experiment 19 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 0.822000
+Experiment 20 : Creating 10000 Keys time in ms: 21.374000
+Experiment 20 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.883000
+Experiment 20 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 14.954000
+Experiment 20 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.211000
+Experiment 20 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.703000
+Experiment 20 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.083000
+Experiment 20 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.028000
+Experiment 20 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 0.986000
+Experiment 21 : Creating 10000 Keys time in ms: 20.896000
+Experiment 21 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.187000
+Experiment 21 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 12.600000
+Experiment 21 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.497000
+Experiment 21 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.822000
+Experiment 21 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.037000
+Experiment 21 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.027000
+Experiment 21 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 0.929000
+Experiment 22 : Creating 10000 Keys time in ms: 20.884000
+Experiment 22 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 3.869000
+Experiment 22 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 14.324000
+Experiment 22 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 3.944000
+Experiment 22 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.515000
+Experiment 22 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.146000
+Experiment 22 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.112000
+Experiment 22 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 0.875000
+Experiment 23 : Creating 10000 Keys time in ms: 21.169000
+Experiment 23 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.137000
+Experiment 23 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 15.652000
+Experiment 23 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.444000
+Experiment 23 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.829000
+Experiment 23 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.146000
+Experiment 23 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.060000
+Experiment 23 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.045000
+Experiment 24 : Creating 10000 Keys time in ms: 22.374000
+Experiment 24 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.360000
+Experiment 24 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 12.308000
+Experiment 24 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.325000
+Experiment 24 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.755000
+Experiment 24 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 0.943000
+Experiment 24 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.038000
+Experiment 24 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 0.888000
+Experiment 25 : Creating 10000 Keys time in ms: 23.909000
+Experiment 25 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.405000
+Experiment 25 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 16.362000
+Experiment 25 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.614000
+Experiment 25 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.847000
+Experiment 25 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.100000
+Experiment 25 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.184000
+Experiment 25 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.066000
+Experiment 26 : Creating 10000 Keys time in ms: 24.977000
+Experiment 26 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.222000
+Experiment 26 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 15.685000
+Experiment 26 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.448000
+Experiment 26 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.712000
+Experiment 26 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 0.975000
+Experiment 26 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 0.822000
+Experiment 26 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 0.858000
+Experiment 27 : Creating 10000 Keys time in ms: 26.746000
+Experiment 27 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 3.653000
+Experiment 27 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 15.130000
+Experiment 27 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.360000
+Experiment 27 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.931000
+Experiment 27 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.103000
+Experiment 27 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.006000
+Experiment 27 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.201000
+Experiment 28 : Creating 10000 Keys time in ms: 25.991000
+Experiment 28 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 3.462000
+Experiment 28 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 12.979000
+Experiment 28 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.620000
+Experiment 28 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.568000
+Experiment 28 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.009000
+Experiment 28 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.160000
+Experiment 28 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.128000
+Experiment 29 : Creating 10000 Keys time in ms: 26.057000
+Experiment 29 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.394000
+Experiment 29 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 15.376000
+Experiment 29 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.376000
+Experiment 29 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.765000
+Experiment 29 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.023000
+Experiment 29 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.006000
+Experiment 29 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.035000
+Experiment 30 : Creating 10000 Keys time in ms: 24.867000
+Experiment 30 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 3.736000
+Experiment 30 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 15.004000
+Experiment 30 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.526000
+Experiment 30 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.754000
+Experiment 30 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.029000
+Experiment 30 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.058000
+Experiment 30 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.154000
+Experiment 31 : Creating 10000 Keys time in ms: 23.598000
+Experiment 31 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.428000
+Experiment 31 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 15.918000
+Experiment 31 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.470000
+Experiment 31 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.690000
+Experiment 31 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 0.928000
+Experiment 31 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 0.915000
+Experiment 31 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.011000
+Experiment 32 : Creating 10000 Keys time in ms: 23.075000
+Experiment 32 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 3.903000
+Experiment 32 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 14.771000
+Experiment 32 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.435000
+Experiment 32 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.782000
+Experiment 32 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.022000
+Experiment 32 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.111000
+Experiment 32 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.030000
+Experiment 33 : Creating 10000 Keys time in ms: 30.409000
+Experiment 33 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.107000
+Experiment 33 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 12.577000
+Experiment 33 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.660000
+Experiment 33 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.570000
+Experiment 33 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.108000
+Experiment 33 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.079000
+Experiment 33 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 0.974000
+Experiment 34 : Creating 10000 Keys time in ms: 25.508000
+Experiment 34 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.207000
+Experiment 34 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 14.706000
+Experiment 34 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.363000
+Experiment 34 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.740000
+Experiment 34 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.063000
+Experiment 34 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.051000
+Experiment 34 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.034000
+Experiment 35 : Creating 10000 Keys time in ms: 22.288000
+Experiment 35 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.071000
+Experiment 35 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 14.894000
+Experiment 35 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.510000
+Experiment 35 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.769000
+Experiment 35 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.174000
+Experiment 35 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.221000
+Experiment 35 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.155000
+Experiment 36 : Creating 10000 Keys time in ms: 32.580000
+Experiment 36 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.477000
+Experiment 36 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 15.006000
+Experiment 36 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.601000
+Experiment 36 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.837000
+Experiment 36 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.072000
+Experiment 36 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 0.922000
+Experiment 36 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.016000
+Experiment 37 : Creating 10000 Keys time in ms: 32.388000
+Experiment 37 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.627000
+Experiment 37 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 15.052000
+Experiment 37 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.841000
+Experiment 37 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.930000
+Experiment 37 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.243000
+Experiment 37 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.070000
+Experiment 37 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.149000
+Experiment 38 : Creating 10000 Keys time in ms: 25.116000
+Experiment 38 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.177000
+Experiment 38 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 15.861000
+Experiment 38 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.873000
+Experiment 38 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.884000
+Experiment 38 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.132000
+Experiment 38 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.024000
+Experiment 38 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.111000
+Experiment 39 : Creating 10000 Keys time in ms: 24.656000
+Experiment 39 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.733000
+Experiment 39 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 17.010000
+Experiment 39 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 5.029000
+Experiment 39 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.865000
+Experiment 39 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.092000
+Experiment 39 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.150000
+Experiment 39 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 0.982000
+Experiment 40 : Creating 10000 Keys time in ms: 32.127000
+Experiment 40 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.513000
+Experiment 40 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 16.672000
+Experiment 40 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 5.051000
+Experiment 40 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.796000
+Experiment 40 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.299000
+Experiment 40 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.318000
+Experiment 40 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.242000
+Experiment 41 : Creating 10000 Keys time in ms: 25.945000
+Experiment 41 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.865000
+Experiment 41 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 16.142000
+Experiment 41 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.736000
+Experiment 41 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.941000
+Experiment 41 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.167000
+Experiment 41 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.162000
+Experiment 41 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.101000
+Experiment 42 : Creating 10000 Keys time in ms: 33.565000
+Experiment 42 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 5.270000
+Experiment 42 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 17.343000
+Experiment 42 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.988000
+Experiment 42 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 2.034000
+Experiment 42 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.382000
+Experiment 42 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.339000
+Experiment 42 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.227000
+Experiment 43 : Creating 10000 Keys time in ms: 31.542000
+Experiment 43 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 4.456000
+Experiment 43 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 16.175000
+Experiment 43 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 5.248000
+Experiment 43 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.866000
+Experiment 43 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.233000
+Experiment 43 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.103000
+Experiment 43 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.027000
+Experiment 44 : Creating 10000 Keys time in ms: 30.198000
+Experiment 44 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 5.090000
+Experiment 44 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 18.149000
+Experiment 44 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 5.238000
+Experiment 44 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.954000
+Experiment 44 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.224000
+Experiment 44 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.232000
+Experiment 44 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.267000
+Experiment 45 : Creating 10000 Keys time in ms: 35.066000
+Experiment 45 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 5.637000
+Experiment 45 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 15.962000
+Experiment 45 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 5.276000
+Experiment 45 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 1.861000
+Experiment 45 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.107000
+Experiment 45 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.199000
+Experiment 45 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.167000
+Experiment 46 : Creating 10000 Keys time in ms: 36.633000
+Experiment 46 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 6.197000
+Experiment 46 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 18.879000
+Experiment 46 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 6.380000
+Experiment 46 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 2.365000
+Experiment 46 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.453000
+Experiment 46 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.386000
+Experiment 46 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.471000
+Experiment 47 : Creating 10000 Keys time in ms: 36.031000
+Experiment 47 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 5.326000
+Experiment 47 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 19.489000
+Experiment 47 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 5.806000
+Experiment 47 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 2.383000
+Experiment 47 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.282000
+Experiment 47 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.256000
+Experiment 47 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.333000
+Experiment 48 : Creating 10000 Keys time in ms: 35.954000
+Experiment 48 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 5.648000
+Experiment 48 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 17.693000
+Experiment 48 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 5.062000
+Experiment 48 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 2.401000
+Experiment 48 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.317000
+Experiment 48 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.301000
+Experiment 48 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.365000
+Experiment 49 : Creating 10000 Keys time in ms: 34.505000
+Experiment 49 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 5.246000
+Experiment 49 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 16.876000
+Experiment 49 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 4.935000
+Experiment 49 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 2.066000
+Experiment 49 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.232000
+Experiment 49 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.300000
+Experiment 49 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.372000
+Experiment 50 : Creating 10000 Keys time in ms: 35.871000
+Experiment 50 : GetRange : Mode FDB_STREAMING_MODE_ITERATOR : 10000 Keys time in ms: 5.332000
+Experiment 50 : GetRange : Mode FDB_STREAMING_MODE_SMALL : 10000 Keys time in ms: 18.627000
+Experiment 50 : GetRange : Mode FDB_STREAMING_MODE_MEDIUM : 10000 Keys time in ms: 5.628000
+Experiment 50 : GetRange : Mode FDB_STREAMING_MODE_LARGE : 10000 Keys time in ms: 2.093000
+Experiment 50 : GetRange : Mode FDB_STREAMING_MODE_SERIAL : 10000 Keys time in ms: 1.167000
+Experiment 50 : GetRange : Mode FDB_STREAMING_MODE_WANT_ALL : 10000 Keys time in ms: 1.463000
+Experiment 50 : GetRange : Mode FDB_STREAMING_MODE_EXACT : 10000 Keys time in ms: 1.586000

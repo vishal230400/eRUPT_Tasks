@@ -121,13 +121,13 @@ public class SingleGetRange {
         String filename = "task1/results/SingleGetRange.txt";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
             for (int experiment = 0; experiment < 50; experiment++) {
-                long startSetTime = System.nanoTime();
+                long startSetTime = System.currentTimeMillis();
                 for (int i = 0; i < 10000; i++) {
                     FDB.setKey(keys[i], values[i]);
                 }
-                long endSetTime = System.nanoTime();
+                long endSetTime = System.currentTimeMillis();
                 long durationSetTime = (endSetTime - startSetTime);
-                writer.write("Experiment " + (experiment + 1) + " : Creating 10000 Keys time in ns: " + durationSetTime + "\n");
+                writer.write("Experiment " + (experiment + 1) + " : Creating 10000 Keys time in ms: " + durationSetTime + "\n");
                 final int tempExp=experiment+1;
                 FDB.getRange(new byte[]{0x00}, new byte[]{(byte) 0xFF}, StreamingMode.SERIAL, false).thenAccept(results -> {
                     long keySize=0;
@@ -147,12 +147,12 @@ public class SingleGetRange {
                     return null;
                 }).join();
                 for (StreamingMode mode : StreamingMode.values()) {
-                    long startGetRangeTime = System.nanoTime();
+                    long startGetRangeTime = System.currentTimeMillis();
                     FDB.getRange(new byte[]{0x00}, new byte[]{(byte) 0xFF}, mode, false).thenAccept(results -> {
-                        long endGetRangeTime = System.nanoTime();
+                        long endGetRangeTime = System.currentTimeMillis();
                         long durationGetRangeTime = (endGetRangeTime - startGetRangeTime);
                         try {
-                            writer.write("Experiment " + tempExp+ " : GetRange : " + mode + " : 10000 Keys time in ns: " + durationGetRangeTime + "\n");
+                            writer.write("Experiment " + tempExp+ " : GetRange : " + mode + " : 10000 Keys time in ms: " + durationGetRangeTime + "\n");
                         } catch (IOException e) {
                             e.printStackTrace();
                         }

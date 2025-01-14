@@ -18,9 +18,9 @@ public class SampleGraphAppFDB {
     public static void main(String[] args) throws CsvValidationException {
         JanusGraph graph = JanusGraphFactory.open("/home/vishal/github/eRUPT_Tasks/task2/janusgraph-foundationdb/conf/janusgraph-foundationdb.properties");
         initializeSchema(graph);
-        long startSetTime = System.nanoTime();
+        long startSetTime = System.currentTimeMillis();
         loadGraphData(graph, "./task2/src/resources/air-routes-latest-nodes.txt", "./task2/src/resources/air-routes-latest-edges.txt");
-        long endSetTime = System.nanoTime();
+        long endSetTime = System.currentTimeMillis();
         long durationSetTime = (endSetTime - startSetTime);
         System.out.println("Time taken to load to FDB db in ns is: "+durationSetTime);
         verifyGraphData(graph);
