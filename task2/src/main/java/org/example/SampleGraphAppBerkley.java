@@ -27,7 +27,7 @@ public class SampleGraphAppBerkley {
         graph.tx().commit();
         long endSetTime = System.nanoTime();
         long durationSetTime = (endSetTime - startSetTime);
-        System.out.println("Time taken to load to berkley db in ns is: "+durationSetTime);
+        System.out.println("Time taken to load to berkley db in ns is   : "+durationSetTime);
         verifyGraphData(graph);
         graph.close();
         Path path = Paths.get("data/graph");
@@ -56,7 +56,10 @@ public class SampleGraphAppBerkley {
 
     private static long getFolderSize(Path path) throws IOException {
         try (Stream<Path> paths = Files.walk(path)) {
-            return paths.filter(Files::isRegularFile).mapToLong(p -> p.toFile().length()).sum();
+            return paths.filter(Files::isRegularFile)
+                        .peek(p -> System.out.println("File: " + p.toString()+" "+ p.toFile().length()/1_048_576+" MB"))
+                        .mapToLong(p -> p.toFile().length())
+                        .sum();
         }
     }
     private static void initializeSchema(JanusGraph graph) {

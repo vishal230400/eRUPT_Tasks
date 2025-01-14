@@ -43,9 +43,16 @@ c. Report the number of vertices/edges loaded, the time it takes to load and the
 - Here are the below results:
     ```
     Output:
-    Time taken to load to berkley db in ns is: 12622355335
+    Time taken to load to berkley db in ns is   : 11954347867
     Vertex count: 3748
     Edge count: 57645
+    File: data/graph/je.lck 0 MB
+    File: data/graph/je.stat.csv 0 MB
+    File: data/graph/00000001.jdb 9 MB
+    File: data/graph/00000002.jdb 1 MB
+    File: data/graph/00000000.jdb 9 MB
+    File: data/graph/je.config.csv 0 MB
+    File: data/graph/je.info.0 0 MB
     Storage size: 20 MB
     Reloaded graph Details:
     Vertex count: 3748
@@ -56,8 +63,21 @@ c. Report the number of vertices/edges loaded, the time it takes to load and the
     ```
     du -sh data/graph/
     13M     data/graph/
+
+    ls -l data/graph/
+    total 12888
+    -rw-r--r-- 1 vishal vishal 9997935 Jan 13 19:06 00000001.jdb
+    -rw-r--r-- 1 vishal vishal 3172603 Jan 13 19:06 00000002.jdb
+    -rw-r--r-- 1 vishal vishal    7597 Jan 13 19:06 je.config.csv
+    -rw-r--r-- 1 vishal vishal    2801 Jan 13 19:06 je.info.0
+    -rw-r--r-- 1 vishal vishal       0 Jan 13 19:06 je.lck
+    -rw-r--r-- 1 vishal vishal    9264 Jan 13 19:06 je.stat.csv
     ```
-- I am bit confused on this behaviour, as I couldn't find a reasonable explaination for this behaviour.
+- When I looked into it on why data/graph/00000000.jdb is being deleted, I got this (page)[https://www.identityfusion.com/blog/unlocking-the-mystery-behind-the-opendj-user-database#:~:text=Note%3A%20Initial%20log%20files%20are,file%20is%20created%20as%2000000001]
+- It describes that : Over time records are deleted or modified in the log.  OpenDJ performs periodic cleanup of log files and rewrites them to new log files.  This task is performed without action by a system administrator and ensures consistency of the data contained in the log files.
+- Initially, in our usecase vertex are added, then edges are added due to why maybe all the vertex are being called again which makes 00000000.jdb file to get deleted by cleanup.
+- Image for better understanding:
+![Log File](./datatbaselogprocessing1.jpg)
 
 ## Switch to use foundationdb storage backend (see the .tar.gz file attached):
 ```
