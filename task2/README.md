@@ -96,7 +96,9 @@ storage size
 - Downloaded and used tar file given by Hieu locally, and installed using mvn clean install -DskipTests
 - After this I ran, 
     ```
-    mvn install:install-file -Dfile=/home/vishal/github/eRUPT_Tasks/task2/janusgraph-foundationdb/target/janusgraph-foundationdb-0.1.0.jar                          -DgroupId=com.yourcompany                          -DartifactId=janusgraph-foundationdb                          -Dversion=0.1.0                          -Dpackaging=jar```
+    mvn install:install-file -Dfile=/home/vishal/github/eRUPT_Tasks/task2/janusgraph-foundationdb/target/janusgraph-foundationdb-0.1.0.jar                          -DgroupId=com.yourcompany                          -DartifactId=janusgraph-foundationdb                        -Dversion=0.1.0                          
+    -Dpackaging=jar
+    ```
     ```
     mvn install:install-file -Dfile=/home/vishal/github/eRUPT_Tasks/task2/NuGraphCallTracing/target/nugraph-calltracing-1.6.5-RELEASE-jar-with-dependencies.jar                         -DgroupId=com.yourcompany                          -DartifactId=nugraph-calltracing                          -Dversion=1.6.5-RELEASE                          -Dpackaging=jar
     ```
