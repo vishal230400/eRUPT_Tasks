@@ -73,7 +73,7 @@ c. Report the number of vertices/edges loaded, the time it takes to load and the
     -rw-r--r-- 1 vishal vishal       0 Jan 13 19:06 je.lck
     -rw-r--r-- 1 vishal vishal    9264 Jan 13 19:06 je.stat.csv
     ```
-- When I looked into it on why data/graph/00000000.jdb is being deleted, I got this (page)[https://www.identityfusion.com/blog/unlocking-the-mystery-behind-the-opendj-user-database#:~:text=Note%3A%20Initial%20log%20files%20are,file%20is%20created%20as%2000000001]
+- When I looked into it on why data/graph/00000000.jdb is being deleted, I got this [page](https://www.identityfusion.com/blog/unlocking-the-mystery-behind-the-opendj-user-database#:~:text=Note%3A%20Initial%20log%20files%20are,file%20is%20created%20as%2000000001)
 - It describes that : Over time records are deleted or modified in the log.  OpenDJ performs periodic cleanup of log files and rewrites them to new log files.  This task is performed without action by a system administrator and ensures consistency of the data contained in the log files.
 - Initially, in our usecase vertex are added, then edges are added due to why maybe all the vertex are being called again which makes 00000000.jdb file to get deleted by cleanup.
 - Image for better understanding:
