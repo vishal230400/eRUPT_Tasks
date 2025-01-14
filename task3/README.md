@@ -108,14 +108,14 @@ Run the executables which u want to
 
     |              | SingleGetRange | SingleVsMultiRanges |
     |--------------|----------------|---------------------|
-    | Key Creation | 0.017808       | 0.021134            |
-    | WANT_ALL     | 0.000173       | 0.000995            |
-    | ITERATOR     | 0.002459       | 0.004607            |
-    | EXACT        | 0.000312       | 0.000991            |
-    | SMALL        | 0.027092       | 0.014275            |
-    | MEDIUM       | 0.006906       | 0.004194            |
-    | LARGE        | 0.001789       | 0.001707            |
-    | SERIAL       | 0.000252       | 0.001037            |
+    | Key Creation | 17.87368       | 25.71838            |
+    | WANT_ALL     | 0.185400       | 1.087230            |
+    | ITERATOR     | 2.363140       | 4.639100            |
+    | EXACT        | 0.310060       | 1.074680            |
+    | SMALL        | 27.81086       | 15.25914            |
+    | MEDIUM       | 7.106900       | 4.587640            |
+    | LARGE        | 1.862140       | 1.815260            |
+    | SERIAL       | 0.255340       | 1.119300            |
 
 - **Observation**:
     - SMALL / MEDIUM / LARGE has small byte limit for chunk size, so when parallelizm is used we get better performance.

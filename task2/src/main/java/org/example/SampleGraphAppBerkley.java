@@ -27,7 +27,7 @@ public class SampleGraphAppBerkley {
         graph.tx().commit();
         long endSetTime = System.currentTimeMillis();
         long durationSetTime = (endSetTime - startSetTime);
-        System.out.println("Time taken to load to berkley db in ns is   : "+durationSetTime);
+        System.out.println("Time taken to load to berkley db in ms is   : "+durationSetTime);
         verifyGraphData(graph);
         graph.close();
         Path path = Paths.get("data/graph");

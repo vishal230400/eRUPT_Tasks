@@ -43,7 +43,7 @@ c. Report the number of vertices/edges loaded, the time it takes to load and the
 - Here are the below results:
     ```
     Output:
-    Time taken to load to berkley db in ns is   : 11954347867
+    Time taken to load to berkley db in ms is   : 12992
     Vertex count: 3748
     Edge count: 57645
     File: data/graph/je.lck 0 MB
@@ -65,13 +65,13 @@ c. Report the number of vertices/edges loaded, the time it takes to load and the
     13M     data/graph/
 
     ls -l data/graph/
-    total 12888
-    -rw-r--r-- 1 vishal vishal 9997935 Jan 13 19:06 00000001.jdb
-    -rw-r--r-- 1 vishal vishal 3172603 Jan 13 19:06 00000002.jdb
-    -rw-r--r-- 1 vishal vishal    7597 Jan 13 19:06 je.config.csv
-    -rw-r--r-- 1 vishal vishal    2801 Jan 13 19:06 je.info.0
-    -rw-r--r-- 1 vishal vishal       0 Jan 13 19:06 je.lck
-    -rw-r--r-- 1 vishal vishal    9264 Jan 13 19:06 je.stat.csv
+    total 12932
+    -rw-r--r-- 1 vishal vishal 9999761 Jan 14 15:26 00000001.jdb
+    -rw-r--r-- 1 vishal vishal 3213284 Jan 14 15:26 00000002.jdb
+    -rw-r--r-- 1 vishal vishal    7597 Jan 14 15:26 je.config.csv
+    -rw-r--r-- 1 vishal vishal    2798 Jan 14 15:26 je.info.0
+    -rw-r--r-- 1 vishal vishal       0 Jan 14 15:26 je.lck
+    -rw-r--r-- 1 vishal vishal    9249 Jan 14 15:26 je.stat.csv
     ```
 - When I looked into it on why data/graph/00000000.jdb is being deleted, I got this [page](https://www.identityfusion.com/blog/unlocking-the-mystery-behind-the-opendj-user-database#:~:text=Note%3A%20Initial%20log%20files%20are,file%20is%20created%20as%2000000001)
 - It describes that : Over time records are deleted or modified in the log.  OpenDJ performs periodic cleanup of log files and rewrites them to new log files.  This task is performed without action by a system administrator and ensures consistency of the data contained in the log files.
@@ -118,7 +118,7 @@ storage size
 - Here are the below results:
     ```
     Output:
-    Time taken to load to FDB db in ns is: 19599680366
+    Time taken to load to FDB db in ms is: 20800
     Vertex count: 3748
     Edge count: 57645
     Reloaded graph Details:
@@ -130,12 +130,35 @@ storage size
     status details
 
     Data:
-    Replication health     - Healthy
-    Moving data            - 0.000 GB
-    Sum of key-value sizes - 6 MB
-    Disk space used        - 140 MB
+        Replication health     - Healthy
+        Moving data            - 0.000 GB
+        Sum of key-value sizes - 6 MB
+        Disk space used        - 161 MB
     ```
 
 - **Accomplishment**: Create a simple Janusgraph with FDB to store graph which is loaded with air-routes data.
 - **SubTask Completion**: This task was completely by creating java program.
 - **Obstacles**: I was initially having installation difficulties, and dependency issue, which I could solve after debugging.
+
+- **Parallel Loading of Data in FDB**:
+    - To reduce loading time, I tried using multiple threads to load data, code for the same is present in SampleGraphAppFDBMulti.java
+    - Here are the below results:
+    ```
+    Output:
+    Time taken to load to FDB db in ms is: 15427
+    Vertex count: 3748
+    Edge count: 57645
+    Reloaded graph Details:
+    Vertex count: 3748
+    Edge count: 57645
+    ```
+    ```
+    fdbcli
+    status details
+
+    Data:
+        Replication health     - Healthy
+        Moving data            - 0.000 GB
+        Sum of key-value sizes - 6 MB
+        Disk space used        - 161 MB
+    ```

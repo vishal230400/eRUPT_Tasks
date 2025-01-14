@@ -22,7 +22,7 @@ public class SampleGraphAppFDB {
         loadGraphData(graph, "./task2/src/resources/air-routes-latest-nodes.txt", "./task2/src/resources/air-routes-latest-edges.txt");
         long endSetTime = System.currentTimeMillis();
         long durationSetTime = (endSetTime - startSetTime);
-        System.out.println("Time taken to load to FDB db in ns is: "+durationSetTime);
+        System.out.println("Time taken to load to FDB db in ms is: "+durationSetTime);
         verifyGraphData(graph);
         graph.close();
         JanusGraph reopen_graph = JanusGraphFactory.open("/home/vishal/github/eRUPT_Tasks/task2/janusgraph-foundationdb/conf/janusgraph-foundationdb.properties");
