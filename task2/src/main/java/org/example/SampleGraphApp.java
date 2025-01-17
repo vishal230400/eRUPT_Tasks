@@ -21,9 +21,13 @@ public class SampleGraphApp {
         initializeSchema(graph);
         loadGraphData(graph, "./task2/src/resources/air-routes-latest-nodes.txt", "./task2/src/resources/air-routes-latest-edges.txt");
         verifyGraphData(graph);
-        List<Vertex> airportsInUS = graph.traversal().V().hasLabel("airport").has("country", "US").toList();
-        System.out.println("Airports in the US :");
-        for (Vertex airport : airportsInUS) {
+        // List<Vertex> airportsInUS = graph.traversal().V().hasLabel("airport").has("country", "US").toList();
+        // System.out.println("Airports in the US :");
+        // for (Vertex airport : airportsInUS) {
+        //     System.out.println("Airport ID: " + airport.property("identity").value() +", Name: " + airport.property("desc").value() +", ICAO: " + airport.property("icao").value());
+        // }
+        List<Vertex> temp = graph.traversal().V().has("airport", "code", "MAA").outE("route").inV().toList();
+        for (Vertex airport : temp) {
             System.out.println("Airport ID: " + airport.property("identity").value() +", Name: " + airport.property("desc").value() +", ICAO: " + airport.property("icao").value());
         }
         graph.close();

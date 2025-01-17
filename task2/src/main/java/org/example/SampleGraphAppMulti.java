@@ -20,46 +20,72 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-public class SampleGraphAppFDBMulti {
+public class SampleGraphAppMulti {
     public static void main(String[] args) throws CsvValidationException, IOException, InterruptedException, ExecutionException {
-        JanusGraph graph = JanusGraphFactory.open("/home/vishal/github/eRUPT_Tasks/task2/janusgraph-foundationdb/conf/janusgraph-foundationdb.properties");
-        initializeSchema(graph);
-        long startSetTime = System.currentTimeMillis();
-        ExecutorService executorVertex = Executors.newFixedThreadPool(1);
-        List<Future<Void>> futures = new ArrayList<>();
-        List<List<String[]>> nodeChunks = chunkifyFile("./task2/src/resources/air-routes-latest-nodes.txt", 4000);
-        List<List<String[]>> edgeChunks = chunkifyFile("./task2/src/resources/air-routes-latest-edges.txt", 30000);
-        for (List<String[]> chunk : nodeChunks) {
-            futures.add(executorVertex.submit(() -> {
-                addVertices(graph, chunk);
-                return null;
-            }));
+        String[] modes = new String[3];
+        modes[0]="In Memory";
+        modes[1]="Berkley DB";
+        modes[2]="Foundation DB";
+        int[] threads=new int[3];
+        threads[0]=8;
+        threads[1]=1;
+        threads[2]=8;
+        int nodeSize=4000;
+        int edgeSize=60000;
+        for(int i=0;i<3;i++){
+            JanusGraph temp = JanusGraphFactory.build().set("storage.backend", "inmemory").open();
+            if(i==1){
+                temp = JanusGraphFactory.build().set("storage.backend", "berkeleyje").set("storage.directory", "data/graph").open();
+            }
+            if(i==2){
+                temp = JanusGraphFactory.open("/home/vishal/github/eRUPT_Tasks/task2/janusgraph-foundationdb/conf/janusgraph-foundationdb.properties");
+            }
+            final JanusGraph graph=temp;
+            initializeSchema(graph);
+            long startSetTime = System.currentTimeMillis();
+            ExecutorService executorVertex = Executors.newFixedThreadPool(threads[i]); 
+            List<Future<Void>> futures = new ArrayList<>();
+            List<List<String[]>> nodeChunks = chunkifyFile("./task2/src/resources/air-routes-latest-nodes.txt", nodeSize/threads[i]);
+            List<List<String[]>> edgeChunks = chunkifyFile("./task2/src/resources/air-routes-latest-edges.txt", edgeSize/threads[i]);
+            for (List<String[]> chunk : nodeChunks) {
+                futures.add(executorVertex.submit(() -> {
+                    addVertices(graph, chunk);
+                    return null;
+                }));
+            }
+            for (Future<Void> future : futures) {
+                future.get();
+            }
+            executorVertex.shutdown();
+            ExecutorService executorEdge = Executors.newFixedThreadPool(threads[i]);
+            for (List<String[]> chunk : edgeChunks) {
+                futures.add(executorEdge.submit(() -> {
+                    addEdges(graph, chunk);
+                    return null;
+                }));
+            }
+            for (Future<Void> future : futures) {
+                future.get();
+            }
+            executorEdge.shutdown();
+            long endSetTime = System.currentTimeMillis();
+            long durationSetTime = (endSetTime - startSetTime);
+            System.out.println(modes[i]+"--------------------------------------------------");
+            System.out.println("Time taken to load to "+ modes[i] +" in ms is: "+durationSetTime);
+            verifyGraphData(graph);
+            graph.close();
+            JanusGraph reopen_graph = JanusGraphFactory.build().set("storage.backend", "inmemory").open();
+            if(i==1){
+                reopen_graph = JanusGraphFactory.build().set("storage.backend", "berkeleyje").set("storage.directory", "data/graph").open();
+            }
+            if(i==2){
+                reopen_graph = JanusGraphFactory.open("/home/vishal/github/eRUPT_Tasks/task2/janusgraph-foundationdb/conf/janusgraph-foundationdb.properties");
+            }
+            initializeSchema(reopen_graph);
+            System.out.println("Reloaded graph Details:");
+            verifyGraphData(reopen_graph);
+            reopen_graph.close();
         }
-        for (Future<Void> future : futures) {
-            future.get();
-        }
-        executorVertex.shutdown();
-        ExecutorService executorEdge = Executors.newFixedThreadPool(2);
-        for (List<String[]> chunk : edgeChunks) {
-            futures.add(executorEdge.submit(() -> {
-                addEdges(graph, chunk);
-                return null;
-            }));
-        }
-        for (Future<Void> future : futures) {
-            future.get();
-        }
-        executorEdge.shutdown();
-        long endSetTime = System.currentTimeMillis();
-        long durationSetTime = (endSetTime - startSetTime);
-        System.out.println("Time taken to load to FDB db in ms is: "+durationSetTime);
-        verifyGraphData(graph);
-        graph.close();
-        JanusGraph reopen_graph = JanusGraphFactory.open("/home/vishal/github/eRUPT_Tasks/task2/janusgraph-foundationdb/conf/janusgraph-foundationdb.properties");
-        initializeSchema(reopen_graph);
-        System.out.println("Reloaded graph Details:");
-        verifyGraphData(reopen_graph);
-        reopen_graph.close();
     }
 
     private static List<List<String[]>> chunkifyFile(String filePath, int chunkSize) throws IOException, CsvValidationException {
@@ -216,6 +242,7 @@ public class SampleGraphAppFDBMulti {
             }
 
             String id = parts[0].strip();
+            String label = parts[1];
             String type = parts[2];
             String code = parts[3];
             String icao = parts[4];
@@ -224,14 +251,14 @@ public class SampleGraphAppFDBMulti {
             String country = parts[10];
             String city = parts[11];
             
-            if (type.equals("airport")) {
+            if (label.equals("airport")) {
                 int runways = parts[7].isEmpty() ? 0 : Integer.parseInt(parts[7]);
                 int longest = parts[8].isEmpty() ? 0 : Integer.parseInt(parts[8]);
                 int elev = parts[9].isEmpty() ? 0 : Integer.parseInt(parts[9]);
                 double lat = parts[12].isEmpty() ? 0.0 : Double.parseDouble(parts[12]);
                 double lon = parts[13].isEmpty() ? 0.0 : Double.parseDouble(parts[13]);
 
-                g.addV(type).property("code", code)
+                g.addV(label).property("code", code)
                         .property("identity", id)
                         .property("icao", icao)
                         .property("desc", desc)
@@ -243,17 +270,22 @@ public class SampleGraphAppFDBMulti {
                         .property("city", city)
                         .property("lat", lat)
                         .property("lon", lon)
+                        .property("type",type)
                         .next();
-            } else if (type.equals("country") || type.equals("continent")) {
-                g.addV(type).property("code", code)
+            } else if (label.equals("country") ) {
+                g.addV(label).property("code", code)
                         .property("identity", id)
                         .property("desc", desc)
-                        .property("country", country)
-                        .property("city", city)
+                        .property("type",type)
+                        .next();
+            } else if (label.equals("continent")){
+                g.addV(label).property("code", code)
+                        .property("identity", id)
+                        .property("desc", desc)
+                        .property("type",type)
                         .next();
             }
         }
-
         g.tx().commit();
     }
 
@@ -288,7 +320,6 @@ public class SampleGraphAppFDBMulti {
                 }
             }
         }
-
         g.tx().commit();
     }
 }
