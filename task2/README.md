@@ -140,12 +140,27 @@ storage size
 - **SubTask Completion**: This task was completely by creating java program.
 - **Obstacles**: I was initially having installation difficulties, and dependency issue, which I could solve after debugging.
 
-- **Parallel Loading of Data in FDB**:
-    - To reduce loading time, I tried using multiple threads to load data, code for the same is present in SampleGraphAppFDBMulti.java
+- **Parallel Loading of Data and using Single Code with just Graph building/Threads parameter**:
+    - To load graph with different storage backend with simple changes in code SampleGraphAppMulti.java
     - Here are the below results:
     ```
     Output:
-    Time taken to load to FDB db in ms is: 15427
+    In Memory--------------------------------------------------
+    Time taken to load to In Memory in ms is: 7206
+    Vertex count: 3748
+    Edge count: 57645
+    Reloaded graph Details:
+    Vertex count: 0
+    Edge count: 0
+    Berkley DB--------------------------------------------------
+    Time taken to load to Berkley DB in ms is: 15238
+    Vertex count: 3748
+    Edge count: 57645
+    Reloaded graph Details:
+    Vertex count: 3748
+    Edge count: 57645
+    Foundation DB--------------------------------------------------
+    Time taken to load to Foundation DB in ms is: 9695
     Vertex count: 3748
     Edge count: 57645
     Reloaded graph Details:
@@ -157,8 +172,22 @@ storage size
     status details
 
     Data:
-        Replication health     - Healthy
-        Moving data            - 0.000 GB
-        Sum of key-value sizes - 6 MB
-        Disk space used        - 161 MB
+        FDB:
+            Replication health     - Healthy
+            Moving data            - 0.000 GB
+            Sum of key-value sizes - 7 MB
+            Disk space used        - 161 MB
+    
+        Berkley DB:
+            du -sh data/
+            13M     data/
+
+            ls -l data/graph/
+            total 12652
+            -rw-r--r-- 1 vishal vishal 9999470 Jan 16 22:28 00000001.jdb
+            -rw-r--r-- 1 vishal vishal 2927841 Jan 16 22:28 00000002.jdb
+            -rw-r--r-- 1 vishal vishal    7597 Jan 16 22:28 je.config.csv
+            -rw-r--r-- 1 vishal vishal    2806 Jan 16 22:28 je.info.0
+            -rw-r--r-- 1 vishal vishal       0 Jan 16 22:28 je.lck
+            -rw-r--r-- 1 vishal vishal    9299 Jan 16 22:28 je.stat.csv
     ```
