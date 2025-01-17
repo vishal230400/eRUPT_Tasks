@@ -11,6 +11,7 @@ CMakeFiles/TransactionConflict.dir/tx_conflict.c.o
  /usr/include/foundationdb/fdb_c_options.g.h
  /usr/include/pthread.h
  /usr/include/sched.h
+ /usr/include/semaphore.h
  /usr/include/stdc-predef.h
  /usr/include/stdint.h
  /usr/include/stdio.h
@@ -33,6 +34,7 @@ CMakeFiles/TransactionConflict.dir/tx_conflict.c.o
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
  /usr/include/x86_64-linux-gnu/bits/sched.h
  /usr/include/x86_64-linux-gnu/bits/select.h
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h
  /usr/include/x86_64-linux-gnu/bits/setjmp.h
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h

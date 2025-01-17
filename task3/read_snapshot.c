@@ -5,6 +5,9 @@
 #include <string.h>
 #include <time.h>
 #include <pthread.h>
+#include <semaphore.h>
+
+sem_t semaphoreT4;
 
 void check_fdb_error(fdb_error_t err) {
     if (err) {
@@ -90,7 +93,6 @@ void* network_thread_func(void* arg) {
 }
 
 void check_transaction_commit(FDBTransaction* tr) {
-    int committed = 0;
     FDBFuture *commitFuture = fdb_transaction_commit(tr);
     check_fdb_error(fdb_future_block_until_ready(commitFuture));
 
@@ -99,9 +101,6 @@ void check_transaction_commit(FDBTransaction* tr) {
         fprintf(stderr, "Commit failed: %s\n", fdb_get_error(err));
         fdb_future_destroy(commitFuture);
         exit(EXIT_FAILURE);
-    } else {
-        committed = 1;
-        printf("Transaction committed successfully.\n");
     }
     fdb_future_destroy(commitFuture);
 }
@@ -114,18 +113,14 @@ void* transaction_t1(void* arg) {
 
     char* valueK1 = get_value(tr1, "K1");
     char* valueK2 = get_value(tr1, "K2");
+    sem_post(&semaphoreT4);
     char* valueK3 = get_value(tr1, "K3");
-
     printf("T1 reads K1: %s\n", valueK1);
     printf("T1 reads K2: %s\n", valueK2);
     printf("T1 reads K3: %s\n", valueK3);
-
     free(valueK1);
     free(valueK2);
     free(valueK3);
-
-    sleep(1);
-
     check_transaction_commit(tr1);
     fdb_transaction_destroy(tr1);
     printf("T1 committed.\n");
@@ -134,19 +129,16 @@ void* transaction_t1(void* arg) {
 }
 
 void* transaction_t4(void* arg) {
+    sem_wait(&semaphoreT4);
     FDBDatabase* db = (FDBDatabase*)arg;
     FDBTransaction* tr4;
     fdb_error_t err = fdb_database_create_transaction(db, &tr4);
     check_fdb_error(err);
-
     set_key(tr4, "K2", "NewValue2");
     set_key(tr4, "K4", "NewValue4");
-    
-    sleep(1);
     check_transaction_commit(tr4);
     fdb_transaction_destroy(tr4);
     printf("T4 committed.\n");
-
     return NULL;
 }
 
@@ -174,6 +166,7 @@ int main() {
     set_key(tr1, "K4", "Value4");
     check_transaction_commit(tr1);
     fdb_transaction_destroy(tr1);
+    sem_init(&semaphoreT4, 0, 0);
     pthread_t t1_thread, t4_thread;
     err = pthread_create(&t1_thread, NULL, transaction_t1, (void*)db);
     if (err != 0) {
@@ -191,5 +184,6 @@ int main() {
     err = fdb_stop_network();
     check_fdb_error(err);
     pthread_join(network_thread, NULL);
+    sem_destroy(&semaphoreT4);
     return 0;
 }

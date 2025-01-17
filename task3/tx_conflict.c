@@ -5,6 +5,9 @@
 #include <string.h>
 #include <time.h>
 #include <pthread.h>
+#include <semaphore.h>
+
+sem_t semaphoreT2;
 
 void check_fdb_error(fdb_error_t err) {
     if (err) {
@@ -90,7 +93,6 @@ void* network_thread_func(void* arg) {
 }
 
 void check_transaction_commit(FDBTransaction* tr) {
-    int committed = 0;
     FDBFuture *commitFuture = fdb_transaction_commit(tr);
     check_fdb_error(fdb_future_block_until_ready(commitFuture));
 
@@ -99,9 +101,6 @@ void check_transaction_commit(FDBTransaction* tr) {
         fprintf(stderr, "Commit failed: %s\n", fdb_get_error(err));
         fdb_future_destroy(commitFuture);
         exit(EXIT_FAILURE);
-    } else {
-        committed = 1;
-        printf("Transaction committed successfully.\n");
     }
     fdb_future_destroy(commitFuture);
 }
@@ -114,7 +113,8 @@ void* transaction_t1(void* arg) {
     char* value = get_value(tr1, "K1");
     printf("T1 reads K1: %s\n", value);
     free(value);
-    sleep(3);
+    sem_post(&semaphoreT2);
+    sleep(1);
     set_key(tr1, "K2", "UpdatedByT1");
     check_transaction_commit(tr1);
     fdb_transaction_destroy(tr1);
@@ -123,6 +123,7 @@ void* transaction_t1(void* arg) {
 }
 
 void* transaction_t2(void* arg) {
+    sem_wait(&semaphoreT2);
     FDBDatabase* db = (FDBDatabase*)arg;
     FDBTransaction* tr1;
     fdb_error_t err = fdb_database_create_transaction(db, &tr1);
@@ -130,7 +131,6 @@ void* transaction_t2(void* arg) {
     char* value = get_value(tr1, "K2");
     printf("T1 reads K2: %s\n", value);
     free(value);
-    sleep(1);
     set_key(tr1, "K1", "UpdatedByT2");
     check_transaction_commit(tr1);
     fdb_transaction_destroy(tr1);
@@ -160,6 +160,7 @@ int main() {
     set_key(tr1, "K2", "Value2");
     check_transaction_commit(tr1);
     fdb_transaction_destroy(tr1);
+    sem_init(&semaphoreT2, 0, 0);
     pthread_t t1_thread, t2_thread;
     err = pthread_create(&t1_thread, NULL, transaction_t1, (void*)db);
     if (err != 0) {
@@ -177,5 +178,6 @@ int main() {
     err = fdb_stop_network();
     check_fdb_error(err);
     pthread_join(network_thread, NULL);
+    sem_destroy(&semaphoreT2);
     return 0;
 }

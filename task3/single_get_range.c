@@ -116,7 +116,6 @@ void* network_thread_func(void* arg) {
 }
 
 void check_transaction_commit(FDBTransaction* tr) {
-    int committed = 0;
     FDBFuture *commitFuture = fdb_transaction_commit(tr);
     check_fdb_error(fdb_future_block_until_ready(commitFuture));
 
@@ -125,9 +124,6 @@ void check_transaction_commit(FDBTransaction* tr) {
         fprintf(stderr, "Commit failed: %s\n", fdb_get_error(err));
         fdb_future_destroy(commitFuture);
         exit(EXIT_FAILURE);
-    } else {
-        committed = 1;
-        //printf("Transaction committed successfully.\n");
     }
     fdb_future_destroy(commitFuture);
 }
