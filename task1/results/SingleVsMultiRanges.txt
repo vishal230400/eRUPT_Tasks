@@ -1,500 +1,500 @@
-Experiment 1 : Creating 10000 Keys time in ms: 38477
+Experiment 1 : Creating 10000 Keys time in ms: 119
 Experiment 1 : KeySize in Bytes: 100000
 Experiment 1 : ValueSize in Bytes: 120000
 Experiment 1 : GetRange : WANT_ALL : 10000 Keys time in ms: 10
-Experiment 1 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 1 : GetRange : EXACT : 10000 Keys time in ms: 4
-Experiment 1 : GetRange : SMALL : 10000 Keys time in ms: 84
-Experiment 1 : GetRange : MEDIUM : 10000 Keys time in ms: 23
-Experiment 1 : GetRange : LARGE : 10000 Keys time in ms: 10
-Experiment 1 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 2 : Creating 10000 Keys time in ms: 24244
+Experiment 1 : GetRange : ITERATOR : 10000 Keys time in ms: 4
+Experiment 1 : GetRange : EXACT : 10000 Keys time in ms: 3
+Experiment 1 : GetRange : SMALL : 10000 Keys time in ms: 75
+Experiment 1 : GetRange : MEDIUM : 10000 Keys time in ms: 22
+Experiment 1 : GetRange : LARGE : 10000 Keys time in ms: 8
+Experiment 1 : GetRange : SERIAL : 10000 Keys time in ms: 2
+Experiment 2 : Creating 10000 Keys time in ms: 44
 Experiment 2 : KeySize in Bytes: 100000
 Experiment 2 : ValueSize in Bytes: 120000
-Experiment 2 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 2 : GetRange : ITERATOR : 10000 Keys time in ms: 5
+Experiment 2 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
+Experiment 2 : GetRange : ITERATOR : 10000 Keys time in ms: 6
 Experiment 2 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 2 : GetRange : SMALL : 10000 Keys time in ms: 68
-Experiment 2 : GetRange : MEDIUM : 10000 Keys time in ms: 19
-Experiment 2 : GetRange : LARGE : 10000 Keys time in ms: 9
-Experiment 2 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 3 : Creating 10000 Keys time in ms: 24669
+Experiment 2 : GetRange : SMALL : 10000 Keys time in ms: 74
+Experiment 2 : GetRange : MEDIUM : 10000 Keys time in ms: 22
+Experiment 2 : GetRange : LARGE : 10000 Keys time in ms: 11
+Experiment 2 : GetRange : SERIAL : 10000 Keys time in ms: 7
+Experiment 3 : Creating 10000 Keys time in ms: 45
 Experiment 3 : KeySize in Bytes: 100000
 Experiment 3 : ValueSize in Bytes: 120000
-Experiment 3 : GetRange : WANT_ALL : 10000 Keys time in ms: 5
+Experiment 3 : GetRange : WANT_ALL : 10000 Keys time in ms: 8
 Experiment 3 : GetRange : ITERATOR : 10000 Keys time in ms: 5
-Experiment 3 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 3 : GetRange : SMALL : 10000 Keys time in ms: 72
-Experiment 3 : GetRange : MEDIUM : 10000 Keys time in ms: 25
-Experiment 3 : GetRange : LARGE : 10000 Keys time in ms: 9
-Experiment 3 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 4 : Creating 10000 Keys time in ms: 24049
+Experiment 3 : GetRange : EXACT : 10000 Keys time in ms: 6
+Experiment 3 : GetRange : SMALL : 10000 Keys time in ms: 70
+Experiment 3 : GetRange : MEDIUM : 10000 Keys time in ms: 30
+Experiment 3 : GetRange : LARGE : 10000 Keys time in ms: 10
+Experiment 3 : GetRange : SERIAL : 10000 Keys time in ms: 9
+Experiment 4 : Creating 10000 Keys time in ms: 50
 Experiment 4 : KeySize in Bytes: 100000
 Experiment 4 : ValueSize in Bytes: 120000
 Experiment 4 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
 Experiment 4 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 4 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 4 : GetRange : SMALL : 10000 Keys time in ms: 85
-Experiment 4 : GetRange : MEDIUM : 10000 Keys time in ms: 24
-Experiment 4 : GetRange : LARGE : 10000 Keys time in ms: 11
-Experiment 4 : GetRange : SERIAL : 10000 Keys time in ms: 7
-Experiment 5 : Creating 10000 Keys time in ms: 23763
+Experiment 4 : GetRange : EXACT : 10000 Keys time in ms: 5
+Experiment 4 : GetRange : SMALL : 10000 Keys time in ms: 77
+Experiment 4 : GetRange : MEDIUM : 10000 Keys time in ms: 23
+Experiment 4 : GetRange : LARGE : 10000 Keys time in ms: 10
+Experiment 4 : GetRange : SERIAL : 10000 Keys time in ms: 6
+Experiment 5 : Creating 10000 Keys time in ms: 48
 Experiment 5 : KeySize in Bytes: 100000
 Experiment 5 : ValueSize in Bytes: 120000
-Experiment 5 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
+Experiment 5 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
 Experiment 5 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 5 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 5 : GetRange : SMALL : 10000 Keys time in ms: 66
-Experiment 5 : GetRange : MEDIUM : 10000 Keys time in ms: 22
-Experiment 5 : GetRange : LARGE : 10000 Keys time in ms: 10
+Experiment 5 : GetRange : EXACT : 10000 Keys time in ms: 6
+Experiment 5 : GetRange : SMALL : 10000 Keys time in ms: 64
+Experiment 5 : GetRange : MEDIUM : 10000 Keys time in ms: 24
+Experiment 5 : GetRange : LARGE : 10000 Keys time in ms: 9
 Experiment 5 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 6 : Creating 10000 Keys time in ms: 23940
+Experiment 6 : Creating 10000 Keys time in ms: 49
 Experiment 6 : KeySize in Bytes: 100000
 Experiment 6 : ValueSize in Bytes: 120000
-Experiment 6 : GetRange : WANT_ALL : 10000 Keys time in ms: 8
-Experiment 6 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 6 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 6 : GetRange : SMALL : 10000 Keys time in ms: 74
-Experiment 6 : GetRange : MEDIUM : 10000 Keys time in ms: 23
-Experiment 6 : GetRange : LARGE : 10000 Keys time in ms: 11
+Experiment 6 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
+Experiment 6 : GetRange : ITERATOR : 10000 Keys time in ms: 7
+Experiment 6 : GetRange : EXACT : 10000 Keys time in ms: 7
+Experiment 6 : GetRange : SMALL : 10000 Keys time in ms: 76
+Experiment 6 : GetRange : MEDIUM : 10000 Keys time in ms: 26
+Experiment 6 : GetRange : LARGE : 10000 Keys time in ms: 9
 Experiment 6 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 7 : Creating 10000 Keys time in ms: 23975
+Experiment 7 : Creating 10000 Keys time in ms: 50
 Experiment 7 : KeySize in Bytes: 100000
 Experiment 7 : ValueSize in Bytes: 120000
 Experiment 7 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
 Experiment 7 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 7 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 7 : GetRange : SMALL : 10000 Keys time in ms: 55
-Experiment 7 : GetRange : MEDIUM : 10000 Keys time in ms: 21
-Experiment 7 : GetRange : LARGE : 10000 Keys time in ms: 10
+Experiment 7 : GetRange : EXACT : 10000 Keys time in ms: 7
+Experiment 7 : GetRange : SMALL : 10000 Keys time in ms: 71
+Experiment 7 : GetRange : MEDIUM : 10000 Keys time in ms: 25
+Experiment 7 : GetRange : LARGE : 10000 Keys time in ms: 9
 Experiment 7 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 8 : Creating 10000 Keys time in ms: 23705
+Experiment 8 : Creating 10000 Keys time in ms: 44
 Experiment 8 : KeySize in Bytes: 100000
 Experiment 8 : ValueSize in Bytes: 120000
-Experiment 8 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 8 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 8 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 8 : GetRange : SMALL : 10000 Keys time in ms: 74
-Experiment 8 : GetRange : MEDIUM : 10000 Keys time in ms: 26
-Experiment 8 : GetRange : LARGE : 10000 Keys time in ms: 11
+Experiment 8 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
+Experiment 8 : GetRange : ITERATOR : 10000 Keys time in ms: 5
+Experiment 8 : GetRange : EXACT : 10000 Keys time in ms: 6
+Experiment 8 : GetRange : SMALL : 10000 Keys time in ms: 71
+Experiment 8 : GetRange : MEDIUM : 10000 Keys time in ms: 23
+Experiment 8 : GetRange : LARGE : 10000 Keys time in ms: 9
 Experiment 8 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 9 : Creating 10000 Keys time in ms: 23882
+Experiment 9 : Creating 10000 Keys time in ms: 42
 Experiment 9 : KeySize in Bytes: 100000
 Experiment 9 : ValueSize in Bytes: 120000
-Experiment 9 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 9 : GetRange : ITERATOR : 10000 Keys time in ms: 5
-Experiment 9 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 9 : GetRange : SMALL : 10000 Keys time in ms: 84
-Experiment 9 : GetRange : MEDIUM : 10000 Keys time in ms: 20
-Experiment 9 : GetRange : LARGE : 10000 Keys time in ms: 9
+Experiment 9 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
+Experiment 9 : GetRange : ITERATOR : 10000 Keys time in ms: 6
+Experiment 9 : GetRange : EXACT : 10000 Keys time in ms: 6
+Experiment 9 : GetRange : SMALL : 10000 Keys time in ms: 72
+Experiment 9 : GetRange : MEDIUM : 10000 Keys time in ms: 22
+Experiment 9 : GetRange : LARGE : 10000 Keys time in ms: 10
 Experiment 9 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 10 : Creating 10000 Keys time in ms: 23927
+Experiment 10 : Creating 10000 Keys time in ms: 41
 Experiment 10 : KeySize in Bytes: 100000
 Experiment 10 : ValueSize in Bytes: 120000
 Experiment 10 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
 Experiment 10 : GetRange : ITERATOR : 10000 Keys time in ms: 6
 Experiment 10 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 10 : GetRange : SMALL : 10000 Keys time in ms: 71
-Experiment 10 : GetRange : MEDIUM : 10000 Keys time in ms: 26
-Experiment 10 : GetRange : LARGE : 10000 Keys time in ms: 10
-Experiment 10 : GetRange : SERIAL : 10000 Keys time in ms: 7
-Experiment 11 : Creating 10000 Keys time in ms: 24011
+Experiment 10 : GetRange : SMALL : 10000 Keys time in ms: 72
+Experiment 10 : GetRange : MEDIUM : 10000 Keys time in ms: 23
+Experiment 10 : GetRange : LARGE : 10000 Keys time in ms: 11
+Experiment 10 : GetRange : SERIAL : 10000 Keys time in ms: 6
+Experiment 11 : Creating 10000 Keys time in ms: 53
 Experiment 11 : KeySize in Bytes: 100000
 Experiment 11 : ValueSize in Bytes: 120000
-Experiment 11 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
+Experiment 11 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
 Experiment 11 : GetRange : ITERATOR : 10000 Keys time in ms: 6
 Experiment 11 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 11 : GetRange : SMALL : 10000 Keys time in ms: 74
-Experiment 11 : GetRange : MEDIUM : 10000 Keys time in ms: 21
-Experiment 11 : GetRange : LARGE : 10000 Keys time in ms: 12
-Experiment 11 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 12 : Creating 10000 Keys time in ms: 24041
+Experiment 11 : GetRange : SMALL : 10000 Keys time in ms: 76
+Experiment 11 : GetRange : MEDIUM : 10000 Keys time in ms: 20
+Experiment 11 : GetRange : LARGE : 10000 Keys time in ms: 11
+Experiment 11 : GetRange : SERIAL : 10000 Keys time in ms: 7
+Experiment 12 : Creating 10000 Keys time in ms: 58
 Experiment 12 : KeySize in Bytes: 100000
 Experiment 12 : ValueSize in Bytes: 120000
 Experiment 12 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
-Experiment 12 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 12 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 12 : GetRange : SMALL : 10000 Keys time in ms: 75
-Experiment 12 : GetRange : MEDIUM : 10000 Keys time in ms: 24
-Experiment 12 : GetRange : LARGE : 10000 Keys time in ms: 8
+Experiment 12 : GetRange : ITERATOR : 10000 Keys time in ms: 7
+Experiment 12 : GetRange : EXACT : 10000 Keys time in ms: 6
+Experiment 12 : GetRange : SMALL : 10000 Keys time in ms: 69
+Experiment 12 : GetRange : MEDIUM : 10000 Keys time in ms: 23
+Experiment 12 : GetRange : LARGE : 10000 Keys time in ms: 9
 Experiment 12 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 13 : Creating 10000 Keys time in ms: 23583
+Experiment 13 : Creating 10000 Keys time in ms: 42
 Experiment 13 : KeySize in Bytes: 100000
 Experiment 13 : ValueSize in Bytes: 120000
 Experiment 13 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
 Experiment 13 : GetRange : ITERATOR : 10000 Keys time in ms: 6
 Experiment 13 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 13 : GetRange : SMALL : 10000 Keys time in ms: 74
-Experiment 13 : GetRange : MEDIUM : 10000 Keys time in ms: 26
-Experiment 13 : GetRange : LARGE : 10000 Keys time in ms: 12
-Experiment 13 : GetRange : SERIAL : 10000 Keys time in ms: 7
-Experiment 14 : Creating 10000 Keys time in ms: 23969
+Experiment 13 : GetRange : SMALL : 10000 Keys time in ms: 68
+Experiment 13 : GetRange : MEDIUM : 10000 Keys time in ms: 24
+Experiment 13 : GetRange : LARGE : 10000 Keys time in ms: 9
+Experiment 13 : GetRange : SERIAL : 10000 Keys time in ms: 6
+Experiment 14 : Creating 10000 Keys time in ms: 43
 Experiment 14 : KeySize in Bytes: 100000
 Experiment 14 : ValueSize in Bytes: 120000
-Experiment 14 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
+Experiment 14 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
 Experiment 14 : GetRange : ITERATOR : 10000 Keys time in ms: 5
-Experiment 14 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 14 : GetRange : SMALL : 10000 Keys time in ms: 87
-Experiment 14 : GetRange : MEDIUM : 10000 Keys time in ms: 20
+Experiment 14 : GetRange : EXACT : 10000 Keys time in ms: 5
+Experiment 14 : GetRange : SMALL : 10000 Keys time in ms: 71
+Experiment 14 : GetRange : MEDIUM : 10000 Keys time in ms: 24
 Experiment 14 : GetRange : LARGE : 10000 Keys time in ms: 9
-Experiment 14 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 15 : Creating 10000 Keys time in ms: 23718
+Experiment 14 : GetRange : SERIAL : 10000 Keys time in ms: 5
+Experiment 15 : Creating 10000 Keys time in ms: 42
 Experiment 15 : KeySize in Bytes: 100000
 Experiment 15 : ValueSize in Bytes: 120000
-Experiment 15 : GetRange : WANT_ALL : 10000 Keys time in ms: 8
-Experiment 15 : GetRange : ITERATOR : 10000 Keys time in ms: 7
-Experiment 15 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 15 : GetRange : SMALL : 10000 Keys time in ms: 73
-Experiment 15 : GetRange : MEDIUM : 10000 Keys time in ms: 22
-Experiment 15 : GetRange : LARGE : 10000 Keys time in ms: 9
-Experiment 15 : GetRange : SERIAL : 10000 Keys time in ms: 5
-Experiment 16 : Creating 10000 Keys time in ms: 23851
+Experiment 15 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
+Experiment 15 : GetRange : ITERATOR : 10000 Keys time in ms: 5
+Experiment 15 : GetRange : EXACT : 10000 Keys time in ms: 5
+Experiment 15 : GetRange : SMALL : 10000 Keys time in ms: 68
+Experiment 15 : GetRange : MEDIUM : 10000 Keys time in ms: 23
+Experiment 15 : GetRange : LARGE : 10000 Keys time in ms: 10
+Experiment 15 : GetRange : SERIAL : 10000 Keys time in ms: 6
+Experiment 16 : Creating 10000 Keys time in ms: 42
 Experiment 16 : KeySize in Bytes: 100000
 Experiment 16 : ValueSize in Bytes: 120000
 Experiment 16 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
 Experiment 16 : GetRange : ITERATOR : 10000 Keys time in ms: 5
 Experiment 16 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 16 : GetRange : SMALL : 10000 Keys time in ms: 75
-Experiment 16 : GetRange : MEDIUM : 10000 Keys time in ms: 22
-Experiment 16 : GetRange : LARGE : 10000 Keys time in ms: 10
-Experiment 16 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 17 : Creating 10000 Keys time in ms: 46305
+Experiment 16 : GetRange : SMALL : 10000 Keys time in ms: 69
+Experiment 16 : GetRange : MEDIUM : 10000 Keys time in ms: 25
+Experiment 16 : GetRange : LARGE : 10000 Keys time in ms: 11
+Experiment 16 : GetRange : SERIAL : 10000 Keys time in ms: 5
+Experiment 17 : Creating 10000 Keys time in ms: 42
 Experiment 17 : KeySize in Bytes: 100000
 Experiment 17 : ValueSize in Bytes: 120000
 Experiment 17 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
 Experiment 17 : GetRange : ITERATOR : 10000 Keys time in ms: 5
-Experiment 17 : GetRange : EXACT : 10000 Keys time in ms: 4
-Experiment 17 : GetRange : SMALL : 10000 Keys time in ms: 68
-Experiment 17 : GetRange : MEDIUM : 10000 Keys time in ms: 19
-Experiment 17 : GetRange : LARGE : 10000 Keys time in ms: 10
+Experiment 17 : GetRange : EXACT : 10000 Keys time in ms: 5
+Experiment 17 : GetRange : SMALL : 10000 Keys time in ms: 71
+Experiment 17 : GetRange : MEDIUM : 10000 Keys time in ms: 25
+Experiment 17 : GetRange : LARGE : 10000 Keys time in ms: 11
 Experiment 17 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 18 : Creating 10000 Keys time in ms: 24080
+Experiment 18 : Creating 10000 Keys time in ms: 45
 Experiment 18 : KeySize in Bytes: 100000
 Experiment 18 : ValueSize in Bytes: 120000
-Experiment 18 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
-Experiment 18 : GetRange : ITERATOR : 10000 Keys time in ms: 7
-Experiment 18 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 18 : GetRange : SMALL : 10000 Keys time in ms: 74
-Experiment 18 : GetRange : MEDIUM : 10000 Keys time in ms: 25
+Experiment 18 : GetRange : WANT_ALL : 10000 Keys time in ms: 5
+Experiment 18 : GetRange : ITERATOR : 10000 Keys time in ms: 6
+Experiment 18 : GetRange : EXACT : 10000 Keys time in ms: 4
+Experiment 18 : GetRange : SMALL : 10000 Keys time in ms: 69
+Experiment 18 : GetRange : MEDIUM : 10000 Keys time in ms: 23
 Experiment 18 : GetRange : LARGE : 10000 Keys time in ms: 10
-Experiment 18 : GetRange : SERIAL : 10000 Keys time in ms: 7
-Experiment 19 : Creating 10000 Keys time in ms: 23906
+Experiment 18 : GetRange : SERIAL : 10000 Keys time in ms: 5
+Experiment 19 : Creating 10000 Keys time in ms: 43
 Experiment 19 : KeySize in Bytes: 100000
 Experiment 19 : ValueSize in Bytes: 120000
-Experiment 19 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
-Experiment 19 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 19 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 19 : GetRange : SMALL : 10000 Keys time in ms: 83
-Experiment 19 : GetRange : MEDIUM : 10000 Keys time in ms: 22
+Experiment 19 : GetRange : WANT_ALL : 10000 Keys time in ms: 5
+Experiment 19 : GetRange : ITERATOR : 10000 Keys time in ms: 5
+Experiment 19 : GetRange : EXACT : 10000 Keys time in ms: 5
+Experiment 19 : GetRange : SMALL : 10000 Keys time in ms: 72
+Experiment 19 : GetRange : MEDIUM : 10000 Keys time in ms: 24
 Experiment 19 : GetRange : LARGE : 10000 Keys time in ms: 10
-Experiment 19 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 20 : Creating 10000 Keys time in ms: 23951
+Experiment 19 : GetRange : SERIAL : 10000 Keys time in ms: 5
+Experiment 20 : Creating 10000 Keys time in ms: 41
 Experiment 20 : KeySize in Bytes: 100000
 Experiment 20 : ValueSize in Bytes: 120000
-Experiment 20 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
-Experiment 20 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 20 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 20 : GetRange : SMALL : 10000 Keys time in ms: 75
-Experiment 20 : GetRange : MEDIUM : 10000 Keys time in ms: 22
-Experiment 20 : GetRange : LARGE : 10000 Keys time in ms: 11
-Experiment 20 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 21 : Creating 10000 Keys time in ms: 23631
+Experiment 20 : GetRange : WANT_ALL : 10000 Keys time in ms: 5
+Experiment 20 : GetRange : ITERATOR : 10000 Keys time in ms: 5
+Experiment 20 : GetRange : EXACT : 10000 Keys time in ms: 5
+Experiment 20 : GetRange : SMALL : 10000 Keys time in ms: 72
+Experiment 20 : GetRange : MEDIUM : 10000 Keys time in ms: 21
+Experiment 20 : GetRange : LARGE : 10000 Keys time in ms: 9
+Experiment 20 : GetRange : SERIAL : 10000 Keys time in ms: 7
+Experiment 21 : Creating 10000 Keys time in ms: 40
 Experiment 21 : KeySize in Bytes: 100000
 Experiment 21 : ValueSize in Bytes: 120000
 Experiment 21 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
 Experiment 21 : GetRange : ITERATOR : 10000 Keys time in ms: 6
 Experiment 21 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 21 : GetRange : SMALL : 10000 Keys time in ms: 74
-Experiment 21 : GetRange : MEDIUM : 10000 Keys time in ms: 25
-Experiment 21 : GetRange : LARGE : 10000 Keys time in ms: 9
+Experiment 21 : GetRange : SMALL : 10000 Keys time in ms: 72
+Experiment 21 : GetRange : MEDIUM : 10000 Keys time in ms: 22
+Experiment 21 : GetRange : LARGE : 10000 Keys time in ms: 10
 Experiment 21 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 22 : Creating 10000 Keys time in ms: 24099
+Experiment 22 : Creating 10000 Keys time in ms: 53
 Experiment 22 : KeySize in Bytes: 100000
 Experiment 22 : ValueSize in Bytes: 120000
-Experiment 22 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 22 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 22 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 22 : GetRange : SMALL : 10000 Keys time in ms: 73
-Experiment 22 : GetRange : MEDIUM : 10000 Keys time in ms: 24
-Experiment 22 : GetRange : LARGE : 10000 Keys time in ms: 11
-Experiment 22 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 23 : Creating 10000 Keys time in ms: 24009
+Experiment 22 : GetRange : WANT_ALL : 10000 Keys time in ms: 5
+Experiment 22 : GetRange : ITERATOR : 10000 Keys time in ms: 5
+Experiment 22 : GetRange : EXACT : 10000 Keys time in ms: 6
+Experiment 22 : GetRange : SMALL : 10000 Keys time in ms: 71
+Experiment 22 : GetRange : MEDIUM : 10000 Keys time in ms: 25
+Experiment 22 : GetRange : LARGE : 10000 Keys time in ms: 10
+Experiment 22 : GetRange : SERIAL : 10000 Keys time in ms: 5
+Experiment 23 : Creating 10000 Keys time in ms: 44
 Experiment 23 : KeySize in Bytes: 100000
 Experiment 23 : ValueSize in Bytes: 120000
-Experiment 23 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
-Experiment 23 : GetRange : ITERATOR : 10000 Keys time in ms: 7
+Experiment 23 : GetRange : WANT_ALL : 10000 Keys time in ms: 5
+Experiment 23 : GetRange : ITERATOR : 10000 Keys time in ms: 5
 Experiment 23 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 23 : GetRange : SMALL : 10000 Keys time in ms: 68
-Experiment 23 : GetRange : MEDIUM : 10000 Keys time in ms: 24
-Experiment 23 : GetRange : LARGE : 10000 Keys time in ms: 11
-Experiment 23 : GetRange : SERIAL : 10000 Keys time in ms: 7
-Experiment 24 : Creating 10000 Keys time in ms: 23883
+Experiment 23 : GetRange : SMALL : 10000 Keys time in ms: 75
+Experiment 23 : GetRange : MEDIUM : 10000 Keys time in ms: 25
+Experiment 23 : GetRange : LARGE : 10000 Keys time in ms: 10
+Experiment 23 : GetRange : SERIAL : 10000 Keys time in ms: 5
+Experiment 24 : Creating 10000 Keys time in ms: 45
 Experiment 24 : KeySize in Bytes: 100000
 Experiment 24 : ValueSize in Bytes: 120000
 Experiment 24 : GetRange : WANT_ALL : 10000 Keys time in ms: 5
-Experiment 24 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 24 : GetRange : EXACT : 10000 Keys time in ms: 7
-Experiment 24 : GetRange : SMALL : 10000 Keys time in ms: 75
-Experiment 24 : GetRange : MEDIUM : 10000 Keys time in ms: 24
-Experiment 24 : GetRange : LARGE : 10000 Keys time in ms: 10
-Experiment 24 : GetRange : SERIAL : 10000 Keys time in ms: 7
-Experiment 25 : Creating 10000 Keys time in ms: 24128
+Experiment 24 : GetRange : ITERATOR : 10000 Keys time in ms: 5
+Experiment 24 : GetRange : EXACT : 10000 Keys time in ms: 4
+Experiment 24 : GetRange : SMALL : 10000 Keys time in ms: 71
+Experiment 24 : GetRange : MEDIUM : 10000 Keys time in ms: 23
+Experiment 24 : GetRange : LARGE : 10000 Keys time in ms: 8
+Experiment 24 : GetRange : SERIAL : 10000 Keys time in ms: 5
+Experiment 25 : Creating 10000 Keys time in ms: 44
 Experiment 25 : KeySize in Bytes: 100000
 Experiment 25 : ValueSize in Bytes: 120000
-Experiment 25 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 25 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 25 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 25 : GetRange : SMALL : 10000 Keys time in ms: 69
-Experiment 25 : GetRange : MEDIUM : 10000 Keys time in ms: 20
-Experiment 25 : GetRange : LARGE : 10000 Keys time in ms: 12
-Experiment 25 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 26 : Creating 10000 Keys time in ms: 24078
+Experiment 25 : GetRange : WANT_ALL : 10000 Keys time in ms: 5
+Experiment 25 : GetRange : ITERATOR : 10000 Keys time in ms: 4
+Experiment 25 : GetRange : EXACT : 10000 Keys time in ms: 3
+Experiment 25 : GetRange : SMALL : 10000 Keys time in ms: 71
+Experiment 25 : GetRange : MEDIUM : 10000 Keys time in ms: 23
+Experiment 25 : GetRange : LARGE : 10000 Keys time in ms: 9
+Experiment 25 : GetRange : SERIAL : 10000 Keys time in ms: 5
+Experiment 26 : Creating 10000 Keys time in ms: 55
 Experiment 26 : KeySize in Bytes: 100000
 Experiment 26 : ValueSize in Bytes: 120000
-Experiment 26 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 26 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 26 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 26 : GetRange : SMALL : 10000 Keys time in ms: 83
-Experiment 26 : GetRange : MEDIUM : 10000 Keys time in ms: 22
+Experiment 26 : GetRange : WANT_ALL : 10000 Keys time in ms: 5
+Experiment 26 : GetRange : ITERATOR : 10000 Keys time in ms: 5
+Experiment 26 : GetRange : EXACT : 10000 Keys time in ms: 4
+Experiment 26 : GetRange : SMALL : 10000 Keys time in ms: 70
+Experiment 26 : GetRange : MEDIUM : 10000 Keys time in ms: 23
 Experiment 26 : GetRange : LARGE : 10000 Keys time in ms: 10
-Experiment 26 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 27 : Creating 10000 Keys time in ms: 23505
+Experiment 26 : GetRange : SERIAL : 10000 Keys time in ms: 5
+Experiment 27 : Creating 10000 Keys time in ms: 45
 Experiment 27 : KeySize in Bytes: 100000
 Experiment 27 : ValueSize in Bytes: 120000
-Experiment 27 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 27 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 27 : GetRange : EXACT : 10000 Keys time in ms: 5
+Experiment 27 : GetRange : WANT_ALL : 10000 Keys time in ms: 5
+Experiment 27 : GetRange : ITERATOR : 10000 Keys time in ms: 4
+Experiment 27 : GetRange : EXACT : 10000 Keys time in ms: 4
 Experiment 27 : GetRange : SMALL : 10000 Keys time in ms: 69
-Experiment 27 : GetRange : MEDIUM : 10000 Keys time in ms: 22
-Experiment 27 : GetRange : LARGE : 10000 Keys time in ms: 8
-Experiment 27 : GetRange : SERIAL : 10000 Keys time in ms: 7
-Experiment 28 : Creating 10000 Keys time in ms: 23956
+Experiment 27 : GetRange : MEDIUM : 10000 Keys time in ms: 23
+Experiment 27 : GetRange : LARGE : 10000 Keys time in ms: 9
+Experiment 27 : GetRange : SERIAL : 10000 Keys time in ms: 4
+Experiment 28 : Creating 10000 Keys time in ms: 45
 Experiment 28 : KeySize in Bytes: 100000
 Experiment 28 : ValueSize in Bytes: 120000
-Experiment 28 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 28 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 28 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 28 : GetRange : SMALL : 10000 Keys time in ms: 68
-Experiment 28 : GetRange : MEDIUM : 10000 Keys time in ms: 21
-Experiment 28 : GetRange : LARGE : 10000 Keys time in ms: 9
-Experiment 28 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 29 : Creating 10000 Keys time in ms: 24222
+Experiment 28 : GetRange : WANT_ALL : 10000 Keys time in ms: 4
+Experiment 28 : GetRange : ITERATOR : 10000 Keys time in ms: 4
+Experiment 28 : GetRange : EXACT : 10000 Keys time in ms: 4
+Experiment 28 : GetRange : SMALL : 10000 Keys time in ms: 71
+Experiment 28 : GetRange : MEDIUM : 10000 Keys time in ms: 22
+Experiment 28 : GetRange : LARGE : 10000 Keys time in ms: 8
+Experiment 28 : GetRange : SERIAL : 10000 Keys time in ms: 5
+Experiment 29 : Creating 10000 Keys time in ms: 47
 Experiment 29 : KeySize in Bytes: 100000
 Experiment 29 : ValueSize in Bytes: 120000
-Experiment 29 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 29 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 29 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 29 : GetRange : SMALL : 10000 Keys time in ms: 69
-Experiment 29 : GetRange : MEDIUM : 10000 Keys time in ms: 24
-Experiment 29 : GetRange : LARGE : 10000 Keys time in ms: 12
-Experiment 29 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 30 : Creating 10000 Keys time in ms: 46148
+Experiment 29 : GetRange : WANT_ALL : 10000 Keys time in ms: 4
+Experiment 29 : GetRange : ITERATOR : 10000 Keys time in ms: 4
+Experiment 29 : GetRange : EXACT : 10000 Keys time in ms: 4
+Experiment 29 : GetRange : SMALL : 10000 Keys time in ms: 70
+Experiment 29 : GetRange : MEDIUM : 10000 Keys time in ms: 21
+Experiment 29 : GetRange : LARGE : 10000 Keys time in ms: 8
+Experiment 29 : GetRange : SERIAL : 10000 Keys time in ms: 5
+Experiment 30 : Creating 10000 Keys time in ms: 44
 Experiment 30 : KeySize in Bytes: 100000
 Experiment 30 : ValueSize in Bytes: 120000
-Experiment 30 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
+Experiment 30 : GetRange : WANT_ALL : 10000 Keys time in ms: 4
 Experiment 30 : GetRange : ITERATOR : 10000 Keys time in ms: 5
-Experiment 30 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 30 : GetRange : SMALL : 10000 Keys time in ms: 69
-Experiment 30 : GetRange : MEDIUM : 10000 Keys time in ms: 23
-Experiment 30 : GetRange : LARGE : 10000 Keys time in ms: 11
+Experiment 30 : GetRange : EXACT : 10000 Keys time in ms: 4
+Experiment 30 : GetRange : SMALL : 10000 Keys time in ms: 115
+Experiment 30 : GetRange : MEDIUM : 10000 Keys time in ms: 27
+Experiment 30 : GetRange : LARGE : 10000 Keys time in ms: 9
 Experiment 30 : GetRange : SERIAL : 10000 Keys time in ms: 7
-Experiment 31 : Creating 10000 Keys time in ms: 23315
+Experiment 31 : Creating 10000 Keys time in ms: 48
 Experiment 31 : KeySize in Bytes: 100000
 Experiment 31 : ValueSize in Bytes: 120000
-Experiment 31 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
-Experiment 31 : GetRange : ITERATOR : 10000 Keys time in ms: 5
-Experiment 31 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 31 : GetRange : SMALL : 10000 Keys time in ms: 69
-Experiment 31 : GetRange : MEDIUM : 10000 Keys time in ms: 22
-Experiment 31 : GetRange : LARGE : 10000 Keys time in ms: 10
-Experiment 31 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 32 : Creating 10000 Keys time in ms: 24184
+Experiment 31 : GetRange : WANT_ALL : 10000 Keys time in ms: 10
+Experiment 31 : GetRange : ITERATOR : 10000 Keys time in ms: 9
+Experiment 31 : GetRange : EXACT : 10000 Keys time in ms: 9
+Experiment 31 : GetRange : SMALL : 10000 Keys time in ms: 65
+Experiment 31 : GetRange : MEDIUM : 10000 Keys time in ms: 24
+Experiment 31 : GetRange : LARGE : 10000 Keys time in ms: 11
+Experiment 31 : GetRange : SERIAL : 10000 Keys time in ms: 9
+Experiment 32 : Creating 10000 Keys time in ms: 45
 Experiment 32 : KeySize in Bytes: 100000
 Experiment 32 : ValueSize in Bytes: 120000
-Experiment 32 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 32 : GetRange : ITERATOR : 10000 Keys time in ms: 5
+Experiment 32 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
+Experiment 32 : GetRange : ITERATOR : 10000 Keys time in ms: 7
 Experiment 32 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 32 : GetRange : SMALL : 10000 Keys time in ms: 63
-Experiment 32 : GetRange : MEDIUM : 10000 Keys time in ms: 19
+Experiment 32 : GetRange : SMALL : 10000 Keys time in ms: 77
+Experiment 32 : GetRange : MEDIUM : 10000 Keys time in ms: 25
 Experiment 32 : GetRange : LARGE : 10000 Keys time in ms: 11
-Experiment 32 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 33 : Creating 10000 Keys time in ms: 24357
+Experiment 32 : GetRange : SERIAL : 10000 Keys time in ms: 7
+Experiment 33 : Creating 10000 Keys time in ms: 49
 Experiment 33 : KeySize in Bytes: 100000
 Experiment 33 : ValueSize in Bytes: 120000
-Experiment 33 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 33 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 33 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 33 : GetRange : SMALL : 10000 Keys time in ms: 69
-Experiment 33 : GetRange : MEDIUM : 10000 Keys time in ms: 23
-Experiment 33 : GetRange : LARGE : 10000 Keys time in ms: 10
-Experiment 33 : GetRange : SERIAL : 10000 Keys time in ms: 8
-Experiment 34 : Creating 10000 Keys time in ms: 24063
+Experiment 33 : GetRange : WANT_ALL : 10000 Keys time in ms: 9
+Experiment 33 : GetRange : ITERATOR : 10000 Keys time in ms: 15
+Experiment 33 : GetRange : EXACT : 10000 Keys time in ms: 9
+Experiment 33 : GetRange : SMALL : 10000 Keys time in ms: 81
+Experiment 33 : GetRange : MEDIUM : 10000 Keys time in ms: 29
+Experiment 33 : GetRange : LARGE : 10000 Keys time in ms: 12
+Experiment 33 : GetRange : SERIAL : 10000 Keys time in ms: 10
+Experiment 34 : Creating 10000 Keys time in ms: 50
 Experiment 34 : KeySize in Bytes: 100000
 Experiment 34 : ValueSize in Bytes: 120000
-Experiment 34 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 34 : GetRange : ITERATOR : 10000 Keys time in ms: 5
-Experiment 34 : GetRange : EXACT : 10000 Keys time in ms: 6
+Experiment 34 : GetRange : WANT_ALL : 10000 Keys time in ms: 9
+Experiment 34 : GetRange : ITERATOR : 10000 Keys time in ms: 9
+Experiment 34 : GetRange : EXACT : 10000 Keys time in ms: 9
 Experiment 34 : GetRange : SMALL : 10000 Keys time in ms: 74
-Experiment 34 : GetRange : MEDIUM : 10000 Keys time in ms: 23
-Experiment 34 : GetRange : LARGE : 10000 Keys time in ms: 10
-Experiment 34 : GetRange : SERIAL : 10000 Keys time in ms: 7
-Experiment 35 : Creating 10000 Keys time in ms: 23733
+Experiment 34 : GetRange : MEDIUM : 10000 Keys time in ms: 29
+Experiment 34 : GetRange : LARGE : 10000 Keys time in ms: 12
+Experiment 34 : GetRange : SERIAL : 10000 Keys time in ms: 8
+Experiment 35 : Creating 10000 Keys time in ms: 47
 Experiment 35 : KeySize in Bytes: 100000
 Experiment 35 : ValueSize in Bytes: 120000
-Experiment 35 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 35 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 35 : GetRange : EXACT : 10000 Keys time in ms: 17
-Experiment 35 : GetRange : SMALL : 10000 Keys time in ms: 70
-Experiment 35 : GetRange : MEDIUM : 10000 Keys time in ms: 22
-Experiment 35 : GetRange : LARGE : 10000 Keys time in ms: 8
-Experiment 35 : GetRange : SERIAL : 10000 Keys time in ms: 5
-Experiment 36 : Creating 10000 Keys time in ms: 23609
+Experiment 35 : GetRange : WANT_ALL : 10000 Keys time in ms: 9
+Experiment 35 : GetRange : ITERATOR : 10000 Keys time in ms: 9
+Experiment 35 : GetRange : EXACT : 10000 Keys time in ms: 11
+Experiment 35 : GetRange : SMALL : 10000 Keys time in ms: 103
+Experiment 35 : GetRange : MEDIUM : 10000 Keys time in ms: 26
+Experiment 35 : GetRange : LARGE : 10000 Keys time in ms: 11
+Experiment 35 : GetRange : SERIAL : 10000 Keys time in ms: 9
+Experiment 36 : Creating 10000 Keys time in ms: 46
 Experiment 36 : KeySize in Bytes: 100000
 Experiment 36 : ValueSize in Bytes: 120000
-Experiment 36 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 36 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 36 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 36 : GetRange : SMALL : 10000 Keys time in ms: 69
-Experiment 36 : GetRange : MEDIUM : 10000 Keys time in ms: 24
-Experiment 36 : GetRange : LARGE : 10000 Keys time in ms: 10
-Experiment 36 : GetRange : SERIAL : 10000 Keys time in ms: 7
-Experiment 37 : Creating 10000 Keys time in ms: 23988
+Experiment 36 : GetRange : WANT_ALL : 10000 Keys time in ms: 9
+Experiment 36 : GetRange : ITERATOR : 10000 Keys time in ms: 10
+Experiment 36 : GetRange : EXACT : 10000 Keys time in ms: 9
+Experiment 36 : GetRange : SMALL : 10000 Keys time in ms: 75
+Experiment 36 : GetRange : MEDIUM : 10000 Keys time in ms: 28
+Experiment 36 : GetRange : LARGE : 10000 Keys time in ms: 13
+Experiment 36 : GetRange : SERIAL : 10000 Keys time in ms: 10
+Experiment 37 : Creating 10000 Keys time in ms: 54
 Experiment 37 : KeySize in Bytes: 100000
 Experiment 37 : ValueSize in Bytes: 120000
-Experiment 37 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 37 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 37 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 37 : GetRange : SMALL : 10000 Keys time in ms: 85
-Experiment 37 : GetRange : MEDIUM : 10000 Keys time in ms: 22
-Experiment 37 : GetRange : LARGE : 10000 Keys time in ms: 9
-Experiment 37 : GetRange : SERIAL : 10000 Keys time in ms: 7
-Experiment 38 : Creating 10000 Keys time in ms: 23827
+Experiment 37 : GetRange : WANT_ALL : 10000 Keys time in ms: 9
+Experiment 37 : GetRange : ITERATOR : 10000 Keys time in ms: 8
+Experiment 37 : GetRange : EXACT : 10000 Keys time in ms: 8
+Experiment 37 : GetRange : SMALL : 10000 Keys time in ms: 77
+Experiment 37 : GetRange : MEDIUM : 10000 Keys time in ms: 70
+Experiment 37 : GetRange : LARGE : 10000 Keys time in ms: 12
+Experiment 37 : GetRange : SERIAL : 10000 Keys time in ms: 9
+Experiment 38 : Creating 10000 Keys time in ms: 48
 Experiment 38 : KeySize in Bytes: 100000
 Experiment 38 : ValueSize in Bytes: 120000
-Experiment 38 : GetRange : WANT_ALL : 10000 Keys time in ms: 5
-Experiment 38 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 38 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 38 : GetRange : SMALL : 10000 Keys time in ms: 64
-Experiment 38 : GetRange : MEDIUM : 10000 Keys time in ms: 23
-Experiment 38 : GetRange : LARGE : 10000 Keys time in ms: 11
-Experiment 38 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 39 : Creating 10000 Keys time in ms: 23991
+Experiment 38 : GetRange : WANT_ALL : 10000 Keys time in ms: 9
+Experiment 38 : GetRange : ITERATOR : 10000 Keys time in ms: 8
+Experiment 38 : GetRange : EXACT : 10000 Keys time in ms: 8
+Experiment 38 : GetRange : SMALL : 10000 Keys time in ms: 80
+Experiment 38 : GetRange : MEDIUM : 10000 Keys time in ms: 29
+Experiment 38 : GetRange : LARGE : 10000 Keys time in ms: 12
+Experiment 38 : GetRange : SERIAL : 10000 Keys time in ms: 8
+Experiment 39 : Creating 10000 Keys time in ms: 51
 Experiment 39 : KeySize in Bytes: 100000
 Experiment 39 : ValueSize in Bytes: 120000
-Experiment 39 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 39 : GetRange : ITERATOR : 10000 Keys time in ms: 5
-Experiment 39 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 39 : GetRange : SMALL : 10000 Keys time in ms: 71
-Experiment 39 : GetRange : MEDIUM : 10000 Keys time in ms: 36
-Experiment 39 : GetRange : LARGE : 10000 Keys time in ms: 8
-Experiment 39 : GetRange : SERIAL : 10000 Keys time in ms: 5
-Experiment 40 : Creating 10000 Keys time in ms: 24058
+Experiment 39 : GetRange : WANT_ALL : 10000 Keys time in ms: 9
+Experiment 39 : GetRange : ITERATOR : 10000 Keys time in ms: 9
+Experiment 39 : GetRange : EXACT : 10000 Keys time in ms: 10
+Experiment 39 : GetRange : SMALL : 10000 Keys time in ms: 80
+Experiment 39 : GetRange : MEDIUM : 10000 Keys time in ms: 29
+Experiment 39 : GetRange : LARGE : 10000 Keys time in ms: 11
+Experiment 39 : GetRange : SERIAL : 10000 Keys time in ms: 9
+Experiment 40 : Creating 10000 Keys time in ms: 56
 Experiment 40 : KeySize in Bytes: 100000
 Experiment 40 : ValueSize in Bytes: 120000
-Experiment 40 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 40 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 40 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 40 : GetRange : SMALL : 10000 Keys time in ms: 70
-Experiment 40 : GetRange : MEDIUM : 10000 Keys time in ms: 25
-Experiment 40 : GetRange : LARGE : 10000 Keys time in ms: 9
-Experiment 40 : GetRange : SERIAL : 10000 Keys time in ms: 7
-Experiment 41 : Creating 10000 Keys time in ms: 24324
+Experiment 40 : GetRange : WANT_ALL : 10000 Keys time in ms: 11
+Experiment 40 : GetRange : ITERATOR : 10000 Keys time in ms: 22
+Experiment 40 : GetRange : EXACT : 10000 Keys time in ms: 9
+Experiment 40 : GetRange : SMALL : 10000 Keys time in ms: 80
+Experiment 40 : GetRange : MEDIUM : 10000 Keys time in ms: 30
+Experiment 40 : GetRange : LARGE : 10000 Keys time in ms: 12
+Experiment 40 : GetRange : SERIAL : 10000 Keys time in ms: 9
+Experiment 41 : Creating 10000 Keys time in ms: 45
 Experiment 41 : KeySize in Bytes: 100000
 Experiment 41 : ValueSize in Bytes: 120000
-Experiment 41 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 41 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 41 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 41 : GetRange : SMALL : 10000 Keys time in ms: 69
-Experiment 41 : GetRange : MEDIUM : 10000 Keys time in ms: 21
-Experiment 41 : GetRange : LARGE : 10000 Keys time in ms: 23
-Experiment 41 : GetRange : SERIAL : 10000 Keys time in ms: 7
-Experiment 42 : Creating 10000 Keys time in ms: 24148
+Experiment 41 : GetRange : WANT_ALL : 10000 Keys time in ms: 10
+Experiment 41 : GetRange : ITERATOR : 10000 Keys time in ms: 9
+Experiment 41 : GetRange : EXACT : 10000 Keys time in ms: 8
+Experiment 41 : GetRange : SMALL : 10000 Keys time in ms: 76
+Experiment 41 : GetRange : MEDIUM : 10000 Keys time in ms: 30
+Experiment 41 : GetRange : LARGE : 10000 Keys time in ms: 12
+Experiment 41 : GetRange : SERIAL : 10000 Keys time in ms: 9
+Experiment 42 : Creating 10000 Keys time in ms: 48
 Experiment 42 : KeySize in Bytes: 100000
 Experiment 42 : ValueSize in Bytes: 120000
-Experiment 42 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 42 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 42 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 42 : GetRange : SMALL : 10000 Keys time in ms: 69
+Experiment 42 : GetRange : WANT_ALL : 10000 Keys time in ms: 10
+Experiment 42 : GetRange : ITERATOR : 10000 Keys time in ms: 10
+Experiment 42 : GetRange : EXACT : 10000 Keys time in ms: 9
+Experiment 42 : GetRange : SMALL : 10000 Keys time in ms: 102
 Experiment 42 : GetRange : MEDIUM : 10000 Keys time in ms: 24
-Experiment 42 : GetRange : LARGE : 10000 Keys time in ms: 8
-Experiment 42 : GetRange : SERIAL : 10000 Keys time in ms: 7
-Experiment 43 : Creating 10000 Keys time in ms: 46145
+Experiment 42 : GetRange : LARGE : 10000 Keys time in ms: 10
+Experiment 42 : GetRange : SERIAL : 10000 Keys time in ms: 8
+Experiment 43 : Creating 10000 Keys time in ms: 44
 Experiment 43 : KeySize in Bytes: 100000
 Experiment 43 : ValueSize in Bytes: 120000
-Experiment 43 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
-Experiment 43 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 43 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 43 : GetRange : SMALL : 10000 Keys time in ms: 71
-Experiment 43 : GetRange : MEDIUM : 10000 Keys time in ms: 22
-Experiment 43 : GetRange : LARGE : 10000 Keys time in ms: 22
-Experiment 43 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 44 : Creating 10000 Keys time in ms: 23949
+Experiment 43 : GetRange : WANT_ALL : 10000 Keys time in ms: 9
+Experiment 43 : GetRange : ITERATOR : 10000 Keys time in ms: 8
+Experiment 43 : GetRange : EXACT : 10000 Keys time in ms: 9
+Experiment 43 : GetRange : SMALL : 10000 Keys time in ms: 76
+Experiment 43 : GetRange : MEDIUM : 10000 Keys time in ms: 29
+Experiment 43 : GetRange : LARGE : 10000 Keys time in ms: 10
+Experiment 43 : GetRange : SERIAL : 10000 Keys time in ms: 8
+Experiment 44 : Creating 10000 Keys time in ms: 45
 Experiment 44 : KeySize in Bytes: 100000
 Experiment 44 : ValueSize in Bytes: 120000
-Experiment 44 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
-Experiment 44 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 44 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 44 : GetRange : SMALL : 10000 Keys time in ms: 71
-Experiment 44 : GetRange : MEDIUM : 10000 Keys time in ms: 21
-Experiment 44 : GetRange : LARGE : 10000 Keys time in ms: 10
-Experiment 44 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 45 : Creating 10000 Keys time in ms: 24007
+Experiment 44 : GetRange : WANT_ALL : 10000 Keys time in ms: 8
+Experiment 44 : GetRange : ITERATOR : 10000 Keys time in ms: 9
+Experiment 44 : GetRange : EXACT : 10000 Keys time in ms: 8
+Experiment 44 : GetRange : SMALL : 10000 Keys time in ms: 76
+Experiment 44 : GetRange : MEDIUM : 10000 Keys time in ms: 28
+Experiment 44 : GetRange : LARGE : 10000 Keys time in ms: 11
+Experiment 44 : GetRange : SERIAL : 10000 Keys time in ms: 8
+Experiment 45 : Creating 10000 Keys time in ms: 53
 Experiment 45 : KeySize in Bytes: 100000
 Experiment 45 : ValueSize in Bytes: 120000
-Experiment 45 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
-Experiment 45 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 45 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 45 : GetRange : SMALL : 10000 Keys time in ms: 74
-Experiment 45 : GetRange : MEDIUM : 10000 Keys time in ms: 26
-Experiment 45 : GetRange : LARGE : 10000 Keys time in ms: 22
-Experiment 45 : GetRange : SERIAL : 10000 Keys time in ms: 7
-Experiment 46 : Creating 10000 Keys time in ms: 24078
+Experiment 45 : GetRange : WANT_ALL : 10000 Keys time in ms: 14
+Experiment 45 : GetRange : ITERATOR : 10000 Keys time in ms: 14
+Experiment 45 : GetRange : EXACT : 10000 Keys time in ms: 9
+Experiment 45 : GetRange : SMALL : 10000 Keys time in ms: 73
+Experiment 45 : GetRange : MEDIUM : 10000 Keys time in ms: 29
+Experiment 45 : GetRange : LARGE : 10000 Keys time in ms: 11
+Experiment 45 : GetRange : SERIAL : 10000 Keys time in ms: 8
+Experiment 46 : Creating 10000 Keys time in ms: 45
 Experiment 46 : KeySize in Bytes: 100000
 Experiment 46 : ValueSize in Bytes: 120000
-Experiment 46 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 46 : GetRange : ITERATOR : 10000 Keys time in ms: 5
-Experiment 46 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 46 : GetRange : SMALL : 10000 Keys time in ms: 74
-Experiment 46 : GetRange : MEDIUM : 10000 Keys time in ms: 22
-Experiment 46 : GetRange : LARGE : 10000 Keys time in ms: 12
-Experiment 46 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 47 : Creating 10000 Keys time in ms: 24003
+Experiment 46 : GetRange : WANT_ALL : 10000 Keys time in ms: 8
+Experiment 46 : GetRange : ITERATOR : 10000 Keys time in ms: 9
+Experiment 46 : GetRange : EXACT : 10000 Keys time in ms: 8
+Experiment 46 : GetRange : SMALL : 10000 Keys time in ms: 73
+Experiment 46 : GetRange : MEDIUM : 10000 Keys time in ms: 28
+Experiment 46 : GetRange : LARGE : 10000 Keys time in ms: 10
+Experiment 46 : GetRange : SERIAL : 10000 Keys time in ms: 9
+Experiment 47 : Creating 10000 Keys time in ms: 46
 Experiment 47 : KeySize in Bytes: 100000
 Experiment 47 : ValueSize in Bytes: 120000
-Experiment 47 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
-Experiment 47 : GetRange : ITERATOR : 10000 Keys time in ms: 5
-Experiment 47 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 47 : GetRange : SMALL : 10000 Keys time in ms: 72
-Experiment 47 : GetRange : MEDIUM : 10000 Keys time in ms: 23
-Experiment 47 : GetRange : LARGE : 10000 Keys time in ms: 22
-Experiment 47 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 48 : Creating 10000 Keys time in ms: 23962
+Experiment 47 : GetRange : WANT_ALL : 10000 Keys time in ms: 8
+Experiment 47 : GetRange : ITERATOR : 10000 Keys time in ms: 8
+Experiment 47 : GetRange : EXACT : 10000 Keys time in ms: 8
+Experiment 47 : GetRange : SMALL : 10000 Keys time in ms: 108
+Experiment 47 : GetRange : MEDIUM : 10000 Keys time in ms: 26
+Experiment 47 : GetRange : LARGE : 10000 Keys time in ms: 10
+Experiment 47 : GetRange : SERIAL : 10000 Keys time in ms: 8
+Experiment 48 : Creating 10000 Keys time in ms: 43
 Experiment 48 : KeySize in Bytes: 100000
 Experiment 48 : ValueSize in Bytes: 120000
-Experiment 48 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 48 : GetRange : ITERATOR : 10000 Keys time in ms: 5
-Experiment 48 : GetRange : EXACT : 10000 Keys time in ms: 6
-Experiment 48 : GetRange : SMALL : 10000 Keys time in ms: 72
-Experiment 48 : GetRange : MEDIUM : 10000 Keys time in ms: 23
-Experiment 48 : GetRange : LARGE : 10000 Keys time in ms: 11
-Experiment 48 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 49 : Creating 10000 Keys time in ms: 24040
+Experiment 48 : GetRange : WANT_ALL : 10000 Keys time in ms: 9
+Experiment 48 : GetRange : ITERATOR : 10000 Keys time in ms: 7
+Experiment 48 : GetRange : EXACT : 10000 Keys time in ms: 8
+Experiment 48 : GetRange : SMALL : 10000 Keys time in ms: 70
+Experiment 48 : GetRange : MEDIUM : 10000 Keys time in ms: 24
+Experiment 48 : GetRange : LARGE : 10000 Keys time in ms: 10
+Experiment 48 : GetRange : SERIAL : 10000 Keys time in ms: 9
+Experiment 49 : Creating 10000 Keys time in ms: 47
 Experiment 49 : KeySize in Bytes: 100000
 Experiment 49 : ValueSize in Bytes: 120000
-Experiment 49 : GetRange : WANT_ALL : 10000 Keys time in ms: 6
-Experiment 49 : GetRange : ITERATOR : 10000 Keys time in ms: 5
-Experiment 49 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 49 : GetRange : SMALL : 10000 Keys time in ms: 67
-Experiment 49 : GetRange : MEDIUM : 10000 Keys time in ms: 36
-Experiment 49 : GetRange : LARGE : 10000 Keys time in ms: 9
-Experiment 49 : GetRange : SERIAL : 10000 Keys time in ms: 6
-Experiment 50 : Creating 10000 Keys time in ms: 24066
+Experiment 49 : GetRange : WANT_ALL : 10000 Keys time in ms: 8
+Experiment 49 : GetRange : ITERATOR : 10000 Keys time in ms: 8
+Experiment 49 : GetRange : EXACT : 10000 Keys time in ms: 8
+Experiment 49 : GetRange : SMALL : 10000 Keys time in ms: 77
+Experiment 49 : GetRange : MEDIUM : 10000 Keys time in ms: 28
+Experiment 49 : GetRange : LARGE : 10000 Keys time in ms: 11
+Experiment 49 : GetRange : SERIAL : 10000 Keys time in ms: 8
+Experiment 50 : Creating 10000 Keys time in ms: 44
 Experiment 50 : KeySize in Bytes: 100000
 Experiment 50 : ValueSize in Bytes: 120000
-Experiment 50 : GetRange : WANT_ALL : 10000 Keys time in ms: 7
-Experiment 50 : GetRange : ITERATOR : 10000 Keys time in ms: 6
-Experiment 50 : GetRange : EXACT : 10000 Keys time in ms: 5
-Experiment 50 : GetRange : SMALL : 10000 Keys time in ms: 69
-Experiment 50 : GetRange : MEDIUM : 10000 Keys time in ms: 24
-Experiment 50 : GetRange : LARGE : 10000 Keys time in ms: 10
-Experiment 50 : GetRange : SERIAL : 10000 Keys time in ms: 7
+Experiment 50 : GetRange : WANT_ALL : 10000 Keys time in ms: 15
+Experiment 50 : GetRange : ITERATOR : 10000 Keys time in ms: 11
+Experiment 50 : GetRange : EXACT : 10000 Keys time in ms: 20
+Experiment 50 : GetRange : SMALL : 10000 Keys time in ms: 78
+Experiment 50 : GetRange : MEDIUM : 10000 Keys time in ms: 29
+Experiment 50 : GetRange : LARGE : 10000 Keys time in ms: 12
+Experiment 50 : GetRange : SERIAL : 10000 Keys time in ms: 8
